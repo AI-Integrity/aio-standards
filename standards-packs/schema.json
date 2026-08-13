@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aioq.org/content/standards-packs/schema.json",
+  "title": "AIO Standards Pack",
+  "description": "A modular, versioned formalization of an external reference norm into AIO Framework hierarchy values (V/E/S). A pack is data, not code: adding a pack adds a certification product without a code change. Certificates pin the pack id and version so that a later revision of the source norm does not retroactively change the meaning of an earlier certificate.",
+  "type": "object",
+  "required": ["id", "name", "sourceNorm", "vesMapping", "itemBankRef", "version", "status", "updatedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional pointer back to this schema, for editor validation."
+    },
+    "id": {
+      "type": "string",
+      "description": "Stable pack identifier. Lowercase, hyphenated. Certificates reference `{id}@{version}`.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "object",
+      "description": "Display name per locale. `en` is required; other locales fall back to `en`.",
+      "required": ["en"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ko": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": { "type": "string" }
+    },
+    "sourceNorm": {
+      "type": "object",
+      "description": "The external reference standard being formalized. AIO certifies conformance to AIO's formalization of this norm — never conformance certified by the norm's issuing body.",
+      "required": ["title", "publisher", "version", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "vesMapping": {
+      "type": "array",
+      "description": "Article-by-article mapping from the source norm to AIO hierarchy expectations. Each entry is validated through the public RFC process before the pack leaves `draft`.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["article", "summary", "v", "e", "s"],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "Verification stage of this single mapping entry (execution plan §5.3.5.3). `draft-unverified` = seeded, never checked against the primary source. `draft-verified` = the quote in `provenance` was read from the official text and the V/E/S assignment was re-derived from it. `rfc` = under public review. `active` = may back an issued certificate.",
+            "enum": ["draft-unverified", "draft-verified", "rfc", "active"]
+          },
+          "provenance": {
+            "type": "object",
+            "description": "Primary-source evidence for this entry (execution plan §5.3.5.2). Mandatory before an entry may leave `draft-unverified`. Only the official publication of the norm counts as a source — never a commentary, summary, or blog.",
+            "required": ["sourceUrl", "article", "quote", "rationale", "retrievedAt", "verifiedBy"],
+            "additionalProperties": false,
+            "properties": {
+              "sourceUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "Canonical URL of the official text the quote was read from."
+              },
+              "retrievalUrl": {
+                "type": "string",
+                "format": "uri",
+                "description": "Optional. The endpoint actually fetched, when it differs from the canonical citation URL (e.g. the EU Publications Office Cellar mirror of a EUR-Lex document)."
+              },
+              "article": {
+                "type": "string",
+                "description": "Exact provision the quote comes from, down to the paragraph and point.",
+                "minLength": 1
+              },
+              "quote": {
+                "type": "string",
+                "description": "Verbatim excerpt of the official text, normally 400 characters or fewer. Elisions are marked […]. A bracketed citation such as [Art. 9(1)] may precede an excerpt when one entry quotes more than one provision; everything outside brackets is verbatim.",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "description": "Why this provision maps to these V/E/S codes, argued from the quoted text.",
+                "minLength": 1
+              },
+              "retrievedAt": {
+                "type": "string",
+                "format": "date",
+                "description": "ISO 8601 date the official text was fetched."
+              },
+              "verifiedBy": {
+                "type": "string",
+                "description": "Who or what performed the check, and what review stage it is at.",
+                "minLength": 1
+              }
+            }
+          },
+          "changeNote": {
+            "type": "string",
+            "description": "What changed in this entry relative to the previous pack version, and why."
+          },
+          "article": {
+            "type": "string",
+            "description": "Citation of the provision in the source norm, as the norm itself numbers it.",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence statement of what the provision requires, in neutral terms.",
+            "minLength": 1
+          },
+          "v": {
+            "type": "array",
+            "description": "Value hierarchy (L4) codes the provision expects to prevail. From pack version 0.2 onward these are the canonical three-letter AIO 00011 codes (Sep, Ses, Cor, …) served at /api/framework/vocabulary — the same codes an AIO 20002 record carries.",
+            "items": { "type": "string" }
+          },
+          "e": {
+            "type": "array",
+            "description": "Evidence hierarchy (L3) codes the provision expects to be decisive. Canonical three-letter AIO 00011 codes (Gui, Dat, Cas, …).",
+            "items": { "type": "string" }
+          },
+          "s": {
+            "type": "array",
+            "description": "Source hierarchy (L2) codes the provision expects to be trusted. Canonical three-letter AIO 00011 codes (Gov, Ind, Pro, …).",
+            "items": { "type": "string" }
+          },
+          "note": {
+            "type": "string",
+            "description": "Optional caveat. Entries carrying `draft` in this field are placeholders awaiting RFC validation."
+          }
+        }
+      }
+    },
+    "itemBankRef": {
+      "type": "object",
+      "description": "References to the scenario item banks used for scoring. The public set is served as static JSON; the private set lives in Firestore and is never exposed, so that Tier 1+ scores cannot be gamed against a known bank.",
+      "required": ["publicSet", "privateSet"],
+      "additionalProperties": false,
+      "properties": {
+        "publicSet": {
+          "type": ["string", "null"],
+          "description": "Path or URL of the public item set. `null` while the bank is not yet built."
+        },
+        "privateSet": {
+          "type": ["string", "null"],
+          "description": "Firestore collection path of the private, rotating item set. Always `null` in the published pack file."
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version of this pack. Any change to `vesMapping` requires a version bump.",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "status": {
+      "type": "string",
+      "description": "Lifecycle stage (execution plan §5.3.5.3): draft-unverified → draft-verified → rfc → active. A pack is `draft-verified` only when EVERY vesMapping entry is `draft-verified`; a single unverified entry holds the whole pack at `draft-unverified`. Only `active` packs may back a certificate without a draft-basis notice. `draft` is the pre-§5.3.5 spelling, retained so that packs written before the provenance regime still load.",
+      "enum": ["draft", "draft-unverified", "draft-verified", "rfc", "active", "deprecated"]
+    },
+    "deprecatedBy": {
+      "type": "string",
+      "description": "Version of the pack that supersedes this one. Present only on `deprecated` packs. The file is kept so that certificates pinned to this version remain resolvable."
+    },
+    "supersedes": {
+      "type": "string",
+      "description": "Version this pack replaces, if any."
+    },
+    "updatedAt": {
+      "type": "string",
+      "description": "ISO 8601 date of the last change to this pack.",
+      "format": "date"
+    },
+    "notes": {
+      "type": "array",
+      "description": "Free-form guardrails and limitations shown alongside the pack.",
+      "items": { "type": "string" }
+    }
+  }
+}

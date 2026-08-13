@@ -1,0 +1,1187 @@
+{
+  "standard": "AIO Framework — V/E/S vocabulary",
+  "vocabularyStandard": "AIO 00011 (common vocabulary)",
+  "recordStandard": "AIO 20002 (reasoning record standard)",
+  "specVersion": "v1.1",
+  "codeCount": 39,
+  "summary": "A machine-readable vocabulary for why an AI system decided what it did: the value (V), evidence (E), and source (S) hierarchies behind a single judgment, plus the context (C) it was made in. Used by the AIO 20003 benchmark, by the standards packs that formalize external norms, and by the AIO Trust Certification programme.",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "AIO — AI Integrity Organization, https://aioq.org, CC BY 4.0",
+  "references": {
+    "specification": "https://aioq.org/papers/paper-g-aio-20002.pdf",
+    "commonVocabularyPaper": "https://aioq.org/papers/paper-j-aio-00011.pdf",
+    "benchmarkPaper": "https://aioq.org/papers/paper-h-aio-20003.pdf",
+    "humanReadable": "https://aioq.org/en/aio-framework",
+    "referenceImplementation": "https://github.com/AI-Integrity/AIO20002",
+    "referenceImplementationCommit": "494751680f6222fff3292786287270b8a7424391"
+  },
+  "layers": [
+    {
+      "axis": "V",
+      "benchmarkLayer": "L4",
+      "name": {
+        "en": "Value hierarchy",
+        "ko": "가치 위계"
+      },
+      "theoreticalBasis": "Schwartz's Refined Theory of Basic Values (Schwartz et al., 2012) — 19 values",
+      "ordering": "incommensurable",
+      "codeCount": 19,
+      "codes": [
+        {
+          "code": "Sdt",
+          "name": {
+            "en": "Self-direction—Thought",
+            "ko": "자율성-사고"
+          },
+          "definition": {
+            "en": "Freedom to think and judge for oneself — reaching conclusions through one's own understanding.",
+            "ko": "스스로 생각하고 판단할 자유. 남이 준 답이 아니라 자기 이해로 결론에 이르는 것."
+          },
+          "behavior": {
+            "en": "Offers the reasoning rather than the answer, so people conclude for themselves.",
+            "ko": "정답을 건네기보다 판단 근거를 제시해, 상대가 스스로 결론 내리게 합니다."
+          }
+        },
+        {
+          "code": "Sda",
+          "name": {
+            "en": "Self-direction—Action",
+            "ko": "자율성-행동"
+          },
+          "definition": {
+            "en": "Freedom to choose one's own actions and determine one's own course.",
+            "ko": "스스로 행동을 선택할 자유. 자기 일을 자기가 결정하는 것."
+          },
+          "behavior": {
+            "en": "Leaves the decision with the person instead of narrowing their options.",
+            "ko": "선택지를 좁히지 않고 결정권을 당사자에게 남깁니다."
+          }
+        },
+        {
+          "code": "Sti",
+          "name": {
+            "en": "Stimulation",
+            "ko": "자극"
+          },
+          "definition": {
+            "en": "Novelty, change, and challenge — choosing the attempt over the familiar.",
+            "ko": "새로움·변화·도전. 익숙함보다 시도를 택하는 것."
+          },
+          "behavior": {
+            "en": "Proposes new approaches ahead of safe convention.",
+            "ko": "안전한 관행보다 새로운 방식을 먼저 제안합니다."
+          }
+        },
+        {
+          "code": "Hed",
+          "name": {
+            "en": "Hedonism",
+            "ko": "쾌락"
+          },
+          "definition": {
+            "en": "Pleasure and gratification — the experience itself being enjoyable.",
+            "ko": "즐거움과 만족. 과정 자체가 유쾌한 것."
+          },
+          "behavior": {
+            "en": "Prioritizes ease and a pleasant experience.",
+            "ko": "부담을 줄이고 편안한 경험을 우선합니다."
+          }
+        },
+        {
+          "code": "Ach",
+          "name": {
+            "en": "Achievement",
+            "ko": "성취"
+          },
+          "definition": {
+            "en": "Success and demonstrated competence against a standard.",
+            "ko": "기준에 따른 성공과 역량의 입증. 맡은 일을 잘 해내는 것."
+          },
+          "behavior": {
+            "en": "Judges by results and efficiency.",
+            "ko": "성과와 효율을 기준으로 판단합니다."
+          }
+        },
+        {
+          "code": "Pod",
+          "name": {
+            "en": "Power—Dominance",
+            "ko": "권력-지배"
+          },
+          "definition": {
+            "en": "Control over people and situations.",
+            "ko": "사람과 상황에 대한 통제력."
+          },
+          "behavior": {
+            "en": "Prioritizes keeping control and the upper hand.",
+            "ko": "주도권과 통제 유지를 우선합니다."
+          }
+        },
+        {
+          "code": "Por",
+          "name": {
+            "en": "Power—Resources",
+            "ko": "권력-자원"
+          },
+          "definition": {
+            "en": "Securing and managing material and organizational resources.",
+            "ko": "자원·예산·인력의 확보와 관리."
+          },
+          "behavior": {
+            "en": "Judges by cost and resource security.",
+            "ko": "비용과 자원 확보를 기준으로 판단합니다."
+          }
+        },
+        {
+          "code": "Fac",
+          "name": {
+            "en": "Face",
+            "ko": "체면"
+          },
+          "definition": {
+            "en": "Maintaining public image and reputation; avoiding humiliation.",
+            "ko": "공적 이미지와 평판의 유지, 굴욕의 회피."
+          },
+          "behavior": {
+            "en": "Prioritizes how things look from outside.",
+            "ko": "외부에 비치는 모습과 평판을 우선합니다."
+          }
+        },
+        {
+          "code": "Sep",
+          "name": {
+            "en": "Security—Personal",
+            "ko": "안전-개인"
+          },
+          "definition": {
+            "en": "The physical and psychological safety of the person and those close to them.",
+            "ko": "당사자와 가까운 사람의 신체적·심리적 안전."
+          },
+          "behavior": {
+            "en": "Chooses to intervene or pause whenever harm is possible.",
+            "ko": "위험 가능성이 있으면 개입하거나 중단하는 쪽을 택합니다."
+          }
+        },
+        {
+          "code": "Ses",
+          "name": {
+            "en": "Security—Societal",
+            "ko": "안전-사회"
+          },
+          "definition": {
+            "en": "Stability and order of society at large.",
+            "ko": "사회 전체의 안정과 질서."
+          },
+          "behavior": {
+            "en": "Puts collective stability ahead of individual convenience.",
+            "ko": "개별 편의보다 전체의 안정을 우선합니다."
+          }
+        },
+        {
+          "code": "Tra",
+          "name": {
+            "en": "Tradition",
+            "ko": "전통"
+          },
+          "definition": {
+            "en": "Respect for the customs a culture or organization has carried forward.",
+            "ko": "문화·조직·공동체가 이어온 방식에 대한 존중."
+          },
+          "behavior": {
+            "en": "Preserves established practice and accumulated ways.",
+            "ko": "기존 관행과 축적된 방식을 유지합니다."
+          }
+        },
+        {
+          "code": "Cor",
+          "name": {
+            "en": "Conformity—Rules",
+            "ko": "순응-규칙"
+          },
+          "definition": {
+            "en": "Compliance with rules, laws, and formal procedures.",
+            "ko": "규정·법·절차의 준수."
+          },
+          "behavior": {
+            "en": "Does not act beyond what the rules permit.",
+            "ko": "규정에 없는 일은 하지 않습니다."
+          }
+        },
+        {
+          "code": "Coi",
+          "name": {
+            "en": "Conformity—Interpersonal",
+            "ko": "순응-대인"
+          },
+          "definition": {
+            "en": "Avoiding upsetting or harming other people.",
+            "ko": "타인을 불편하게 하거나 상하게 하지 않는 것."
+          },
+          "behavior": {
+            "en": "Chooses wording and manner so no one is hurt.",
+            "ko": "상대가 상처받지 않도록 표현과 방식을 고릅니다."
+          }
+        },
+        {
+          "code": "Hum",
+          "name": {
+            "en": "Humility",
+            "ko": "겸손"
+          },
+          "definition": {
+            "en": "Recognizing one's own limits; not overstating.",
+            "ko": "자기 한계의 인정. 과장하지 않는 것."
+          },
+          "behavior": {
+            "en": "Says what it does not know and tempers its certainty.",
+            "ko": "모르는 것은 모른다고 말하고 확신의 수위를 낮춥니다."
+          }
+        },
+        {
+          "code": "Bec",
+          "name": {
+            "en": "Benevolence—Care",
+            "ko": "박애-돌봄"
+          },
+          "definition": {
+            "en": "Attending to the welfare and needs of those close by.",
+            "ko": "가까운 사람들의 복지와 필요를 살피는 것."
+          },
+          "behavior": {
+            "en": "Helps whoever is in difficulty right now, first.",
+            "ko": "당장 곤경에 처한 사람을 먼저 돕습니다."
+          }
+        },
+        {
+          "code": "Bed",
+          "name": {
+            "en": "Benevolence—Dependability",
+            "ko": "박애-신뢰"
+          },
+          "definition": {
+            "en": "Being a reliable member — keeping promises and obligations.",
+            "ko": "믿을 수 있는 구성원이 되는 것. 약속과 책임을 지키는 것."
+          },
+          "behavior": {
+            "en": "Honors commitments already made.",
+            "ko": "이미 한 약속과 맡은 책임을 지키는 쪽을 택합니다."
+          }
+        },
+        {
+          "code": "Unc",
+          "name": {
+            "en": "Universalism—Concern",
+            "ko": "보편주의-관심"
+          },
+          "definition": {
+            "en": "Equality, justice, and protection for all people.",
+            "ko": "모든 사람의 평등·정의·보호."
+          },
+          "behavior": {
+            "en": "Chooses what is fair to everyone, not to one group.",
+            "ko": "특정 집단이 아니라 모두에게 공정한 쪽을 택합니다."
+          }
+        },
+        {
+          "code": "Unn",
+          "name": {
+            "en": "Universalism—Nature",
+            "ko": "보편주의-자연"
+          },
+          "definition": {
+            "en": "Preservation of the natural environment.",
+            "ko": "자연환경의 보전."
+          },
+          "behavior": {
+            "en": "Chooses the option that burdens the environment less.",
+            "ko": "환경에 부담이 적은 쪽을 택합니다."
+          }
+        },
+        {
+          "code": "Unt",
+          "name": {
+            "en": "Universalism—Tolerance",
+            "ko": "보편주의-관용"
+          },
+          "definition": {
+            "en": "Understanding and accepting those who differ.",
+            "ko": "다른 신념과 배경을 이해하고 받아들이는 것."
+          },
+          "behavior": {
+            "en": "Presents opposing positions alongside.",
+            "ko": "다른 입장도 함께 제시합니다."
+          }
+        }
+      ]
+    },
+    {
+      "axis": "E",
+      "benchmarkLayer": "L3",
+      "name": {
+        "en": "Evidence hierarchy",
+        "ko": "증거 위계"
+      },
+      "theoreticalBasis": "Walton's argumentation schemes combined with the GRADE/CEBM evidence hierarchy — 10 evidence types",
+      "ordering": "rigor-ordered",
+      "codeCount": 10,
+      "codes": [
+        {
+          "code": "Rev",
+          "name": {
+            "en": "Systematic review",
+            "ko": "체계적 검토"
+          },
+          "definition": {
+            "en": "A synthesis that pooled and weighed findings across many separate studies.",
+            "ko": "여러 개별 연구를 모아 종합·가중해 얻은 결론."
+          },
+          "behavior": {
+            "en": "Leads with the pooled synthesis over any single source.",
+            "ko": "여러 연구를 종합한 결론을 최우선 근거로 삼습니다."
+          }
+        },
+        {
+          "code": "Dat",
+          "name": {
+            "en": "Statistical data",
+            "ko": "통계 데이터"
+          },
+          "definition": {
+            "en": "A single large body of measured numbers.",
+            "ko": "측정된 수치의 큰 묶음 그 자체."
+          },
+          "behavior": {
+            "en": "Leads with what the measured numbers indicate.",
+            "ko": "측정된 수치가 가리키는 방향을 우선합니다."
+          }
+        },
+        {
+          "code": "Cas",
+          "name": {
+            "en": "Case-based",
+            "ko": "사례 분석"
+          },
+          "definition": {
+            "en": "A close structured analysis of a few comparable past instances.",
+            "ko": "비교 가능한 소수 선례에 대한 구조적 분석."
+          },
+          "behavior": {
+            "en": "Leads with structured analysis of comparable cases.",
+            "ko": "비교 가능한 선례의 분석을 우선합니다."
+          }
+        },
+        {
+          "code": "Gui",
+          "name": {
+            "en": "Guidelines",
+            "ko": "지침·표준절차"
+          },
+          "definition": {
+            "en": "An established written standard procedure.",
+            "ko": "확립된 문서화된 표준 절차."
+          },
+          "behavior": {
+            "en": "Leads with the established standard procedure.",
+            "ko": "확립된 표준 절차를 우선 따릅니다."
+          }
+        },
+        {
+          "code": "Exp",
+          "name": {
+            "en": "Expert judgment",
+            "ko": "전문가 판단"
+          },
+          "definition": {
+            "en": "The considered judgment of one recognized specialist.",
+            "ko": "인정받은 한 전문가의 숙고된 판단."
+          },
+          "behavior": {
+            "en": "Leads with the recognized specialist's judgment.",
+            "ko": "인정받은 전문가의 판단을 우선합니다."
+          }
+        },
+        {
+          "code": "Log",
+          "name": {
+            "en": "Logical reasoning",
+            "ko": "논리 추론"
+          },
+          "definition": {
+            "en": "A step-by-step argument from agreed premises citing no outside findings.",
+            "ko": "합의된 전제에서 단계적으로 도출한 논증(외부 자료 없이)."
+          },
+          "behavior": {
+            "en": "Leads with the argument from premises.",
+            "ko": "전제로부터의 논증을 우선합니다."
+          }
+        },
+        {
+          "code": "Tri",
+          "name": {
+            "en": "Lived experience",
+            "ko": "체험적 근거"
+          },
+          "definition": {
+            "en": "The firsthand account of those who lived through it.",
+            "ko": "직접 겪은 이들의 1인칭 진술."
+          },
+          "behavior": {
+            "en": "Leads with the firsthand lived account.",
+            "ko": "직접 겪은 이들의 진술을 우선합니다."
+          }
+        },
+        {
+          "code": "Pop",
+          "name": {
+            "en": "Popular opinion",
+            "ko": "통념"
+          },
+          "definition": {
+            "en": "What most people commonly take to be so.",
+            "ko": "대다수가 사실이라 여기는 바."
+          },
+          "behavior": {
+            "en": "Leads with what most people take to be so.",
+            "ko": "대다수가 사실로 여기는 바를 우선합니다."
+          }
+        },
+        {
+          "code": "Emo",
+          "name": {
+            "en": "Emotional appeal",
+            "ko": "정서적 호소"
+          },
+          "definition": {
+            "en": "The felt moral weight the situation stirs.",
+            "ko": "상황이 불러일으키는 도덕적 무게감."
+          },
+          "behavior": {
+            "en": "Leads with the felt moral weight.",
+            "ko": "상황이 불러일으키는 도덕적 무게를 우선합니다."
+          }
+        },
+        {
+          "code": "Ane",
+          "name": {
+            "en": "Anecdote",
+            "ko": "일화"
+          },
+          "definition": {
+            "en": "One story a single person recounted.",
+            "ko": "한 사람이 전한 하나의 이야기."
+          },
+          "behavior": {
+            "en": "Leads with the single recounted story.",
+            "ko": "한 사람이 전한 이야기를 우선합니다."
+          }
+        }
+      ]
+    },
+    {
+      "axis": "S",
+      "benchmarkLayer": "L2",
+      "name": {
+        "en": "Source hierarchy",
+        "ko": "출처 위계"
+      },
+      "theoreticalBasis": "Hovland–Kelley source credibility theory — 10 source classes",
+      "ordering": "authority-ordered",
+      "codeCount": 10,
+      "codes": [
+        {
+          "code": "Pee",
+          "name": {
+            "en": "Peer-reviewed",
+            "ko": "동료검토"
+          },
+          "definition": {
+            "en": "A claim that had passed independent scholarly scrutiny.",
+            "ko": "독립적 학술 검증을 거친 주장."
+          },
+          "behavior": {
+            "en": "Leads with the peer-scrutinized source.",
+            "ko": "학술 검증을 거친 출처를 최우선으로 삼습니다."
+          }
+        },
+        {
+          "code": "Gov",
+          "name": {
+            "en": "Government / regulator",
+            "ko": "정부·규제기관"
+          },
+          "definition": {
+            "en": "The official position of the governing authority.",
+            "ko": "관할 당국의 공식 입장."
+          },
+          "behavior": {
+            "en": "Leads with the governing authority's position.",
+            "ko": "관할 당국의 공식 입장을 우선합니다."
+          }
+        },
+        {
+          "code": "Pro",
+          "name": {
+            "en": "Professional body",
+            "ko": "전문가단체"
+          },
+          "definition": {
+            "en": "The collective position of the field's own body of credentialed practitioners.",
+            "ko": "해당 분야 실무자 협회의 집단 입장."
+          },
+          "behavior": {
+            "en": "Leads with the practitioners' collective position.",
+            "ko": "실무자 협회의 집단 입장을 우선합니다."
+          }
+        },
+        {
+          "code": "Sta",
+          "name": {
+            "en": "Official statistics",
+            "ko": "공식통계"
+          },
+          "definition": {
+            "en": "The officially compiled public tally.",
+            "ko": "공적으로 집계된 수치."
+          },
+          "behavior": {
+            "en": "Leads with the official compiled tally.",
+            "ko": "공적으로 집계된 통계를 우선합니다."
+          }
+        },
+        {
+          "code": "Ind",
+          "name": {
+            "en": "Industry",
+            "ko": "업계"
+          },
+          "definition": {
+            "en": "Material issued by the concerned industry itself.",
+            "ko": "당사자 산업이 스스로 낸 자료."
+          },
+          "behavior": {
+            "en": "Leads with the industry's own material.",
+            "ko": "당사자 산업이 낸 자료를 우선합니다."
+          }
+        },
+        {
+          "code": "New",
+          "name": {
+            "en": "News media",
+            "ko": "언론"
+          },
+          "definition": {
+            "en": "A report published and circulated by a news outlet.",
+            "ko": "언론사가 보도·유포한 내용."
+          },
+          "behavior": {
+            "en": "Leads with the news report.",
+            "ko": "언론 보도를 우선합니다."
+          }
+        },
+        {
+          "code": "Tes",
+          "name": {
+            "en": "Testimony",
+            "ko": "증언"
+          },
+          "definition": {
+            "en": "The sworn on-record statement of one specific named eyewitness.",
+            "ko": "지명된 목격자의 선서 진술."
+          },
+          "behavior": {
+            "en": "Leads with the named eyewitness's statement.",
+            "ko": "지명된 목격자의 진술을 우선합니다."
+          }
+        },
+        {
+          "code": "Usr",
+          "name": {
+            "en": "User-provided",
+            "ko": "사용자 제공"
+          },
+          "definition": {
+            "en": "Information the requester themselves supplied.",
+            "ko": "요청자 본인이 제공한 정보."
+          },
+          "behavior": {
+            "en": "Leads with the requester's own information.",
+            "ko": "요청자가 제공한 정보를 우선합니다."
+          }
+        },
+        {
+          "code": "Alt",
+          "name": {
+            "en": "Alternative media",
+            "ko": "대안매체"
+          },
+          "definition": {
+            "en": "A non-mainstream independent outlet's account.",
+            "ko": "비주류 독립 매체의 보도."
+          },
+          "behavior": {
+            "en": "Leads with the alternative outlet's account.",
+            "ko": "비주류 독립 매체의 보도를 우선합니다."
+          }
+        },
+        {
+          "code": "Ano",
+          "name": {
+            "en": "Anonymous",
+            "ko": "익명"
+          },
+          "definition": {
+            "en": "An unattributed claim whose author is unknown.",
+            "ko": "출처 불명의 주장(작성자 미상)."
+          },
+          "behavior": {
+            "en": "Leads with the unattributed claim.",
+            "ko": "출처 불명의 주장을 우선합니다."
+          }
+        }
+      ]
+    }
+  ],
+  "context": {
+    "description": "The C: field records the situation a judgment was made in. Positions are fixed; an unassessable field is written as `-` rather than deleted.",
+    "domain": {
+      "description": "CAP policy topics (21) plus GEN for \"no specific policy topic\". Never `-`.",
+      "options": [
+        {
+          "code": "MED",
+          "name": {
+            "en": "Health",
+            "ko": "보건"
+          }
+        },
+        {
+          "code": "EDU",
+          "name": {
+            "en": "Education",
+            "ko": "교육"
+          }
+        },
+        {
+          "code": "LAW",
+          "name": {
+            "en": "Law & Crime",
+            "ko": "법·범죄"
+          }
+        },
+        {
+          "code": "DEF",
+          "name": {
+            "en": "Defense",
+            "ko": "국방"
+          }
+        },
+        {
+          "code": "TEC",
+          "name": {
+            "en": "Science, Tech & Comms",
+            "ko": "과학기술·통신"
+          }
+        },
+        {
+          "code": "COM",
+          "name": {
+            "en": "Domestic Commerce & Finance",
+            "ko": "국내상업·금융"
+          }
+        },
+        {
+          "code": "WEL",
+          "name": {
+            "en": "Social Welfare",
+            "ko": "사회복지"
+          }
+        },
+        {
+          "code": "CUL",
+          "name": {
+            "en": "Culture",
+            "ko": "문화"
+          }
+        },
+        {
+          "code": "GOV",
+          "name": {
+            "en": "Government Operations",
+            "ko": "정부운영"
+          }
+        },
+        {
+          "code": "AGR",
+          "name": {
+            "en": "Agriculture",
+            "ko": "농업"
+          }
+        },
+        {
+          "code": "TRA",
+          "name": {
+            "en": "Transportation",
+            "ko": "교통"
+          }
+        },
+        {
+          "code": "MAC",
+          "name": {
+            "en": "Macroeconomics",
+            "ko": "거시경제"
+          }
+        },
+        {
+          "code": "LND",
+          "name": {
+            "en": "Public Lands & Water",
+            "ko": "공유지·수자원"
+          }
+        },
+        {
+          "code": "HOU",
+          "name": {
+            "en": "Housing & Community Dev.",
+            "ko": "주거·지역개발"
+          }
+        },
+        {
+          "code": "LAB",
+          "name": {
+            "en": "Labor",
+            "ko": "노동"
+          }
+        },
+        {
+          "code": "ENE",
+          "name": {
+            "en": "Energy",
+            "ko": "에너지"
+          }
+        },
+        {
+          "code": "ENV",
+          "name": {
+            "en": "Environment",
+            "ko": "환경"
+          }
+        },
+        {
+          "code": "INT",
+          "name": {
+            "en": "International Affairs",
+            "ko": "국제관계"
+          }
+        },
+        {
+          "code": "IMM",
+          "name": {
+            "en": "Immigration",
+            "ko": "이민"
+          }
+        },
+        {
+          "code": "TRD",
+          "name": {
+            "en": "Foreign Trade",
+            "ko": "대외무역"
+          }
+        },
+        {
+          "code": "CIV",
+          "name": {
+            "en": "Civil Rights & Liberties",
+            "ko": "시민권·자유"
+          }
+        },
+        {
+          "code": "GEN",
+          "name": {
+            "en": "General",
+            "ko": "일반·미분류"
+          }
+        }
+      ]
+    },
+    "scope": {
+      "description": "Scope of impact — the population directly affected.",
+      "options": [
+        {
+          "code": "I",
+          "name": {
+            "en": "Individual (1 person)",
+            "ko": "개인 (1명)"
+          }
+        },
+        {
+          "code": "G",
+          "name": {
+            "en": "Group (2–20)",
+            "ko": "그룹 (2–20명)"
+          }
+        },
+        {
+          "code": "C",
+          "name": {
+            "en": "Community (tens–thousands)",
+            "ko": "커뮤니티 (수십–수천)"
+          }
+        },
+        {
+          "code": "P",
+          "name": {
+            "en": "Population (tens of thousands–millions)",
+            "ko": "인구집단 (수만–수백만)"
+          }
+        },
+        {
+          "code": "S",
+          "name": {
+            "en": "Society (national / international)",
+            "ko": "사회 (국가·국제)"
+          }
+        }
+      ]
+    },
+    "reversibility": {
+      "description": "Whether the consequence can be undone.",
+      "options": [
+        {
+          "code": "R",
+          "name": {
+            "en": "Reversible",
+            "ko": "가역적"
+          }
+        },
+        {
+          "code": "P",
+          "name": {
+            "en": "Partially reversible",
+            "ko": "부분 가역"
+          }
+        },
+        {
+          "code": "X",
+          "name": {
+            "en": "Irreversible",
+            "ko": "비가역"
+          }
+        }
+      ]
+    },
+    "time": {
+      "description": "Time horizon of the major consequences, judged on the domain's own clock.",
+      "options": [
+        {
+          "code": "i",
+          "name": {
+            "en": "Immediate",
+            "ko": "즉시"
+          }
+        },
+        {
+          "code": "s",
+          "name": {
+            "en": "Short-term",
+            "ko": "단기"
+          }
+        },
+        {
+          "code": "l",
+          "name": {
+            "en": "Long-term",
+            "ko": "장기"
+          }
+        }
+      ]
+    }
+  },
+  "logLine": {
+    "format": "C:<domain>/<scope><reversibility><time> | V:<v_lo><<v_hi> | E:<e_lo><<e_hi> | S:<s_lo><<s_hi>",
+    "notation": "`<` reads \"was outranked by\". Left = deprioritized, right = prevailed.",
+    "grammar": "log-line    = context [ \" | \" value ] [ \" | \" evidence ] [ \" | \" source ]\ncontext     = \"C:\" domain \"/\" scope reversibility time\nvalue       = \"V:\" pair\nevidence    = \"E:\" pair\nsource      = \"S:\" pair\npair        = [ code \"<\" ] code        ; left = deprioritized, right = prevailed\ndomain      = 3*3 UPPER                ; CAP policy topic or GEN\nscope       = \"I\" / \"G\" / \"C\" / \"P\" / \"S\" / \"-\"\nreversibility = \"R\" / \"P\" / \"X\" / \"-\"\ntime        = \"i\" / \"s\" / \"l\" / \"-\"",
+    "partialOutputRules": [
+      "Context fields that could not be assessed are written `-`; the position is never deleted. Domain falls back to GEN, never `-`.",
+      "A V/E/S layer that played no role is omitted entirely, including its label and separator. Order stays C, V, E, S. C is always present.",
+      "If only one code in a layer is identifiable, emit that code alone without `<`.",
+      "`-` means \"not assessed\"; an omitted layer means \"not applicable\". They are different signals.",
+      "If C would be all `-` and no V/E/S layer applies, the decision is not substantive — skip the record entirely."
+    ],
+    "pattern": "^C:(?:MED|EDU|LAW|DEF|TEC|COM|WEL|CUL|GOV|AGR|TRA|MAC|LND|HOU|LAB|ENE|ENV|INT|IMM|TRD|CIV|GEN)/[IGCPS-][RPX-][isl-](?: \\| V:(?:(?:Sdt|Sda|Sti|Hed|Ach|Pod|Por|Fac|Sep|Ses|Tra|Cor|Coi|Hum|Bec|Bed|Unc|Unn|Unt)<)?(?:Sdt|Sda|Sti|Hed|Ach|Pod|Por|Fac|Sep|Ses|Tra|Cor|Coi|Hum|Bec|Bed|Unc|Unn|Unt))?(?: \\| E:(?:(?:Rev|Dat|Cas|Gui|Exp|Log|Tri|Pop|Emo|Ane)<)?(?:Rev|Dat|Cas|Gui|Exp|Log|Tri|Pop|Emo|Ane))?(?: \\| S:(?:(?:Pee|Gov|Pro|Sta|Ind|New|Tes|Usr|Alt|Ano)<)?(?:Pee|Gov|Pro|Sta|Ind|New|Tes|Usr|Alt|Ano))?$",
+    "examples": [
+      {
+        "code": "C:MED/IXi | V:Bec<Sda | E:Exp<Gui | S:Usr<Pro",
+        "description": "End-of-life medical decision: in-group caring was outranked by patient self-direction; expert opinion by an authoritative guideline; user-provided information by a professional body."
+      },
+      {
+        "code": "C:DEF/SXi | V:Ses<Unc | E:Exp<Gui | S:Ind<Gov",
+        "description": "Military AI ethics: societal security was outranked by universal concern for all people."
+      },
+      {
+        "code": "C:TEC/GRl | V:Sti<Ses",
+        "description": "Partial output: no evidence or source layer played a role in the reasoning, so both layers are omitted entirely."
+      },
+      {
+        "code": "C:MED/I-i | V:Sep",
+        "description": "Partial output: reversibility was not assessed (`-`), and only one value code was identifiable, so it is emitted without `<`."
+      }
+    ],
+    "jsonSchema": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "https://aioq.org/api/framework/vocabulary?format=schema",
+      "title": "AIO 20002 reasoning record (log line)",
+      "description": "One structured line per substantive AI decision, recording the context and the value, evidence, and source hierarchies behind it. `<` reads \"was outranked by\": the left code was deprioritized, the right code prevailed. The record carries no verbatim user content — only topic-level metadata.",
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "The full record in one line. Format: C:<domain>/<scope><reversibility><time> | V:<v_lo><<v_hi> | E:<e_lo><<e_hi> | S:<s_lo><<s_hi>",
+          "pattern": "^C:(?:MED|EDU|LAW|DEF|TEC|COM|WEL|CUL|GOV|AGR|TRA|MAC|LND|HOU|LAB|ENE|ENV|INT|IMM|TRD|CIV|GEN)/[IGCPS-][RPX-][isl-](?: \\| V:(?:(?:Sdt|Sda|Sti|Hed|Ach|Pod|Por|Fac|Sep|Ses|Tra|Cor|Coi|Hum|Bec|Bed|Unc|Unn|Unt)<)?(?:Sdt|Sda|Sti|Hed|Ach|Pod|Por|Fac|Sep|Ses|Tra|Cor|Coi|Hum|Bec|Bed|Unc|Unn|Unt))?(?: \\| E:(?:(?:Rev|Dat|Cas|Gui|Exp|Log|Tri|Pop|Emo|Ane)<)?(?:Rev|Dat|Cas|Gui|Exp|Log|Tri|Pop|Emo|Ane))?(?: \\| S:(?:(?:Pee|Gov|Pro|Sta|Ind|New|Tes|Usr|Alt|Ano)<)?(?:Pee|Gov|Pro|Sta|Ind|New|Tes|Usr|Alt|Ano))?$",
+          "examples": [
+            "C:MED/IXi | V:Bec<Sda | E:Exp<Gui | S:Usr<Pro",
+            "C:DEF/SXi | V:Ses<Unc | E:Exp<Gui | S:Ind<Gov",
+            "C:TEC/GRl | V:Sti<Ses",
+            "C:MED/I-i | V:Sep"
+          ]
+        },
+        "context": {
+          "type": "object",
+          "description": "Parsed form of the C: field. Optional — the canonical form is `code`.",
+          "required": [
+            "domain"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "domain": {
+              "type": "string",
+              "description": "CAP policy topic (21) or GEN when no specific topic applies.",
+              "enum": [
+                "MED",
+                "EDU",
+                "LAW",
+                "DEF",
+                "TEC",
+                "COM",
+                "WEL",
+                "CUL",
+                "GOV",
+                "AGR",
+                "TRA",
+                "MAC",
+                "LND",
+                "HOU",
+                "LAB",
+                "ENE",
+                "ENV",
+                "INT",
+                "IMM",
+                "TRD",
+                "CIV",
+                "GEN"
+              ]
+            },
+            "scope": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Population directly affected by the outcome. null / \"-\" = not assessed.",
+              "enum": [
+                "I",
+                "G",
+                "C",
+                "P",
+                "S",
+                "-",
+                null
+              ]
+            },
+            "reversibility": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Stricter of action reversibility and consequence reversibility. null / \"-\" = not assessed.",
+              "enum": [
+                "R",
+                "P",
+                "X",
+                "-",
+                null
+              ]
+            },
+            "time": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "When the major consequences land, on the domain's own clock. null / \"-\" = not assessed.",
+              "enum": [
+                "i",
+                "s",
+                "l",
+                "-",
+                null
+              ]
+            }
+          }
+        },
+        "value": {
+          "$ref": "#/$defs/valuePair",
+          "description": "Parsed form of the V: layer. Omit the property entirely when no value was engaged."
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidencePair",
+          "description": "Parsed form of the E: layer. Omit the property entirely when no evidence type was engaged."
+        },
+        "source": {
+          "$ref": "#/$defs/sourcePair",
+          "description": "Parsed form of the S: layer. Omit the property entirely when no source class was engaged."
+        }
+      },
+      "$defs": {
+        "valuePair": {
+          "type": "object",
+          "required": [
+            "prevailed"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "deprioritized": {
+              "type": "string",
+              "enum": [
+                "Sdt",
+                "Sda",
+                "Sti",
+                "Hed",
+                "Ach",
+                "Pod",
+                "Por",
+                "Fac",
+                "Sep",
+                "Ses",
+                "Tra",
+                "Cor",
+                "Coi",
+                "Hum",
+                "Bec",
+                "Bed",
+                "Unc",
+                "Unn",
+                "Unt"
+              ],
+              "description": "The code on the left of `<`. Omit when only one code was identifiable."
+            },
+            "prevailed": {
+              "type": "string",
+              "enum": [
+                "Sdt",
+                "Sda",
+                "Sti",
+                "Hed",
+                "Ach",
+                "Pod",
+                "Por",
+                "Fac",
+                "Sep",
+                "Ses",
+                "Tra",
+                "Cor",
+                "Coi",
+                "Hum",
+                "Bec",
+                "Bed",
+                "Unc",
+                "Unn",
+                "Unt"
+              ],
+              "description": "The code on the right of `<` — the one that prevailed."
+            }
+          }
+        },
+        "evidencePair": {
+          "type": "object",
+          "required": [
+            "prevailed"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "deprioritized": {
+              "type": "string",
+              "enum": [
+                "Rev",
+                "Dat",
+                "Cas",
+                "Gui",
+                "Exp",
+                "Log",
+                "Tri",
+                "Pop",
+                "Emo",
+                "Ane"
+              ]
+            },
+            "prevailed": {
+              "type": "string",
+              "enum": [
+                "Rev",
+                "Dat",
+                "Cas",
+                "Gui",
+                "Exp",
+                "Log",
+                "Tri",
+                "Pop",
+                "Emo",
+                "Ane"
+              ]
+            }
+          }
+        },
+        "sourcePair": {
+          "type": "object",
+          "required": [
+            "prevailed"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "deprioritized": {
+              "type": "string",
+              "enum": [
+                "Pee",
+                "Gov",
+                "Pro",
+                "Sta",
+                "Ind",
+                "New",
+                "Tes",
+                "Usr",
+                "Alt",
+                "Ano"
+              ]
+            },
+            "prevailed": {
+              "type": "string",
+              "enum": [
+                "Pee",
+                "Gov",
+                "Pro",
+                "Sta",
+                "Ind",
+                "New",
+                "Tes",
+                "Usr",
+                "Alt",
+                "Ano"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

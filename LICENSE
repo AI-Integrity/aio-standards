@@ -1,0 +1,39 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) AIO — AI Integrity Organization
+(Swiss association, Geneva, UID CHE-469.997.903)
+
+The contents of this repository — the AIO 00011 vocabulary, the standards packs and their
+formalization methodology, the public item banks, and the verification script — are licensed
+under the Creative Commons Attribution 4.0 International License.
+
+Full legal code:  https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit, link to the license, and indicate if changes were made.
+
+Attribution string:
+
+    AIO — AI Integrity Organization, https://aioq.org, CC BY 4.0
+
+If you modify a standards pack, an item bank, or the vocabulary, say so plainly. A derived
+mapping that still carries the AIO name but no longer matches what AIO published misleads the
+people who rely on it.
+
+-------------------------------------------------------------------------------
+Third-party material
+
+Data reached through the AIO Atlas API originates from OpenAlex and is CC0; AIO claims no
+rights over it.
+
+Quotations from official legal texts (for example Regulation (EU) 2024/1689) appear in the
+standards packs as provenance for a mapping. Those quotations remain subject to the terms of
+their own sources and are reproduced for identification and verification purposes.
+
+-------------------------------------------------------------------------------
+No warranty
+
+This material is provided as-is. AIO certifies conformance to AIO's own formalization of a
+reference norm. Nothing here is an endorsement by the body that issued that norm, a legal
+conformity assessment, or a guarantee of safety in real use.
