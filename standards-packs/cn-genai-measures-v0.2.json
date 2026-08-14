@@ -1,0 +1,308 @@
+{
+  "$schema": "./schema.json",
+  "id": "cn-genai-measures",
+  "name": {
+    "en": "China Interim Measures for Generative AI Services — AIO formalization",
+    "ko": "중국 생성형 AI 서비스 관리 잠정판법 — AIO 정형화"
+  },
+  "sourceNorm": {
+    "title": "生成式人工智能服务管理暂行办法 (Interim Measures for the Management of Generative Artificial Intelligence Services — unofficial English rendering; no official English text of these Measures exists)",
+    "publisher": "国家互联网信息办公室 (Cyberspace Administration of China) jointly with 国家发展和改革委员会 · 教育部 · 科学技术部 · 工业和信息化部 · 公安部 · 国家广播电视总局 — seven departments in total",
+    "version": "国家互联网信息办公室令第15号 · adopted 2023-05-23, promulgated 2023-07-13, in force from 2023-08-15 · 24 articles · unamended as at 2026-08-14",
+    "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+  },
+  "vesMapping": [
+    {
+      "article": "第四条",
+      "summary": "Article 4 — providers and users of generative AI services must comply with laws and administrative regulations and respect social morality and ethics, and specifically: (1) adhere to core socialist values and not generate content that laws and administrative regulations prohibit, the article naming incitement to subvert state power or overthrow the socialist system, endangering national security and interests or damaging the national image, inciting secession or undermining national unity and social stability, promoting terrorism or extremism, promoting ethnic hatred or ethnic discrimination, violence, obscenity and pornography, and false and harmful information; (2) take effective measures during algorithm design, training-data selection, model generation and optimisation, and service provision to prevent discrimination on grounds including ethnicity, belief, nationality, region, gender, age, occupation and health; (3) respect intellectual property and commercial ethics, keep trade secrets, and not use advantages in algorithms, data or platforms to carry out monopolistic or unfair competitive conduct; (4) respect the lawful rights and interests of others, not endanger their physical or mental health, and not infringe their portrait, reputation, honour, privacy or personal-information rights; and (5) take effective measures, on the basis of the characteristics of the service type, to raise the transparency of the service and the accuracy and reliability of generated content.",
+      "v": [
+        "Cor",
+        "Ses",
+        "Unc"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The article is the widest and the vaguest in the Measures, and the pack records that rather than smoothing it over. Its operative verb throughout is 采取有效措施 (\"take effective measures\") with no metric, no threshold, no sampling rule and no assessor named; 坚持社会主义核心价值观 is a political-doctrinal standard, not a technical one. An item bank built on this entry must therefore confine itself to the concrete enumerated prohibitions in points (2) and (4) — discrimination on named grounds, harm to physical or mental health, infringement of the named personality rights — and must not attempt to score judgment against the doctrinal limb, which is not legible as a testable normative direction from the text alone.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第四条 — chapeau and points （一）, （二）, （五）",
+        "quote": "第四条 提供和使用生成式人工智能服务，应当遵守法律、行政法规，尊重社会公德和伦理道德，遵守以下规定：（一）坚持社会主义核心价值观，不得生成煽动颠覆国家政权、推翻社会主义制度，危害国家安全和利益、损害国家形象，煽动分裂国家、破坏国家统一和社会稳定，宣扬恐怖主义、极端主义，宣扬民族仇恨、民族歧视，暴力、淫秽色情，以及虚假有害信息等法律、行政法规禁止的内容；（二）在算法设计、训练数据选择、模型生成和优化、提供服务等过程中，采取有效措施防止产生民族、信仰、国别、地域、性别、年龄、职业、健康等歧视；[…]（五）基于服务类型特点，采取有效措施，提升生成式人工智能服务的透明度，提高生成内容的准确性和可靠性。",
+        "rationale": "Point (1) protects collective order in its own words — 危害国家安全和利益, 破坏国家统一和社会稳定 — which is Ses. Point (2) forbids discrimination across a closed list of named grounds (民族、信仰、国别、地域、性别、年龄、职业、健康), which is equal treatment and protection extended to all groups alike (Unc). Point (4), quoted in the summary but elided from the excerpt for length, protects 他人身心健康 — the physical and psychological safety of the individual (Sep). The chapeau is a bare compliance command, 应当遵守法律、行政法规, hence Cor. On evidence the article designates nothing measurable: the whole of it turns on 采取有效措施, so what is decisive on the face of the text is only the written prohibition list read as issued (Gui). Measurement (Dat) is what discharges points (2) and (5) in operational practice, through the 第十七条 security-assessment route and the test-set methodology of GB/T 45654-2025, but the article does not say so and Dat is deliberately not asserted here. The only trusted source class the text designates is the state: the content catalogue is fixed by 法律、行政法规 and by 社会主义核心价值观, both state-defined (Gov). No professional body, no scholarly source and no affected complainant appears anywhere in the article, so Pro, Pee and Usr are not assigned however plausible they might sound. ADJUDICATION 2026-08-14: Sep, Hum and Unt are not carried into v0.2, and V is reduced to the intersection of the two independent passes. Sep was declared by the first pass from point (4)'s 他人身心健康 — but point (4) was elided from the quoted excerpt for length, so the code rested on text this entry does not quote, which §4 does not permit. Hum and Unt were declared by the blind second pass and flagged by it as an inference and a structural read respectively: point (5) requires accuracy of the output, not calibrated candour about the model's own certainty, and points (一)(二) designate non-discrimination rather than tolerance. What both passes read off the quoted words is compliance with 法律、行政法规 (Cor), the collective order named in 国家安全和利益 and 社会稳定 (Ses), and equal protection across the closed list of grounds in point (二) (Unc).",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui]), S ([Gov]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Cor, Ses, Unc]. The removal of Sep is a correction rather than a preference: v0.1 coded it from point (4), which its own excerpt elides. If point (4) is to be coded, it must first be quoted — proposed for the next revision."
+    },
+    {
+      "article": "第七条",
+      "summary": "Article 7 — providers must carry out pre-training, optimisation training and other training-data processing activities in accordance with law, and must: (1) use data and foundation models of lawful origin; (2) not infringe the intellectual property rights of others where intellectual property is involved; (3) obtain individual consent, or satisfy another circumstance provided by law or administrative regulation, where personal information is involved; (4) take effective measures to raise the quality of training data and enhance its truthfulness, accuracy, objectivity and diversity; and (5) comply with the other relevant provisions of the Cybersecurity Law, the Data Security Law, the Personal Information Protection Law and other laws and administrative regulations, and with the related supervisory requirements of the competent departments.",
+      "v": [
+        "Cor",
+        "Unc"
+      ],
+      "e": [
+        "Dat",
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "Nothing in this article is discharged by a judgment made in a concrete case; it is a corpus-provenance and corpus-quality duty that an organization documents before the model ships. An AIO 20002 record says nothing about it. The entry is carried in the pack because the article is one of the two provisions (with 第十九条) that determine what a provider must be able to explain to an inspecting authority about its training corpus, and because omitting it would leave the pack implying that training-data legality is outside the Measures.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第七条 — chapeau and points （一）–（四）",
+        "quote": "第七条 生成式人工智能服务提供者（以下称提供者）应当依法开展预训练、优化训练等训练数据处理活动，遵守以下规定：（一）使用具有合法来源的数据和基础模型；（二）涉及知识产权的，不得侵害他人依法享有的知识产权；（三）涉及个人信息的，应当取得个人同意或者符合法律、行政法规规定的其他情形；（四）采取有效措施提高训练数据质量，增强训练数据的真实性、准确性、客观性、多样性；[…]",
+        "rationale": "The article is drafted as a compliance enumeration — 应当依法开展, 合法来源, 应当取得个人同意 — so the value that must prevail is adherence to the rule itself (Cor). What the enumeration protects is the rights of persons other than the provider: 不得侵害他人依法享有的知识产权 and the consent condition attached to 个人信息, together with 多样性 as a required property of the corpus, which is protection extended to those the corpus represents (Unc). Evidence is two-sided here and both limbs are in the text: points (1)–(3) are discharged by documentary proof of origin, licence and consent basis, which is the written record read as issued (Gui); point (4) states four measurable properties of the corpus — 真实性、准确性、客观性、多样性 — which cannot be shown other than by measurement over the corpus (Dat). The only source class named is the state, twice over: the four statutes cited in point (5) and, expressly, 有关主管部门的相关监管要求 (Gov). No professional body or scholarly authority is designated, so Pro and Pee are not assigned. ADJUDICATION 2026-08-14: the second pass's Sda is not carried into v0.2. It was read from point （三）'s 应当取得个人同意 as the individual's own decision over their information — a defensible reading of a consent condition, and the same routing the Council of Europe pack uses for Art. 11. It is nevertheless declared by one pass only, so the conservative outcome is the intersection; the routing itself is logged as an instance of the privacy vocabulary gap rather than dismissed.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Dat, Gui]), S ([Gov]) and obligationType (organizational) agreed exactly — one of the closest entries in the pack. V reduced to the intersection [Cor, Unc]. The second pass's Sda for the consent limb is recorded in the pack's vocabulary-gap note (no privacy or personal-data code in AIO 00011) rather than adopted."
+    },
+    {
+      "article": "第八条",
+      "summary": "Article 8 — where data annotation is carried out in the course of generative AI research and development, the provider must formulate clear, specific and operable annotation rules meeting the requirements of these Measures; carry out annotation quality assessment and verify the accuracy of annotated content by sampling; and give annotation personnel the necessary training, raise their awareness of respecting and observing the law, and supervise and guide them in carrying out annotation work in a standardised manner.",
+      "v": [
+        "Cor",
+        "Ach"
+      ],
+      "e": [
+        "Dat",
+        "Gui"
+      ],
+      "s": [
+        "Gov",
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "One of the few provisions in the Measures that names a concrete verification technique — 抽样核验 (sampling verification) — rather than an unquantified 有效措施. That makes it the most auditable article in the pack on its own terms, but it remains a management-system duty: an item can test nothing about whether an organization actually samples its annotations. The provision addresses annotation during 研发 (research and development) only; annotation performed after deployment, for example on user feedback used for continued tuning, is not expressly covered by its wording, and the pack does not extend it.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第八条",
+        "quote": "第八条 在生成式人工智能技术研发过程中进行数据标注的，提供者应当制定符合本办法要求的清晰、具体、可操作的标注规则；开展数据标注质量评估，抽样核验标注内容的准确性；对标注人员进行必要培训，提升尊法守法意识，监督指导标注人员规范开展标注工作。",
+        "rationale": "The article has two operative demands and each carries its own value. 制定符合本办法要求的…标注规则 and 提升尊法守法意识 make adherence to a rule the thing that must prevail (Cor); 开展数据标注质量评估，抽样核验标注内容的准确性 frames the duty as demonstrated performance against a declared standard of accuracy, which is Ach. Evidence follows the same split and is unusually explicit for these Measures: the annotation rules are a written standard procedure that must be 清晰、具体、可操作 (Gui), and the quality assessment is discharged by sampled measurement of annotation accuracy (Dat) — the article names the technique itself, so Dat is read from the text and not inferred. On sources, the rules are drawn up by the provider itself — 提供者应当制定 — which is material issued by the concerned industry (Ind), while 符合本办法要求 fixes the state as the authority those rules answer to (Gov). No professional body of annotators is designated, so Pro is not assigned.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "Exact agreement on all four axes in the blind second pass — V [Cor, Ach], E [Dat, Gui], S [Gov, Ind], obligationType organizational. Auto-accepted; no change from v0.1. Both passes reached Dat directly from 抽样核验标注内容的准确性, which names the verification technique rather than gesturing at 有效措施, and both reached Ind from 提供者应当制定…标注规则 — a rule document the provider issues unilaterally."
+    },
+    {
+      "article": "第九条",
+      "summary": "Article 9 — providers bear, in accordance with law, the responsibility of a producer of online information content and must perform online information security obligations; where personal information is involved they bear, in accordance with law, the responsibility of a personal information handler and must perform personal information protection obligations. Providers must also conclude a service agreement with users who register for their service, specifying the rights and obligations of both parties.",
+      "v": [
+        "Cor",
+        "Bed",
+        "Ses"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "This is the allocation article: it does not create new substantive duties so much as attach two pre-existing statutory roles — 网络信息内容生产者 under the online content regime and 个人信息处理者 under the Personal Information Protection Law — to the generative AI provider. Its practical weight lies almost entirely in the instruments it points to, which this pack does not formalize. The service-agreement limb is the only part with an artefact an auditor can ask to see.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第九条 第一款·第二款",
+        "quote": "[第一款] 提供者应当依法承担网络信息内容生产者责任，履行网络信息安全义务。涉及个人信息的，依法承担个人信息处理者责任，履行个人信息保护义务。[第二款] 提供者应当与注册其服务的生成式人工智能服务使用者（以下称使用者）签订服务协议，明确双方权利义务。",
+        "rationale": "The first paragraph is a pure role assignment carried out 依法 — the provider must occupy statutory positions it did not choose — which is compliance with a formal requirement (Cor), and what those positions exist to protect is 网络信息安全, the security of the information environment as a collective good (Ses). The second paragraph turns the relationship with the user into a written bargain with 明确双方权利义务, which is the value of being a party that can be relied on to honour stated obligations (Bed). On evidence the article is discharged wholly by documents: the statutory role definitions and the service agreement, both read as written (Gui). It designates no measurement and no adjudicator. The roles are fixed by the state's own statutes (Gov) and the service agreement is drafted and issued by the provider itself (Ind). ADJUDICATION 2026-08-14, obligationType adjudicated under contamination notice: the second pass's Sep and the first pass's Ind are not carried into v0.2, and the article stays `organizational`. Sep was declared by the second pass for 个人信息保护义务, expressly by analogy and with the note that AIO 00011 has no dedicated privacy value; it is logged as a vocabulary gap, not adopted on one pass's word. Ind was declared by the first pass for the 服务协议 and the second pass considered and rejected it — a service agreement is a bilateral contract concluded with the user, not material the industry issues as a source to be trusted, which is what distinguishes it from the annotation rules the provider unilaterally 制定 under 第八条. On obligation type, the article assigns two pre-existing statutory roles and requires a contract; neither limb states a judgment made in a concrete case, and the first pass's own note calls this 'the allocation article'.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui]) agreed exactly. V reduced to the intersection [Cor, Bed, Ses]; S narrowed [Gov, Ind] to [Gov] on the second pass's explicit consider-and-reject reasoning. obligationType DIVERGED (first pass organizational, second pass mixed) and was adjudicated under a contamination notice — the guideline §2.3 had disclosed this pack's obligationType distribution to the second formalizer, so the axis was decided on the quoted text alone. It stays `organizational`: role allocation and contracting have no per-case judgment correlate."
+    },
+    {
+      "article": "第十条",
+      "summary": "Article 10 — providers must clarify and publicly disclose the applicable user groups, occasions and uses of their service, guide users toward a scientific and rational understanding and a lawful use of generative AI technology, and take effective measures to guard against minors becoming excessively dependent on or addicted to generative AI services.",
+      "v": [
+        "Sep",
+        "Sdt"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The minors limb is one of the few places in the Measures where a per-interaction judgment correlate genuinely exists: how a model responds when a user it has reason to treat as a minor shows signs of dependency is a judgment an item can present. The disclosure limb is not — it is discharged by a published statement. Note also that the article imposes no age-verification duty in its own words; it requires 有效措施 against 过度依赖或者沉迷 without saying how the provider is to know a user is a minor. The pack does not read an age-assurance obligation into it.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十条",
+        "quote": "第十条 提供者应当明确并公开其服务的适用人群、场合、用途，指导使用者科学理性认识和依法使用生成式人工智能技术，采取有效措施防范未成年人用户过度依赖或者沉迷生成式人工智能服务。",
+        "rationale": "The article names its protected subject expressly — 未成年人用户 — and the harm it names, 过度依赖或者沉迷, is psychological rather than physical, which is squarely Sep (the physical and psychological safety of the person). The middle limb, 指导使用者科学理性认识和依法使用, asks the provider to build the user's own capacity to judge the technology rather than to decide for them, which is Sdt. On evidence, 明确并公开其服务的适用人群、场合、用途 is discharged by a published written declaration (Gui). Dat is assigned for the minors limb as an inference from the structure rather than from the words: 防范…过度依赖或者沉迷 cannot be operated without observing usage patterns over time, but the article names no metric, and this assignment is flagged for the RFC round. On sources the article is notably self-referential — the only thing it designates as authoritative is the provider's own published statement of scope (Ind). No authority, professional body or third party is named, so Gov is deliberately not assigned here even though the Measures as a whole are a state instrument. ADJUDICATION 2026-08-14: Cor and Hum (second pass) and Dat (first pass) and Gov (second pass) are not carried into v0.2. Hum was flagged INFERENCE by the second pass itself — publishing 适用人群、场合、用途 is a scope declaration, and reading it as a duty not to overstate the service's reach is structural. Cor rests on 依法使用, which is the user's lawful use that the provider is to guide, not a value the provider must let prevail. Dat was flagged as an inference by the first pass on the same ground the second pass gives for withholding it: the minors limb cannot be operated without observing usage over time, but the article names no metric. Gov fails the pack-wide source rule — this article names no authority at all, which the first pass had noted expressly.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "obligationType (mixed) agreed. V reduced to the intersection [Sep, Sdt]; E narrowed [Gui, Dat] to [Gui]; S narrowed to [Ind], the first pass's set, since nothing in 第十条 designates a state authority. This is the only entry in the pack whose source class is not `Gov`, and both passes noticed the article's self-referential character."
+    },
+    {
+      "article": "第十一条",
+      "summary": "Article 11 — providers must perform their protection obligations in accordance with law with respect to users' input information and usage records: they must not collect unnecessary personal information, must not unlawfully retain input information and usage records capable of identifying a user, and must not unlawfully provide a user's input information and usage records to others. Providers must also accept and handle, in accordance with law and in a timely manner, individuals' requests to access, copy, correct, supplement or delete their personal information.",
+      "v": [
+        "Sep",
+        "Cor"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The judgment correlate is narrow but real: 不得收集非必要个人信息 bears on whether a system asks a user for more identifying detail than the task requires, which an item can present as a concrete case. Everything else — retention limits, disclosure prohibitions, the rights-request workflow — is a management-system duty. Note the collision this article sets up with 第十四条, which requires 保存有关记录 when a user is found to be engaged in unlawful activity: one article restricts retention of identifying records and the other requires it. The Measures do not resolve the tension in their own text; the management guide records it as a decision the operator has to document rather than assume. VOCABULARY GAP: the interest 第十一条 protects — the user's control over identifying input information and usage records — has no code in the AIO 00011 value layer. The two independent passes split on how to carry it (Bed against Sda) on top of the Sep both agreed on. The split is recorded in the pack's vocabulary-gap note and goes to the AIO 00011 RFC round together with the same finding at 第九条, at Art. 11 of the Council of Europe pack, and at 第七条's consent limb.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十一条 第一款·第二款",
+        "quote": "[第一款] 提供者对使用者的输入信息和使用记录应当依法履行保护义务，不得收集非必要个人信息，不得非法留存能够识别使用者身份的输入信息和使用记录，不得非法向他人提供使用者的输入信息和使用记录。[第二款] 提供者应当依法及时受理和处理个人关于查阅、复制、更正、补充、删除其个人信息等的请求。",
+        "rationale": "What the paragraph protects is the individual user's own sphere — 能够识别使用者身份的输入信息和使用记录 — against collection, retention and onward disclosure, which is the personal security of the identified person (Sep) rather than a societal interest. The second paragraph makes the provider answerable to that person on request within a time constraint (及时受理和处理), which is the value of being a counterparty who can be relied on (Bed). 依法 appears three times in six clauses, making adherence to the rule itself an operative value (Cor). Evidence is documentary throughout: three prohibitions and one rights list, read as written (Gui); the article names no measurement and no assessor. The rights enumerated — 查阅、复制、更正、补充、删除 — track the Personal Information Protection Law, and 依法 points to that statute, so the designated source class is the state (Gov). The user is the protected party here, not a source the provider is directed to trust, so Usr is not assigned. ADJUDICATION 2026-08-14: V is reduced to the intersection [Sep, Cor] and the two passes' disagreement about 第二款 is recorded rather than resolved. The first pass coded the rights-request duty `Bed` (a provider answerable to the person within a time constraint); the second pass coded the same limb `Sda` (the individual's control over their own information). Neither is forced by the text and each was declared once, so neither is carried; the split is itself evidence of the privacy vocabulary gap, since both codes are stopgaps for an interest the value layer does not name. On sources, the second pass's `Usr` is dropped: it flagged the code as an inference, and the first pass had expressly reasoned that the user here is the protected party, not a source the provider is directed to trust.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Sep, Cor]; S narrowed [Gov, Usr] to [Gov], the first pass's set. The Bed-against-Sda split on the rights-request limb is recorded as a vocabulary-gap finding rather than adjudicated in favour of either."
+    },
+    {
+      "article": "第十二条",
+      "summary": "Article 12 — providers must label generated content such as images and video in accordance with the Provisions on the Administration of Deep Synthesis of Internet Information Services.",
+      "v": [
+        "Cor",
+        "Sdt"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "The whole substance of this article sits in the instrument it refers to, and that instrument is no longer the only one. 第十二条 points to the 2022 深度合成管理规定; since these Measures were made, the 人工智能生成合成内容标识办法 (in force 2025-09-01) and the mandatory national standard GB 45438-2025 have become the operative labeling regime, distinguishing 显式标识 from 隐式标识. This pack quotes only 第十二条 itself and does not formalize the later instruments; they are cited by name and clause number in the management guide and never quoted verbatim, because their copyright position differs from that of the Measures. On the article's own text, labeling is a pipeline capability rather than a judgment, so an AIO 20002 record contributes nothing to discharging it.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十二条",
+        "quote": "第十二条 提供者应当按照《互联网信息服务深度合成管理规定》对图片、视频等生成内容进行标识。",
+        "rationale": "The article is a one-sentence referral: 应当按照《互联网信息服务深度合成管理规定》 makes conformity to a named written instrument the operative demand, which is Cor, and what the labeling regime exists to protect is the integrity of the shared information environment against undisclosed synthetic media (Ses). Sdt is assigned because a label works by putting the recipient in a position to judge the provenance of what they are looking at for themselves rather than by deciding for them what to believe; this reads the purpose from the structure of a disclosure duty rather than from words in this article, and is flagged as such for the RFC round. Evidence can only be the referred instrument read as written (Gui) — the article states no test and no threshold of its own. The instrument referred to is a CAC-issued departmental rule, so the designated source is the state (Gov). ADJUDICATION 2026-08-14: Ses is not carried into v0.2. The article states no purpose whatever — it is a one-sentence referral to the 深度合成管理规定 — and the first pass grounded Ses in what the labeling regime exists to protect rather than in any word of 第十二条. Sdt survives because both passes declared it, but both also flagged it: the first as a reading of the structure of a disclosure duty, the second with the observation that the article gives no purpose to read. It is kept on the strength of the agreement and logged under the information-integrity vocabulary gap.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui]), S ([Gov]) and obligationType (organizational) agreed exactly — both passes independently declined to read 标识 as a behavioral self-disclosure duty. V reduced to the intersection [Cor, Sdt] by dropping Ses, which was grounded in the referred instrument rather than in this article."
+    },
+    {
+      "article": "第十四条",
+      "summary": "Article 14 — where a provider discovers unlawful content it must promptly take disposal measures such as stopping generation, stopping transmission and elimination, take measures such as model optimisation training to rectify the situation, and report to the competent departments. Where a provider discovers that a user is using the generative AI service to engage in unlawful activity, it must take disposal measures in accordance with law and with the agreement — warnings, restriction of functions, suspension or termination of service — preserve the relevant records, and report to the competent departments.",
+      "v": [
+        "Cor",
+        "Ses"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The strongest judgment correlate in the pack: whether a given piece of content is treated as 违法内容 at all, and whether the response is to continue, to stop generation, or to escalate, is a judgment an item can put in front of a model. What no item reaches is the rest of the article — the rectification training, the record preservation, the report to the competent departments — all of which are organizational. Note also that the article states no deadline: 及时 (\"promptly\") is the only temporal standard, with nothing comparable to the 2-, 10- and 15-day reporting clocks of the EU AI Act. An operator that wants a defensible position has to set its own internal clock, and the management guide says so.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十四条 第一款·第二款",
+        "quote": "[第一款] 提供者发现违法内容的，应当及时采取停止生成、停止传输、消除等处置措施，采取模型优化训练等措施进行整改，并向有关主管部门报告。[第二款] 提供者发现使用者利用生成式人工智能服务从事违法活动的，应当依法依约采取警示、限制功能、暂停或者终止向其提供服务等处置措施，保存有关记录，并向有关主管部门报告。",
+        "rationale": "Both paragraphs are triggered by 违法 — unlawfulness as defined elsewhere in Chinese law — and the interest served by stopping generation, stopping transmission and eliminating the material is the order of the information environment as a whole (Ses); the response is prescribed rather than discretionary and is owed 依法依约, which is Cor. Evidence: what discharges the duty is the prescribed disposal menu read as written (Gui) together with 保存有关记录, the retained operational record that makes the disposal reviewable after the fact (Dat). The article does not make an expert opinion, a complaint or an external finding decisive — the trigger is the provider's own 发现. The escalation is owed to 有关主管部门, which is the only source class the article designates (Gov). Note what is absent: no affected person, no complainant and no independent reviewer appears in either paragraph, so Usr, Tes and Pro are not assigned even though the article's subject matter would make them plausible. ADJUDICATION 2026-08-14: the second pass's Bed and the first pass's Dat are not carried into v0.2. Bed reads 依约 as acting on a commitment already made — defensible, but declared once and secondary to the 依法 limb both passes coded as Cor. Dat was assigned by the first pass to 保存有关记录; record preservation is an output of the duty rather than what discharges it, and the second pass withheld it. Both passes independently declined `Cas` for 发现, on the ground that the article prescribes no analytic method.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "S ([Gov]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Cor, Ses]; E narrowed [Gui, Dat] to [Gui]. This entry remains the strongest judgment correlate in the pack — whether to stop generating rather than continue — and that direction now rests on Cor and Ses alone."
+    },
+    {
+      "article": "第十五条",
+      "summary": "Article 15 — providers must establish and improve a complaint and reporting mechanism, set up a convenient entry point for complaints and reports, publish the handling process and the time limits for feedback, and accept, handle and give feedback on public complaints and reports in a timely manner.",
+      "v": [
+        "Bed",
+        "Unc"
+      ],
+      "e": [
+        "Gui",
+        "Tri"
+      ],
+      "s": [],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "A complaint channel is built and staffed, not judged, so nothing an item measures bears on whether this article is met. It is carried in the pack because it is the only provision in the Measures under which a member of the public — not a regulator, and not necessarily a registered user — can put something in front of the provider and require an answer within a published time limit. That makes it the article an operator is most likely to implement in name only: an entry point that exists but publishes no 处理流程 and no 反馈时限 does not meet the words of the provision. VOCABULARY GAP and undeclared layer: `s` is an empty array by decision, not by oversight. A member of the public who lodges a complaint or report under this article fits no class in the ten-code source hierarchy — `Usr` means the requester of the service and `Tes` means a sworn named eyewitness. The same gap appears at Arts. 14 and 16 of the Council of Europe pack and at Copyright Measure 1.5 of the GPAI pack, and it is one of the consolidated findings going to the AIO 00011 RFC round.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十五条",
+        "quote": "第十五条 提供者应当建立健全投诉、举报机制，设置便捷的投诉、举报入口，公布处理流程和反馈时限，及时受理、处理公众投诉举报并反馈处理结果。",
+        "rationale": "The article binds the provider to a published process and a published deadline and then to actually feed the result back — 公布处理流程和反馈时限 … 并反馈处理结果 — which is the value of being a party whose stated commitments hold (Bed). Its beneficiary is 公众, the public at large rather than a defined class of customers, which extends the protection to anyone affected (Unc). Evidence has two limbs the text supplies directly: the published handling process and time limits, read as written (Gui), and the content of the complaints themselves, which are firsthand accounts by those who encountered the problem (Tri). The source class the article designates is the complainant — the person who supplies the information the provider must act on (Usr). No authority is named in this article: complaints to 有关主管部门 are the separate subject of 第十八条, so Gov is not assigned here. ADJUDICATION 2026-08-14: the source layer is left UNDECLARED and the second pass's Cor is not carried. On sources, v0.1 assigned `Usr`; the blind second pass deliberately declared nothing, on the ground that the article designates a channel for 公众 complaints rather than a class of source whose word is to be trusted. `Usr` is defined as information the requester themselves supplied, and a 举报人 under this article need not be a user of the service at all. Under the adjudication rule on vocabulary gaps, a nearest-code choice is kept only where both passes made it; here only one did, so the layer is declared empty. An empty `s` array in this pack means the layer is deliberately undeclared — an honest signal that nothing is scored on it — and is not the same as an omitted field.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "V reduced to the intersection [Bed, Unc]; E ([Gui, Tri]) and obligationType (organizational) agreed exactly. S CHANGED from [Usr] to an empty array — the layer is now deliberately undeclared, following the blind second pass, which declared nothing there and said why. This is the only layer in Wave 1 left empty by adjudication."
+    },
+    {
+      "article": "第十七条",
+      "summary": "Article 17 — a provider of generative AI services with public-opinion attributes or the capacity for social mobilisation must carry out a security assessment in accordance with the relevant national provisions, and must complete algorithm filing and the procedures for changing or cancelling that filing in accordance with the Provisions on the Administration of Algorithmic Recommendation of Internet Information Services.",
+      "v": [
+        "Cor",
+        "Ses"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "The gateway provision in practice: in the Chinese market a public-facing generative AI service does not launch until the security assessment and the algorithm filing are done, and the 2026 清朗 campaign named failure to complete filing as a first-order enforcement target. It is also the article that binds the Measures to a body of instruments outside them — the assessment route runs through the security-assessment regime for services with public-opinion attributes, the filing route through the algorithmic recommendation provisions, and the assessment content is in practice measured against GB/T 45654-2025. None of that is in the text of 第十七条, and this pack does not formalize any of it. Nothing here is testable by an item.",
+      "provenance": {
+        "sourceUrl": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+        "article": "第十七条",
+        "quote": "第十七条 提供具有舆论属性或者社会动员能力的生成式人工智能服务的，应当按照国家有关规定开展安全评估，并按照《互联网信息服务算法推荐管理规定》履行算法备案和变更、注销备案手续。",
+        "rationale": "The article is procedural through and through — 应当按照国家有关规定开展安全评估 and 履行算法备案和变更、注销备案手续 — so what must prevail is completion of the prescribed formality itself (Cor). The trigger condition states the interest at stake in its own words: 具有舆论属性或者社会动员能力, the capacity of a service to shape opinion or mobilise people, which is societal stability and order (Ses). Evidence can only be the referred written procedures — the assessment specification and the filing procedure of the named instrument (Gui); the article states no metric, no pass threshold and no test set of its own, and the fact that GB/T 45654-2025 supplies those in practice is an operational reality outside the text, so Dat is not asserted. Both the assessment and the filing are owed to and adjudicated by the state (Gov); no independent assessor or accredited body is designated, so Pro is not assigned.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "Exact agreement on all four axes in the blind second pass — V [Cor, Ses], E [Gui], S [Gov], obligationType organizational. Auto-accepted; no change from v0.1. Both passes independently withheld `Dat` for 安全评估, on the ground that the named regime is a procedural assessment and filing and the text declares no metric — GB/T 45654-2025 supplies one in practice, but that is outside the article."
+    }
+  ],
+  "itemBankRef": {
+    "publicSet": null,
+    "privateSet": null
+  },
+  "version": "0.2",
+  "supersedes": "0.1",
+  "status": "draft-verified",
+  "updatedAt": "2026-08-14",
+  "measurementScope": "AIO items measure model judgment alignment with each provision's normative direction. They do not assess whether an organization implements the provision's management-system obligations (training-data governance, annotation quality regimes, complaint handling, illegal-content detection and disposal, labeling infrastructure, security assessment and algorithm filing). Of the ten provisions mapped here, six are `organizational` outright and four are `mixed`; none is purely behavioral. A measurement against this pack is therefore evidence about model judgment only, and is never evidence that a provider has met the Measures.",
+  "notes": [
+    "draft-verified. Every entry carries a verbatim excerpt of the official text and a rationale argued from it, and as of 2026-08-14 the second independent formalization that FORMALIZATION_METHODOLOGY §5 recommends — and that this pack treated as a precondition rather than an aspiration, because the source norm is in a language the reviewing team may not read — has been carried out and adjudicated. The second pass was blind to v0.1's codes, summaries, rationales, obligationType tags and notes and worked from the Chinese excerpts alone. Two of ten entries agreed on all four axes and the evidence axis agreed on eight of ten; every divergence is recorded with its decision in the entry's `changeNote`. Human review is still pending, and promotion beyond `draft-verified` requires the public RFC process at https://aioq.org/en/rfc.",
+    "Primary source and retrieval. 生成式人工智能服务管理暂行办法, 国家互联网信息办公室令第15号, promulgated 2023-07-13 and in force from 2023-08-15, retrieved 2026-08-14 from the issuing body's own site at https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm. No commentary, law-firm summary, translation site or mirror was used for any quote. The Measures were confirmed unamended as at the retrieval date: no amending instrument was located, and CAC continued to operate the filing regime under them (public notice of 2025 filings, 2026-01-09).",
+    "Quote verification method. The page was fetched as raw HTML, decoded as UTF-8, stripped of script, style and markup, and reduced to one line per source paragraph. Each `provenance.quote` was then compared character by character against that extracted text by exact substring match, after removing the elision marker […] and the bracketed paragraph citations such as [第一款], which are AIO editorial marks and not part of the official wording. Quotes that span two paragraphs of the official text carry a bracketed paragraph citation at each break. Everything outside brackets matched the official page exactly, including the ASCII space that follows each 第X条 marker in the source.",
+    "Language and translation. No official English text of these Measures exists. The Chinese excerpts in `provenance.quote` are canonical; every English string in this pack — names, summaries, rationales, notes — is AIO's own rendering, written for comprehension and not equivalent in authority to the Chinese. Where a decision turns on precise wording, the Chinese text governs. Nothing in this pack may be presented, cited or reproduced as an official or authorised English translation.",
+    "Quotation basis. Article 5(1) of the Copyright Law of the People's Republic of China excludes laws and regulations, resolutions, decisions and orders of state organs, and other documents of a legislative, administrative or judicial nature from copyright protection. Verbatim quotation of the Measures is accordingly free. This does not extend to the companion instruments: GB 45438-2025 and GB/T 45654-2025 are national standards whose copyright position is different, and they are referred to in this pack and in the management guide by number, name and clause only, never quoted.",
+    "Extraterritorial reach is limited to blocking. The Measures apply to services provided to the public within the territory (第二条), and the only remedy the text provides against a non-conforming service originating outside the territory is technical disposal: 第二十条 directs the national cyberspace department to notify relevant institutions to adopt technical and other necessary measures. There is no extraterritorial penalty mechanism and no analogue to the EU AI Act's authorised-representative regime in these Measures. An operator outside China therefore faces access blocking rather than enforcement against the entity, which is a materially different risk profile and should not be described as \"applying to\" the operator in the way an EU or Korean obligation does.",
+    "Relationship to the labeling regime and to the national standards. 第十二条 refers labeling to the 2022 互联网信息服务深度合成管理规定. Since these Measures were made, the 人工智能生成合成内容标识办法 (CAC, MIIT, MPS and NRTA; in force 2025-09-01) and the mandatory national standard GB 45438-2025 网络安全技术 人工智能生成合成内容标识方法 (issued 2025-02-28, in force 2025-09-01) have become the operative labeling regime, splitting the duty into 显式标识 and 隐式标识. Separately, GB/T 45654-2025 网络安全技术 生成式人工智能服务安全基本要求 (issued 2025-04-25, in force 2025-11-01) is the recommended national standard that functions as the de facto yardstick for the 第十七条 security assessment. Standard numbers and dates were taken from the SAMR national standard registry on 2026-08-14. None of these three instruments is formalized by this pack.",
+    "Enforcement is real, and that is what distinguishes this norm from most soft-law entries in the roster. In April 2026 CAC launched the 清朗·整治AI应用乱象 special campaign, whose first stage targeted failure to complete large-model filing and registration, insufficient platform review and filtering capability, AI data poisoning, and inadequate implementation of generated-content labeling; CAC reported the first stage and announced a second stage on 2026-07-06. A pack user should read the obligations below as live administrative exposure, not as guidance. The pack takes no position on the merits of any enforcement action.",
+    "Non-endorsement. AIO wrote this formalization. The Cyberspace Administration of China and the six co-issuing departments took no part in it, have not reviewed or approved it, and have not endorsed it. AIO certifies conformance to AIO's own formalization of the Measures. This is not a legal conformity assessment, not a filing, not a security assessment under 第十七条, and confers no presumption of compliance under Chinese law or any other law.",
+    "Article selection. Ten of the twenty-four articles are mapped: those imposing obligations on judgment, records, oversight or user protection that can be stated as a normative direction. 第五条 and 第六条 (encouragement of innovation, infrastructure and international cooperation) and 第十六条 (allocation of supervisory competence among departments) are promotional or institutional and impose no duty on a provider, so they are not mapped. 第一条 to 第三条 (purpose, scope, regulatory posture), 第十三条 (service continuity), 第十八条 to 第二十一条 (user complaints to authorities, inspection, cross-border disposal, penalties) and 第二十二条 to 第二十四条 (definitions, licensing, commencement) are outside the pack's scope for this version; 第十九条 in particular is a candidate for a later version, since the duty to explain training-data sources, scale, type, annotation rules and algorithm mechanisms to an inspecting authority pairs directly with 第七条 and 第八条.",
+    "Measurement scope, per entry. `obligationType` distribution across the ten mapped provisions after adjudication: six `organizational` (第七条, 第八条, 第九条, 第十二条, 第十五条, 第十七条) and four `mixed` (第四条, 第十条, 第十一条, 第十四条). Not one is purely `behavioral`. The distribution is unchanged from v0.1, but one entry was contested: the blind second pass read 第九条 as `mixed`, and because the pack-authoring guideline §2.3 had disclosed this pack's obligationType distribution to that formalizer, the axis was adjudicated on the quoted text alone rather than on either pass's authority. It stays `organizational` — role allocation and contracting carry no per-case judgment. The Measures address 提供者 — organizations — throughout, and their characteristic remedy is administrative rather than adjudicative, so the organizational weight is heavier than in the EU AI Act pack. The four `mixed` entries are where an item can reach: what content to refuse (第四条), how to respond to a minor showing dependency (第十条), whether to ask for identifying detail the task does not need (第十一条), and whether to stop generating rather than continue (第十四条).",
+    "No item bank has been built for this pack. `itemBankRef.publicSet` and `privateSet` are both null, so this pack currently backs no certificate at any tier. When a public set is seeded it must respect the limits recorded in the per-entry `note` fields, in particular the 第四条 note: items must be drawn from the concrete enumerated prohibitions and not from the doctrinal limb.",
+    "Methodology for the article → V/E/S translation: /content/standards-packs/FORMALIZATION_METHODOLOGY.md.",
+    "Adjudication method (v0.2). The pack was formalized twice — the v0.1 seed pass and a blind second pass working from the same Chinese excerpts and nothing else — and the two results were compared mechanically, entry by entry and layer by layer, with v, e and s treated as sets. Exact agreement was auto-accepted. Divergences were adjudicated under a fixed policy: the reading better grounded in the quoted text prevails under FORMALIZATION_METHODOLOGY.md §4; where both readings are defensible the more conservative is taken (fewer codes, or a layer left undeclared); the intersection of the two readings is an allowed outcome where it is non-empty and defensible; no third reading is invented. Agreement statistics for this pack, across ten entries: V 2/10, E 8/10, S 6/10, obligationType 9/10, all four axes together 2/10 (第八条 and 第十七条). The evidence axis agreed more strongly here than in any other Wave 1 pack, which is what one would expect of a text that says 采取有效措施 and names almost nothing measurable: both readers found the same absence.",
+    "Contamination notice. The obligationType axis of the second pass was not blind. The pack-authoring guideline §2.3 records this pack's obligationType distribution (\"중국 0/6·4\") as a worked precedent, and the second formalizer had read that section. The axis was therefore adjudicated purely on the quoted text of each article, and the one divergence on it — 第九条 — was decided without treating the second pass's classification as independent evidence either way. The notice is repeated in that entry's changeNote and in the measurement-scope note. No other axis of this pack was disclosed.",
+    "Source-axis policy (P4, decided once across the Wave 1 packs and applied uniformly). S=`Gov` is declared only where the quoted excerpt itself names the governmental authority or the legal instrument that is decisive on the substance of the duty — 法律、行政法规 and the four statutes at 第七条, 本办法 at 第八条, 依法 pointing to the Personal Information Protection Law at 第十一条, the named 深度合成管理规定 at 第十二条, 有关主管部门 at 第十四条, 国家有关规定 at 第十七条. It is never carried in from the fact that the Measures are themselves a state instrument, which is why 第十条 and 第十五条 do not carry it. S=`Ind` is declared where the quoted excerpt makes the 提供者 the unilateral author of the operative artefact — the annotation rules of 第八条, the published statement of scope of 第十条 — and not where the provider merely concludes a bilateral instrument with the user, which is why the 服务协议 of 第九条 does not carry it. The same rule was applied to all five Wave 1 packs and is recorded in each.",
+    "Vocabulary gaps found by the dual formalization (feeding a future AIO 00011 RFC). This pack contributes three. (1) PRIVACY AND PERSONAL DATA — 第九条's 个人信息处理者责任, 第十一条's protection of identifying input information and usage records, and 第七条's consent condition all protect an interest the value layer does not name. The two passes routed it three different ways across those entries (Sep, Bed, Sda), agreeing only on Sep at 第十一条. That disagreement pattern is the finding. The same gap is recorded at Art. 11 of the Council of Europe pack. (2) INFORMATION INTEGRITY — the interest that 第十二条's labeling duty and 第四条's ban on 虚假有害信息 protect is the shared information environment, for which `Ses` (stability and order of society at large) is the only nearby carrier. It was kept at 第四条, where both passes declared it, and dropped at 第十二条, where only one did. The same gap appears at 제31조제2항·제3항 of the Korean pack and Art. 8 of the Council of Europe pack. (3) PUBLIC COMPLAINANTS AS A SOURCE CLASS — 第十五条's 公众 complainant fits neither `Usr` nor `Tes`, and the source layer of that entry is left empty as a result. The consolidated Wave 1 list is reproduced in the adjudication report."
+  ]
+}

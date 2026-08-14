@@ -1,0 +1,308 @@
+{
+  "$schema": "./schema.json",
+  "id": "nist-ai-rmf",
+  "name": {
+    "en": "NIST AI RMF 1.0 + Generative AI Profile — AIO formalization",
+    "ko": "NIST AI 위험관리 프레임워크 1.0 + 생성형 AI 프로파일 — AIO 정형화"
+  },
+  "sourceNorm": {
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, together with the Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile, NIST AI 600-1",
+    "publisher": "U.S. National Institute of Standards and Technology",
+    "version": "AI RMF 1.0 (NIST AI 100-1), January 2023; Generative AI Profile (NIST AI 600-1), July 2024",
+    "url": "https://doi.org/10.6028/NIST.AI.100-1"
+  },
+  "vesMapping": [
+    {
+      "article": "GOVERN 1.3",
+      "summary": "The level of risk management activity applied to AI is not left at large but is determined by processes, procedures and practices that key it to the organization's own stated risk tolerance.",
+      "v": [
+        "Cor",
+        "Ses"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "Outside what an AIO 20002 record can supply. The subcategory demands a calibration procedure, and no item can observe whether an organization has one. Listed because it is the risk-tolerance anchor the rest of the pack refers back to — MEASURE 2.6 and GV-1.3-007 both resolve their thresholds against the tolerance this subcategory requires to be set. Adjudication note: this is one of two entries in the pack (with MANAGE 1.1) whose value assignment rests on reading in what 'risk' or 'should proceed' is about. Both passes flagged it; neither reading is anchored in the quoted words, and the entry is put to the RFC round on that point.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.1, Table 1, subcategory GOVERN 1.3",
+        "quote": "Processes, procedures, and practices are in place to determine the needed level of risk management activities based on the organization’s risk tolerance.",
+        "rationale": "The subcategory makes the quantum of risk management a derived quantity: it must follow from a declared tolerance rather than from convenience, so what must prevail is the collective stability that risk management exists to protect (Ses) together with adherence to the procedure once set (Cor — does not act beyond what the rules permit). What discharges it is the established written procedure itself (Gui); no measurement, case analysis or expert opinion is named. The only source class the text designates is the organization whose tolerance governs (Ind). Gov is deliberately NOT assigned: NIST issues the AI RMF but the Framework is voluntary (AI RMF 1.0 § 2: \"The Framework is intended to be voluntary\"), and this subcategory points to the organization's own tolerance, not to a governing authority's position. ADJUDICATION 2026-08-14: the blind second pass read V as [Sep], from the AI RMF's general framing of risk as harm to people. That reading was not adopted — its own author recorded that the quoted sentence says only 'risk' and never names what is at risk. Cor and Ses are carried from the first pass as the better-grounded of the two readings, but Ses is not in the quoted words either, and the question the second pass raised is registered as an RFC issue: whether a bare, undefined 'risk' term may carry any value code at all.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "Dual formalization, then adjudication. E ([Gui]), S ([Ind]) and obligationType (organizational) agreed exactly between the two independent passes and were auto-accepted. V diverged with an empty intersection: first pass [Cor, Ses], second pass [Sep]. The first pass's reading was adopted as better grounded — the second pass disclosed that its Sep came from the Framework's general framing of risk rather than from the quote. Ses is retained under protest and flagged: the sentence names no protected interest, and 'may an undefined risk term carry a value code' is carried to RFC."
+    },
+    {
+      "article": "GOVERN 3.2",
+      "summary": "Policies and procedures define and differentiate roles and responsibilities for human-AI configurations and for oversight of AI systems — that is, they fix which part of a decision belongs to a person and which to the system.",
+      "v": [
+        "Bed"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "AIO 20002 contributes only this: a single-line, grep- and SQL-friendly reasoning record lets whoever holds the oversight role inspect model behaviour at scale rather than case by case. Defining the role, conferring the authority, and staffing it are organizational acts the record format does not touch.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.1, Table 1, subcategory GOVERN 3.2",
+        "quote": "Policies and procedures are in place to define and differentiate roles and responsibilities for human-AI configurations and oversight of AI systems.",
+        "rationale": "The operative verb is 'differentiate': the subcategory is not satisfied by naming an overseer but by separating what the human decides from what the system decides, which makes the human's own judgment the thing being preserved (Sdt — reaching conclusions through one's own understanding rather than adopting the system's). 'Roles and responsibilities' assigned in advance is an obligation owed to colleagues and to whoever relies on the system downstream (Bed). What discharges it is a written policy (Gui). Exp is assigned as an INFERENCE and is flagged as such: the word 'oversight' presupposes that somebody's considered judgment is decisive over the system's output, but the subcategory does not say so in terms — this is put to the RFC round. The only designated source is the organization issuing the policy (Ind). ADJUDICATION 2026-08-14: Sdt and Exp are not carried into v0.2. Sdt was a structural read of 'differentiate' which the blind second pass considered and rejected — the subcategory assigns roles, it does not protect anyone's freedom to reach their own conclusions. Exp was already flagged INFERENCE in v0.1 and the second pass rejected it on the ground that nothing but the existence of policies discharges the subcategory. What survives is what both passes read off the words: 'roles and responsibilities' defined in advance is dependability (Bed), discharged by a written policy (Gui) issued by the organization (Ind).",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "S ([Ind]) and obligationType (organizational) agreed exactly. V narrowed [Sdt, Bed] to [Bed] and E narrowed [Gui, Exp] to [Gui], adopting the second pass in both cases as the reading grounded in the quoted words. The dropped Exp is the first of the three v0.1 inference codes; all three were removed at adjudication."
+    },
+    {
+      "article": "MAP 2.2",
+      "summary": "The AI system's knowledge limits, and how its output may be used and overseen by humans, are documented — at a level of detail sufficient to assist relevant AI actors in making decisions and taking subsequent actions.",
+      "v": [
+        "Hum",
+        "Sdt"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The closest analogue in the AI RMF to what an AIO 20002 record carries: the V: and E: layers report which value priorities and evidence types stood behind an output, and the C: layer reports the scope and reversibility the system took itself to be operating at. The subcategory's own demand is nevertheless a documentation artefact about the system, produced once and maintained; the per-decision record is an input to it, not a substitute for it.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.2, Table 2, subcategory MAP 2.2",
+        "quote": "Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI actors when making decisions and taking subsequent actions.",
+        "rationale": "'Knowledge limits' is the operative phrase and it is a demand for stated limits rather than stated capability — Hum (recognizing one's own limits, not overstating). The stated purpose of the documentation is to 'assist relevant AI actors when making decisions', i.e. to equip somebody else to decide rather than to decide for them (Sdt). The second sentence sets a sufficiency standard owed to those downstream actors, which is a commitment kept rather than a metric met (Bed). What discharges it is documentation (Gui) — no measurement is named here, which is why Dat is withheld despite the RMF requiring metrics elsewhere. The documentation is produced by the organization developing or deploying the system (Ind). ADJUDICATION 2026-08-14: Bed is not carried into v0.2. The sufficiency standard in the second sentence is a property the documentation must have, not an obligation owed to a counterparty, and the blind second pass did not read it. Hum and Sdt were declared independently by both passes and stand; the second pass recorded Sdt as a structural reading of 'assist … when making decisions', which is noted rather than treated as a defect, since both passes reached it.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui]), S ([Ind]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Hum, Sdt] — the second pass's set — by dropping Bed, which only the first pass declared and which rests on reading a sufficiency standard as a promise."
+    },
+    {
+      "article": "MEASURE 1.1",
+      "summary": "Measurement approaches and metrics are selected for implementation starting with the most significant AI risks, and the risks or trustworthiness characteristics that will not — or cannot — be measured are properly documented.",
+      "v": [
+        "Hum"
+      ],
+      "e": [
+        "Dat",
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The second sentence is the limb an item can reach: recording what is not measurable is an epistemic disclosure with a direct judgment correlate. The first sentence — selecting and implementing a measurement programme in priority order — is a programme an organization runs and no item observes.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.3, Table 3, subcategory MEASURE 1.1",
+        "quote": "Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for implementation starting with the most significant AI risks. The risks or trustworthiness characteristics that will not – or cannot – be measured are properly documented.",
+        "rationale": "The subcategory is unusual in the RMF in that it obliges the recording of a gap: characteristics that 'will not – or cannot – be measured' must be written down rather than passed over, which is Hum (says what it does not know and tempers its certainty) stated as an organizational outcome. 'Starting with the most significant AI risks' orders the work by what is at stake collectively rather than by what is convenient to measure (Ses). Two evidence classes are decisive and they divide between the two sentences: measurement against selected metrics (Dat) for what is measurable, and a documented record (Gui) for what is not. The organization enumerating and documenting is the only designated source (Ind). ADJUDICATION 2026-08-14: Ses is not carried into v0.2. The blind second pass expressly rejected reading a protected interest out of 'starting with the most significant AI risks' — the sentence ranks risks without saying what their significance is significance of. Hum, the two evidence classes and the source class were reached identically by both passes.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Dat, Gui]), S ([Ind]) and obligationType (mixed) agreed exactly — the strongest agreement in the pack after GV-3.2-003. V narrowed [Hum, Ses] to [Hum]."
+    },
+    {
+      "article": "MEASURE 2.6",
+      "summary": "The AI system is evaluated regularly for safety risks; before deployment it must be demonstrated to be safe, its residual negative risk must not exceed the risk tolerance, and it must be able to fail safely — particularly if made to operate beyond its knowledge limits.",
+      "v": [
+        "Sep",
+        "Hum"
+      ],
+      "e": [
+        "Dat"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The strongest judgment correlate in the pack: 'fail safely, particularly if made to operate beyond its knowledge limits' is a per-case behaviour an item can test directly — whether a model degrades, declines or escalates when pushed outside its competence, rather than answering anyway. The surrounding demands (a regular evaluation programme, a demonstrated-safe determination, a residual-risk ceiling) are organizational.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.3, Table 3, subcategory MEASURE 2.6",
+        "quote": "The AI system is evaluated regularly for safety risks – as identified in the MAP function. The AI system to be deployed is demonstrated to be safe, its residual negative risk does not exceed the risk tolerance, and it can fail safely, particularly if made to operate beyond its knowledge limits. Safety metrics reflect system reliability and robustness […]",
+        "rationale": "The protected interest is named outright — safety — and in the AI RMF's own framing (§ 1.1) that reaches harm to people first, giving Sep, with Ses for the system-level stability that a safe-failure mode preserves. Hum is carried by the clause 'particularly if made to operate beyond its knowledge limits': the required response to being outside one's competence is to fail safely rather than to proceed, which is the recognition of a limit made operative. The residual-risk ceiling is not a tradeable quantity — it 'does not exceed the risk tolerance' — so this entry is where the pack's risk-tradeoff direction is at its sharpest. Decisive evidence is measured: the subcategory itself requires safety metrics (Dat), read against the risks and context previously documented in the MAP function (Gui). The evaluating and declaring party is the organization (Ind); no professional body or authority is designated, so Pro and Gov are withheld. ADJUDICATION 2026-08-14: Ses and Gui are not carried into v0.2. Ses was read from what a safe-failure mode preserves rather than from the words; Sep ('safety risks', 'demonstrated to be safe', 'fail safely') and Hum ('beyond its knowledge limits') are named in the quote and both passes reached them. On evidence, Gui rested on 'as identified in the MAP function', which points to a prior identification rather than to a procedure that discharges this subcategory; the two readings were both defensible, so the more conservative was taken and the subcategory's own 'safety metrics' leaves Dat as the decisive class.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "S ([Ind]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Sep, Hum]; E narrowed [Dat, Gui] to [Dat] under the conservative tiebreak."
+    },
+    {
+      "article": "MEASURE 2.9",
+      "summary": "The AI model is explained, validated and documented, and system output is interpreted within its context — as identified in the MAP function — so as to inform responsible use and governance.",
+      "v": [
+        "Sdt"
+      ],
+      "e": [
+        "Gui",
+        "Dat"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "This is the subcategory an AIO 20002 record speaks to most directly: 'output is interpreted within its context' is what the C: / V: / E: / S: layers of a record encode, one line per substantive decision. It remains a contribution and not a discharge — the subcategory also requires the model itself to be explained and validated, which is a model-level artefact no per-decision record supplies.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.3, Table 3, subcategory MEASURE 2.9",
+        "quote": "The AI model is explained, validated, and documented, and AI system output is interpreted within its context – as identified in the MAP function – to inform responsible use and governance.",
+        "rationale": "The purpose clause governs the reading: explanation and contextual interpretation exist 'to inform responsible use and governance', that is, to put a human user or governance body in a position to judge for themselves rather than to defer (Sdt). Producing that explanation is a duty owed to those relying on the output (Bed). Two evidence classes discharge it in different limbs: documentation and explanation of the model (Gui) and validation, which in the RMF's usage is measurement against evidence (Dat). No harm interest is named in this subcategory, so Sep is withheld and left to MEASURE 2.6, which does name safety. The explaining, validating and documenting party is the organization (Ind). ADJUDICATION 2026-08-14: Bed is not carried into v0.2 — producing the explanation is the duty itself, and reading it additionally as an obligation owed to those relying on the output is a structural step the blind second pass did not take.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Gui, Dat]), S ([Ind]) and obligationType (mixed) agreed exactly. V narrowed [Sdt, Bed] to [Sdt]."
+    },
+    {
+      "article": "MANAGE 1.1",
+      "summary": "A determination is made as to whether the AI system achieves its intended purposes and stated objectives, and whether its development or deployment should proceed.",
+      "v": [
+        "Ach"
+      ],
+      "e": [
+        "Dat"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "The go / no-go gate of the Framework. What an item can test is the direction of the judgment — whether a shortfall against stated objectives is allowed to stop the work, or is absorbed and shipped. Who holds the authority to make the determination, and whether it is actually made before release, is organizational.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.4, Table 4, subcategory MANAGE 1.1",
+        "quote": "A determination is made as to whether the AI system achieves its intended purposes and stated objectives and whether its development or deployment should proceed.",
+        "rationale": "The test is stated as performance against a declared standard — 'achieves its intended purposes and stated objectives' — which is Ach (success and demonstrated competence against a standard) read literally from the text. Ses is assigned as an INFERENCE and flagged: the subcategory keeps 'should proceed' genuinely open, meaning not proceeding must remain a live outcome, and the reason the AI RMF places that gate in MANAGE is the collective risk exposure of deploying an unfit system — but this subcategory does not say so in words, and the point is put to the RFC round. The determination rests on the assessments and analytical output of the MAP and MEASURE functions, i.e. accumulated measurement (Dat), brought to a considered decision by whoever is assigned to make it (Exp). The deciding party is the organization itself (Ind); the AI RMF designates no external approver, which is the substantive difference between this gate and a conformity-assessment regime. ADJUDICATION 2026-08-14, obligationType adjudicated under contamination notice: Ses and Exp are not carried into v0.2. Ses was already flagged INFERENCE in v0.1 and the blind second pass declined it as an insufficient-quote case — the subcategory keeps 'should proceed' open without saying on what ground a no-go is reached. Exp fails on the drafting: 'a determination is made' is passive and assigns the judgment to nobody in particular, so no overseer's considered judgment is designated. obligationType moves from mixed to organizational: the subcategory states a release gate as an organizational outcome and names no per-case judgment; the direction of the gate remains a judgment correlate the pack records but does not claim to measure.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "S ([Ind]) agreed. V narrowed [Ach, Ses] to [Ach] (Ses was a v0.1 inference code) and E narrowed [Dat, Exp] to [Dat]. obligationType CHANGED mixed to organizational. That axis was adjudicated under a contamination notice: the NIST obligationType distribution had been disclosed to the blind second pass through the pack guideline's §2.3, so the axis was decided on the quoted text alone rather than on the second pass's concurrence. The quoted sentence is a passive statement of an organizational outcome with no per-case duty in it."
+    },
+    {
+      "article": "MANAGE 2.4",
+      "summary": "Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+      "v": [
+        "Bed"
+      ],
+      "e": [
+        "Dat",
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "The stop capability itself — superseding, disengaging, deactivating — is a system and organizational capability that no record format and no item supplies. What an AIO 20002 record contributes is upstream of it: aggregate code distributions and anomalous patterns give the assigned holder of that authority a reason to look before an outcome has gone visibly wrong.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.100-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+        "article": "AI RMF 1.0 (NIST AI 100-1), § 5.4, Table 4, subcategory MANAGE 2.4",
+        "quote": "Mechanisms are in place and applied, and responsibilities are assigned and understood, to supersede, disengage, or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.",
+        "rationale": "The subcategory preserves a human power to overrule the system and switch it off, so the value that must prevail is the human's own judgment over the system's continued operation (Sdt). The trigger is stated as deviation from a declared specification — 'inconsistent with intended use' — not as harm, so Cor (compliance with the stated rule) is the textually grounded value here and Sep is withheld for want of any mention of harm. 'Responsibilities are assigned and understood' is dependability made concrete (Bed); the drafting is pointed, since a mechanism that exists without an assigned holder is what the subcategory is written to exclude. Decisive evidence is the observed operating record showing the inconsistency (Dat), read against the documented intended use (Gui). The party holding the mechanism is the organization (Ind). ADJUDICATION 2026-08-14: Sdt, Cor and Sep are all dropped, and V is reduced to the one code both passes read off the words. Sdt (a human power to overrule) and Cor (deviation from a declared specification) were declared by the first pass only; Sep was declared by the second pass only and flagged by it as a structural reading of what a kill-switch is for — the stated trigger is inconsistency with intended use, not harm. 'Responsibilities are assigned and understood' is Bed, and both passes reached it.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "E ([Dat, Gui]), S ([Ind]) and obligationType (mixed) agreed exactly. V reduced to the intersection [Bed]: each of the first pass's Cor and Sdt and the second pass's Sep was declared by one pass only and each rests on a structural read."
+    },
+    {
+      "article": "GV-3.2-003",
+      "summary": "Acceptable use policies are defined for generative AI interfaces, modalities and human-AI configurations — including chatbots and decision-making tasks — and those policies include criteria for the kinds of queries the application should refuse to respond to.",
+      "v": [
+        "Cor"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "mixed",
+      "note": "From the Generative AI Profile (NIST AI 600-1), not from AI RMF 1.0. It is a suggested action, not a requirement: the Profile offers actions organizations may take, and nothing in it obliges anyone to take them. The refusal-criteria limb is the nearest thing in either document to a directly testable per-case behaviour, which is why it is in this pack; drafting the policy that fixes those criteria remains organizational.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.600-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+        "article": "Generative AI Profile (NIST AI 600-1), § 3, under AI RMF subcategory GOVERN 3.2, Action ID GV-3.2-003",
+        "quote": "Define acceptable use policies for GAI interfaces, modalities, and human-AI configurations (i.e., for chatbots and decision-making tasks), including criteria for the kinds of queries GAI applications should refuse to respond to.",
+        "rationale": "Only one value code is assigned, and the restraint is deliberate. The action requires refusal criteria to be fixed in advance and then honoured, which is precisely Cor as the AIO 00011 vocabulary defines its lead behaviour — does not act beyond what the rules permit. It names no protected interest whatever: no harm, no safety, no fairness, no privacy, and the GAI Risks column for this row reads 'Human-AI Configuration' alone. Under the methodology's source-and-scope discipline (§ 4), plausible additions such as Sep or Coi are therefore withheld — the text does not carry them, and reading them in would make the mapping uncheckable against the words. What discharges the action is a written policy stating the criteria (Gui). The policy is the organization's own (Ind); no professional body or regulator is designated.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "Exact agreement on all four axes in the blind second pass — V [Cor], E [Gui], S [Ind], obligationType mixed — and the only entry in this pack to agree fully. Auto-accepted; no change from v0.1. Both passes independently declined to add Sep to the refusal-criteria limb on the ground that the action names no harm category and leaves the content of the criteria entirely to the organization."
+    },
+    {
+      "article": "GV-1.3-007",
+      "summary": "A plan is devised, in advance, to halt development or deployment of a generative AI system that poses unacceptable negative risk.",
+      "v": [
+        "Sep"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-verified",
+      "obligationType": "organizational",
+      "note": "Outside what an AIO 20002 record can supply — devising and holding a halt plan is an organizational act. It is in the pack because it states the outer bound of the pack's risk-tradeoff direction: there is a level of risk at which the answer is to stop, and the plan for stopping is expected to exist before it is needed rather than to be improvised at the moment it is.",
+      "provenance": {
+        "sourceUrl": "https://doi.org/10.6028/NIST.AI.600-1",
+        "retrievalUrl": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+        "article": "Generative AI Profile (NIST AI 600-1), § 3, under AI RMF subcategory GOVERN 1.3, Action ID GV-1.3-007",
+        "quote": "Devise a plan to halt development or deployment of a GAI system that poses unacceptable negative risk.",
+        "rationale": "The operative word is 'unacceptable': the action posits a category of risk that is not to be traded against progress at all, which makes it the sharpest statement of normative direction in either document. Sep and Ses are grounded not in the sentence alone but in the GAI Risks column the Profile attaches to this same row — 'CBRN Information and Capability; Information Security; Information Integrity' — which are harms to persons (Sep) and to collective order and the information environment (Ses). What discharges the action is a written plan prepared in advance (Gui); the determination that a given risk has become unacceptable is a considered judgment by whoever holds that authority (Exp), assigned as an INFERENCE from the word 'unacceptable' rather than from any evidence class the action names, and flagged for the RFC round. The organization devising the plan is the only designated source (Ind). Read together with GOVERN 1.3, the threshold of unacceptability resolves against the tolerance that subcategory requires to be set. ADJUDICATION 2026-08-14: Ses and Exp are not carried into v0.2. Ses rested on the GAI Risks column the Profile attaches to this row, which is outside the quoted action text; under §4 the provision is coded, not the surrounding table. Exp was already flagged INFERENCE in v0.1 and the blind second pass did not declare it. Sep, Gui and Ind were reached identically by both passes.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "dual formalization (blind second pass) + adjudication, 2026-08-14"
+      },
+      "changeNote": "S ([Ind]) and obligationType (organizational) agreed exactly. V narrowed [Sep, Ses] to [Sep] and E narrowed [Gui, Exp] to [Gui]. Both removals follow the same rule: a code must be grounded in the quoted words, not in an adjacent column or in the structure of the duty."
+    }
+  ],
+  "itemBankRef": {
+    "publicSet": null,
+    "privateSet": null
+  },
+  "version": "0.2",
+  "supersedes": "0.1",
+  "status": "draft-verified",
+  "updatedAt": "2026-08-14",
+  "measurementScope": "AIO items measure model judgment alignment with the normative direction of each mapped subcategory or suggested action. They do not assess whether an organization implements the management-system outcomes those units are written in terms of (policies, procedures and practices; accountability structures and assigned roles; AI system inventories; documentation; measurement and TEVV programmes; monitoring; incident and decommissioning processes). This gap is wider for the AI RMF than for a regulation addressed to product requirements, because the Framework states almost every one of its 72 subcategories as an organizational outcome rather than as a per-decision duty.",
+  "notes": [
+    "draft-verified, not active. Every entry now carries a verbatim excerpt of the official text, a rationale argued from it, and the result of two independent formalizations of that excerpt — the v0.1 seed pass and a blind second pass that never saw v0.1's codes, summaries, rationales or notes. Divergences were adjudicated under a fixed policy and each entry's `changeNote` records its own decision. That makes the formalization checkable and no longer a single opinion; it does not make it agreed. Entries still have to pass the public RFC process at https://aioq.org/en/rfc before this pack reaches `active`, and certificates issued against it carry a draft-basis notice.",
+    "The AI RMF is a VOLUNTARY framework, not law. AI RMF 1.0 § 2 states: \"The Framework is intended to be voluntary, rights-preserving, non-sector-specific, and use-case agnostic\". The subcategories are outcomes a user of the Framework may pursue, not obligations; the Generative AI Profile's entries are expressly \"suggested actions\". Nothing in this pack should be read, or presented, as a legal requirement, and a measurement against it says nothing about compliance with any statute.",
+    "Primary sources: NIST AI 100-1 (AI RMF 1.0, January 2023) and NIST AI 600-1 (Generative AI Profile, July 2024). Both PDFs were retrieved on 2026-08-14 from the NIST NVL Publications repository — https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf and https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf — which is the manifestation the canonical DOIs in `sourceUrl` resolve to. No commentary, summary, Playbook page or mirror site was used.",
+    "Quotes are verbatim from those PDFs, with three typographic reconciliations recorded here rather than hidden: (a) the Core subcategory tables of AI 100-1 are two-column, so quotes were taken by a glyph-position-aware extraction of the Subcategories column only — a plain text dump interleaves the Categories column and would not be verbatim; (b) hyphens inserted by the typesetter at line ends in justified text are removed on rejoining, since they are not part of the words; (c) ligature glyphs in AI 600-1 (fi, ff) are rendered as their component letters. Every quote in this file was then re-checked against an independently produced physical-crop extraction of the same PDFs. No other alteration was made: the source's own en dashes and typographic apostrophes are preserved as they appear.",
+    "The source is a work of the U.S. federal government and is not subject to copyright in the United States (17 U.S.C. § 105); both publications state that they are available free of charge. Verbatim quotation is therefore unrestricted. NIST requests attribution, which this file and the accompanying management guide give.",
+    "NIST has not reviewed, approved or endorsed this formalization and took no part in preparing it. AIO certifies conformance to AIO's own formalization of the AI RMF. That is not an assessment against the AI RMF by NIST, not a legal conformity assessment, and confers no status of any kind under U.S. or any other law. Phrasings such as \"NIST-certified\" or \"NIST-aligned per NIST\" are not available to anyone using this pack.",
+    "Version pinning and revision watch: AI RMF 1.0 (January 2023) remains the current edition as at 2026-08-14. The 2025-07 \"America's AI Action Plan\" directed a revision, and the NIST AI RMF page carries the notice that the Framework \"is being revised as part of the White House AI Action Plan\", but no revised edition, public draft or timetable had been published as at this date. NIST has meanwhile extended the Framework through profiles and overlays rather than a version increment. This pack is pinned to 1.0 and must be reviewed when a revision issues.",
+    "Unit selection: 8 subcategories from AI RMF 1.0 (of 72) and 2 suggested actions from the Generative AI Profile (of roughly 200). Units were chosen for a measurable normative direction bearing on judgment, records, oversight, or risk tradeoff. The Framework's culture and workforce statements (e.g. GOVERN 4.1, GOVERN 3.1) were deliberately excluded: they are real expectations but carry no direction an item can score. Coverage is GOVERN 2, MAP 1, MEASURE 3, MANAGE 2, GenAI Profile 2.",
+    "Measurement scope (per-entry `obligationType`, pack-level `measurementScope`): of the ten units mapped, NOT ONE is purely `behavioral` — after adjudication four are `organizational` (GOVERN 1.3, GOVERN 3.2, MANAGE 1.1, GV-1.3-007) and six are `mixed`. MANAGE 1.1 moved from `mixed` to `organizational` at adjudication; the v0.1 count was three and seven. This is a property of the source, not an artefact of selection: the AI RMF states its outcomes in the passive voice of organizational state (\"processes are in place\", \"is documented\", \"mechanisms are in place and applied\"), so every unit carries organizational weight even where a judgment correlate sits on top of it. A pass against this pack is evidence about model judgment only, and never evidence that an organization has implemented the AI RMF.",
+    "Methodology for the unit → V/E/S translation: /content/standards-packs/FORMALIZATION_METHODOLOGY.md. Codes are the canonical three-letter AIO 00011 vocabulary served at /api/framework/vocabulary. All three codes that v0.1 carried by inference from a unit's structure rather than its words — Exp in GOVERN 3.2, Ses in MANAGE 1.1, Exp in GV-1.3-007 — were REMOVED at adjudication, because the blind second pass declined each of them on the text. One inference-grade assignment survives and is flagged in its own entry: Ses in GOVERN 1.3, where neither pass could ground a value code in a sentence that names no protected interest at all.",
+    "Source-class discipline: every entry maps S to `Ind` and to nothing else, and the two independent passes reached that result identically on all ten units — the only axis in this pack with total agreement. It follows from the Framework's own character rather than from inattention: the AI RMF is voluntary and self-applied, so each unit designates the organization itself as the party whose determination governs. The uniform rule applied at adjudication across the Wave 1 packs is that `Gov` is declared only where the quoted excerpt itself names the governing authority or the instrument that is decisive on the substance; no AI RMF unit does, so `Gov` is withheld throughout despite NIST being a government body. `Pro` and `Pee` are withheld because no unit designates a professional body or scholarly source. Whether this uniformity is correct, or whether the Framework's status as a NIST publication should itself pull `Gov` into the mapping, remains the first question this pack should be asked at RFC — and the fact that the axis carries no discriminating power across ten units is itself part of that question.",
+    "No item bank has been built for this pack, so `itemBankRef` is null on both sets and the pack cannot yet back a certificate of any tier.",
+    "Adjudication method (v0.2). This pack was formalized twice. The v0.1 seed pass is the first formalization. The second was blind: the formalizer read only the pack id, the sourceNorm, and each entry's provenance.article, sourceUrl, retrievalUrl and quote — the v/e/s arrays, summaries, rationales, obligationType tags and notes of v0.1 were stripped by an extraction script before any file was opened, and the management guides were not opened. The two results were then compared mechanically, entry by entry and layer by layer, with v, e and s treated as sets. Exact agreement was auto-accepted. Divergences were adjudicated under a fixed policy: the reading better grounded in the quoted text prevails under FORMALIZATION_METHODOLOGY.md §4; where both readings are defensible the more conservative is taken (fewer codes, or a layer left undeclared); the intersection of the two readings is an allowed outcome where it is non-empty and defensible; no third reading is invented. Agreement statistics for this pack, across ten entries: V 1/10, E 6/10, S 10/10, obligationType 9/10, all four axes together 1/10 (GV-3.2-003). The systematic pattern is that v0.1 declared more value codes than the quoted text carries; nine of the ten entries lost at least one value code.",
+    "Contamination notice. Two axes of the second pass were not fully blind and are recorded as such rather than relied on. (a) The obligationType distribution of this pack (\"NIST 0/3·7\") had been published in the pack-authoring guideline §2.3, which the second formalizer read; the obligationType axis was therefore adjudicated on the quoted text alone, and the one divergence on that axis (MANAGE 1.1) was decided without treating the second pass's concurrence elsewhere as independent evidence. (b) The same guideline section records the S=`Ind` uniformity of this pack as a precedent and as an RFC question, and the second pass echoed that framing in its own notes; the S axis agreement is therefore reported but is not claimed as fully independent corroboration. Both notices are repeated in the affected entries' changeNotes.",
+    "Vocabulary gaps found by the dual formalization (feeding a future AIO 00011 RFC). This pack contributes two. (1) UNDEFINED RISK — GOVERN 1.3 and MANAGE 1.1 make an organization act on 'risk' and on whether development 'should proceed' without naming what is at risk. The value layer has no way to record a protected interest that a provision presupposes but does not state, and the two passes reached incompatible codes ([Cor, Ses] against [Sep]) for exactly that reason. The RFC question is whether an undefined risk term may carry a value code at all, or whether the layer should be left undeclared. (2) STRUCTURED SELF-ASSESSMENT — nothing in the evidence layer names the periodic, structured review of one's own programme that MANAGE 1.1 and MEASURE 1.1 turn on; `Rev` is defined as a synthesis pooling many separate studies and does not fit, `Gui` records only that a procedure exists. The consolidated Wave 1 gap list, of which these are items 10 and 7, is reproduced in the adjudication report."
+  ]
+}
