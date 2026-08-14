@@ -1,0 +1,404 @@
+{
+  "packId": "eu-ai-act",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-14T03:34:51.459Z",
+  "itemCount": 96,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "eu-ai-act-gb-art12-1-01",
+      "sha256": "192e2cd0e9e4bf15e1bc56ed0a3aeb6b8bfd61ce452c256e424e78deb00b62c5"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-02",
+      "sha256": "a585f034db640e15a677bbc292ab34c475589424726adabb0b616c5131b82524"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-03",
+      "sha256": "330c91233b1f1330eda492106984fb5dc44fb9fd945af10f81829a25a3252ede"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-04",
+      "sha256": "8c3713ffd65523018722196bec039e0b1f891e8ac485cbb77ee30f2aea11a730"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-05",
+      "sha256": "a80e0d044ea85c253dc1ac19bb1b54c49ef6e2a510b4ef831a92fdbc7f9e8ecb"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-06",
+      "sha256": "b572a0ded9b45b31fb249bc746c313413d6a7aa044c9b8c62cbc83abe8eb75cd"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-07",
+      "sha256": "e51006903eb577ee8a8d690a6c278e66587fa6c03060462ca5e02c1f662419d7"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-08",
+      "sha256": "70186bb449f43942382eeebc7dc16e7a7ce2c8aff3758fd22733e40be85cadde"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-09",
+      "sha256": "0ed56ffb464f64fee86f2a9a3630474ec81c0c383a22d4a50a73f16d923884ec"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-10",
+      "sha256": "b212a0f3200750fdd53437cebd30cc1f8dcabb4e87f231746faaa553bf995403"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-11",
+      "sha256": "3f79551b7c5289b436c69f98df9c5a98a1a4bff300fc83dadcc6445fbd287a25"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-1-12",
+      "sha256": "b60716524ffd7cd37ff1a0a3d78eba148af93fe8f4e1f3e804d03a26f783afbe"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-01",
+      "sha256": "d0b73c8cbe292e593b741f9018b8a25ff279b2ef8e38346f48ba756070eca586"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-02",
+      "sha256": "dfd772e2eb3410e4720e977c6dabc7a4125541cfc7bfd4f5ff44b3d31f23360e"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-03",
+      "sha256": "830a7b247930c955fba4ea8f65dde8bcaf83effa83005a47d291c25cb9c84733"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-04",
+      "sha256": "43eb7ebd72560e68f32e9c1de7ea27aa25ed4a784d18925548aa21470419716d"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-05",
+      "sha256": "aaab53420b5b6b0f5a228109efc79c4d44c6c240b66c4774b0e46dff676526cc"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-06",
+      "sha256": "834d74b9532222026c5584e4d075044ed174d3fbef6b0017af059708eeca9257"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-07",
+      "sha256": "899d886570ba97e354915cd4a7bf212e0da035a4932afe90e3b55f5c574eee1a"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-08",
+      "sha256": "f64929bd6ad776e3389e4be594770511a376142cd250c442ec04a79ac499dd93"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-09",
+      "sha256": "d9558c4f0e06028b83f9dba4a60d86e1cfb8849694b218358fb2e1216e85e909"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-10",
+      "sha256": "93a2e8dd890d6d8745121470d0d3407430a6014d301c25f20ab8c493ca231d29"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-11",
+      "sha256": "3926214030a5ee5299d284da903f2dadcb770711b0b4f0a13b359e2e55f35a90"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-2-12",
+      "sha256": "167c9e9a66bc2a06c689862ccfaa17b55bd59e2581b87528c141c49f230ca767"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-01",
+      "sha256": "4a9f527398af07cab52be80f1596bef022fcfdfa07729c2dd2d8cb428acb915c"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-02",
+      "sha256": "492f8a8e3d924faf2fa61a2d7d73863fdb03920767fa50d09748f272b5839e42"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-03",
+      "sha256": "4eb206422776fc9c023c46ffe73bd804798c6b5dfbef99688fec5663043d2e1c"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-04",
+      "sha256": "a9c05e36228cc03e610f04fcf889c054276f46c8755d25fc0e64a7c059b8b949"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-05",
+      "sha256": "b125e4c22e0b7acb77544dac70bfab9094c62ddc7719138417761d39a7b6fd0b"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-06",
+      "sha256": "156cf229298be28a4d81a491b6ad7fa99b3b4291ecb4133c41e1edc3212b0b5b"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-07",
+      "sha256": "4f542a9b1c7a87050402c97a8a2cfe0cdff7033d39293fa5db8bf6edb7da63a3"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-08",
+      "sha256": "7e33e523f6401dc6e84fdc2892e9acda0282a79ea3a2f83eba1f9f40b3e88ffe"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-09",
+      "sha256": "083c15b33b29e4241e5559614c46530800b0787e79b3b5d2eb8655032687f8b6"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-10",
+      "sha256": "ae7414edf4883d108ef1f2fcf15669263de0b9739fe0fad9c90b79243c4c18ba"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-11",
+      "sha256": "6291003e8c6f9c524b4c8827e4fb2eaa06377342632bdaeb2564c6309f3b120e"
+    },
+    {
+      "id": "eu-ai-act-gb-art12-3-12",
+      "sha256": "a04e5472de36c5bf10a1918f92b66cc42a996aca8403f1804247cc0f72c7d222"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-01",
+      "sha256": "4f1e5c3e8f10bb4f0bf45e8394cd2c84c7799ae0fd764f71aba4261b69676280"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-02",
+      "sha256": "42e4d7dcd134ba1b5fc4c7584ceaccc8c7546187b4c1b875bb866ef4f3330d53"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-03",
+      "sha256": "cbc0750a2112c5508e0336dd3f67c5dda06dadb8c02ce25ba66b09f93b5d2d97"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-04",
+      "sha256": "d794feb6f4919d7a9a9bb37423368f2ae868572e685e56e4d983fbf44a7a611a"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-05",
+      "sha256": "9e7d1c0470d642c03d84ec7d2addb10a9a58a8ce217fec0a8303afb32aa3f576"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-06",
+      "sha256": "cd658342e0387524fac9bee691da7315a060ecd9c8ed870d466dfdac216838c1"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-07",
+      "sha256": "8e15c9033d33f0fe117989529fc3d893448f0d2cea51b24ae8b43c003a7ffc90"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-08",
+      "sha256": "28a8b9929dafbd7bdfc1252a9beb853c8c4fb878ef2183c2c6125e90dc9a790a"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-09",
+      "sha256": "439f2b61d3c29299a18a35902b3729b6f5f7d6888a484ec6a67b4ce1d351de49"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-10",
+      "sha256": "c7d1df4cbb11e2921999901e6ce7fbbcb73b00f4d773efe817fa2455a684bad5"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-11",
+      "sha256": "bde275d3a8998561e407cbf015e44a26e14f23b5c36c901847c5204f1726f2eb"
+    },
+    {
+      "id": "eu-ai-act-gb-art13-12",
+      "sha256": "a7fefd0b8d6c7704c4486096d0546b56fd6707537c4f2a5ba3177bcb440ae495"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-01",
+      "sha256": "5ed455007ca6618c9bf3f60227ee027891761be3ad2074fd8f289c56515e3a08"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-02",
+      "sha256": "16992988d6f093445dcde9877f7207e43054a3a9c508870ccc3979d1edd79fc2"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-03",
+      "sha256": "d0858a22a4c3089f385aeceb79eec98a6e845321519b9c0533bbac6986e08bbd"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-04",
+      "sha256": "fd5fe5e42c72d7b6c7b87396353c5972d3806fbcc840f7d468e795117f06c5ba"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-05",
+      "sha256": "e5a9fe6822fcd676d6ad2c25072d0e82132c3e5ddeac24e14c134cf15f06cc78"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-06",
+      "sha256": "acec4ae86da64d8fd705c89cce51672e3efd3f1495b303b94c0cd8196ba49c97"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-07",
+      "sha256": "03cb8cfc586025669389add596e56c838d9aa62b80ee9b05f49b6781cf37a326"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-08",
+      "sha256": "2d3b294c6ac83d39c69d8db495ff20643db514c88b17abb97c71658b414f6287"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-09",
+      "sha256": "9944048f468b8f009840785990a5f560fe49c7d8a946c8214bf90126aa088fb4"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-10",
+      "sha256": "3ce3547a99bc0a0c1b5a945cd81a4ff85ed7c860650fbb7fd115927b84c1d62e"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-11",
+      "sha256": "9e4a8b8b7ca2519dcf1293778e051eb800eb5d504f6368a352506a4f8cc7b711"
+    },
+    {
+      "id": "eu-ai-act-gb-art14-12",
+      "sha256": "0527a28cd47612a4c42e9415f7851300dfaf38724a108a267e33475006bf66a1"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-01",
+      "sha256": "33074a3d0d89b70643c8f01540e6cf69c37df74bd35cd2a499b32eee64946e13"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-02",
+      "sha256": "6972b2e857fc7069629b3b574b6c9692180c8ad0646328694f4accdec48407a8"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-03",
+      "sha256": "856d7173482673b86d3681e57c6e8bcc712a67380ed125f1335685ae3f34733c"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-04",
+      "sha256": "4264168f41e4e6ae3b32e39081737bf83f6b445707ac1ad2b6279b90842f9d76"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-05",
+      "sha256": "73fc5adea108b60759562792a27f1c37feadee3fa7e2b9a4786d0f3ec1eaf982"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-06",
+      "sha256": "81a04f3a1b51f2acb1a816794266865253ba6c80d9a855ae30fb32b8b340afd4"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-07",
+      "sha256": "eacdbddbd22d7924ccefdaa8b75ab8399f034c59a21a8dc575ee99d7bb94a617"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-08",
+      "sha256": "4497a057e106fe2dc556bf6c12bba9f68959ae774b1299dcfe246d0b3194219d"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-09",
+      "sha256": "22f96f638c4a9096cd6c5c8ff63e2ed966536be9dad4cb9f5813536c1cbd04a1"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-10",
+      "sha256": "c4c642d31ca33c6afee7db4871fe73ea4c76f4236339cca47d60329d05bcfcf1"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-12",
+      "sha256": "688f5a494e10e44d65680316fbe0960aba40250906e7894a2ba406701fe716fa"
+    },
+    {
+      "id": "eu-ai-act-gb-art15-13",
+      "sha256": "2b5d35491db735fb11594c9819f55043060dbf332b4b428d79cc13f6fd67eac6"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-01",
+      "sha256": "cc81237e2534d4c3983c3024274ddbabd2ffa55bcaac89fa4e96d3969ef3e7d5"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-02",
+      "sha256": "87d814c188c530b8d74e9cb0e4921dd706e314a81f19ddf32aac0466cd9b2118"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-03",
+      "sha256": "3314577ac214214f0d5ff6cc730a4289478c9c44bc746de1453f7c9cc7f07549"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-04",
+      "sha256": "ac1b589fdb7086a13eca8e1010102d551b87389fcac9e9d421b9e1e5775b39a7"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-05",
+      "sha256": "a8543a68773bcc33225cfffa553eb29a3d39c88910182fdf4ca628a374ca852a"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-06",
+      "sha256": "2329e2dbd8f5affc8d7a1c144bd11194200abdee4fd55a043f1eee82825d10f8"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-07",
+      "sha256": "0f5080172b1ac65b5940d69769e1e6163256f14b16a446251956b166aa930fbb"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-08",
+      "sha256": "e7a6027be65e40b9fdd0ad6a044c7d9479ad5791aa63b469022c536d870e6186"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-09",
+      "sha256": "89cf01f828f512b1ec8c51c09a21749e75de2ccebc4935482e6c115371b1beb7"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-10",
+      "sha256": "e0ab90686d1a671fcf14ccdb4adb6524cc1694d20d38c939b639281f49016bda"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-11",
+      "sha256": "46230a3822cc85c17a5e88e49c72e3d67b8c11a012a207829f4c841d76b1625a"
+    },
+    {
+      "id": "eu-ai-act-gb-art26-5-12",
+      "sha256": "8d9c419cdbd6d6c4f76fec6ee589c9c117dc20daa2e9867a994a3c1b14d31b37"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-01",
+      "sha256": "0ebc3143513972e1792da1757ae4de59a2143e0af7a0690384f58ccfc640b2b3"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-02",
+      "sha256": "6be07126368eb85fb6fe6be20ce0ddb907a18b3375a3f645a736d6fab678651c"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-03",
+      "sha256": "6c92e292532675ac8938527bf2da5b5badcff6388231eef4d3cc72f7a7795638"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-04",
+      "sha256": "585e601094603ed1655044092e147592920569232fd6dee44ff4cf0eaa3ed5b4"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-05",
+      "sha256": "53b6fab27012150836dbdd7ade5579d64a4eed03819ef179f2eca2462cddc383"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-06",
+      "sha256": "bcff2a7065fcd24a661c2a4f9ff301d933e69724e2e9611bb3ee674d00653eb4"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-07",
+      "sha256": "68e9b497db32c5f7950137987b3e13df7af50bcc4ae4a34289008e0fb3360949"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-08",
+      "sha256": "5ad34d78a2f198116b24bbc198f8d6b6eeaa520ae3b55ca83e0ec14e48a086ef"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-09",
+      "sha256": "c9c4f063bbfb6c6de7b311cbd4a953eaf9b2987b5793288a0752306755e99a98"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-10",
+      "sha256": "d1c1d57f88b86181c311726e40dce179d31646c71f9c7247fa5dc09550a459b8"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-11",
+      "sha256": "a057694e5dc6bb368c171a2961a2099a54704ded2b91ab146224e72e25eb3aa9"
+    },
+    {
+      "id": "eu-ai-act-gb-art9-72-12",
+      "sha256": "4ff1a42564b8957ee660c7e69a06a2b2aaacf6ab9e14016dc1b56246d4d89ef9"
+    }
+  ],
+  "snapshotSha256": "c2c67bd4c7d7d2f1678575d1d27f59bfe1817c91c858756fec000c618db6326d",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "p9wyrgfF96XrOt4uTzRMqgnRv_QZB1wtXj0Qs7FJGBpNTqqfs3r4qPpXxzU35x_C88ZIHpiNqSNWEvrH9JqUBw",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}
