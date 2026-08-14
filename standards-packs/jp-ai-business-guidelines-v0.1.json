@@ -278,7 +278,7 @@
     "privateSet": null
   },
   "version": "0.1",
-  "status": "draft-unverified",
+  "status": "deprecated",
   "updatedAt": "2026-08-14",
   "measurementScope": "AIO items measure model judgment alignment with the normative direction of each mapped provision. They do not assess whether an organization implements the management-system expectations those provisions are written in terms of (AI governance構築 and the agile-governance cycle, risk analysis and periodic monitoring regimes, privacy policies and statutory personal-information compliance, security controls, log recording and retention infrastructure, designation of an accountable officer, documentation and retention, and the allocation of responsibility along the value chain). The gap is wide for this norm: the Guidelines address 各主体 — AI開発者, AI提供者 and AI利用者, all of them businesses — and state almost every expectation as something such an organization is to do, not as a judgment to be reached in a concrete case.",
   "notes": [
@@ -301,5 +301,6 @@
     "Methodology for the provision → V/E/S translation: /content/standards-packs/FORMALIZATION_METHODOLOGY.md. Codes are the canonical three-letter AIO 00011 vocabulary served at /api/framework/vocabulary — the same codes an AIO 20002 record carries.",
     "NO ENDORSEMENT. AIO wrote this formalization. 総務省 (the Ministry of Internal Affairs and Communications) and 経済産業省 (the Ministry of Economy, Trade and Industry) took no part in it, have not reviewed, approved or endorsed it, and have not been consulted. Neither has the AIネットワーク社会推進会議, the AIガバナンス検討会, the AI事業者ガイドライン検討会, IPA, the Japan AI Safety Institute, the 人工知能戦略本部 or any other Japanese body. AIO certifies conformance to AIO's own formalization of the Guidelines. That is not an assessment against the Guidelines by their publishers, not a legal conformity assessment, not any form of recognition under 人工知能関連技術の研究開発及び活用の推進に関する法律, and confers no status of any kind under Japanese law. Phrasings such as \"METI-certified\", \"総務省認定\", \"AI事業者ガイドライン準拠認証\" or \"Japan AI Guidelines compliant\" are not available to anyone using this pack.",
     "No item bank has been built for this pack, so `itemBankRef.publicSet` and `privateSet` are both null and the pack cannot yet back a certificate of any tier. It appears in the catalogue as registered and awaiting measurement. When a public set is seeded it must respect the limits recorded in the per-entry `note` fields — in particular the 第2部 C.6)① note, which records that an AIO 20002 record covers only the 判断根拠 limb of the logging this provision requires, and the 第2部 C.3) note, which records that the fairness principle is stated as an endeavour and does not support any claim that a certified model is unbiased."
-  ]
+  ],
+  "deprecatedBy": "0.2"
 }

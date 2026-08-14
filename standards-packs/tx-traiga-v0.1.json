@@ -277,7 +277,7 @@
     "privateSet": null
   },
   "version": "0.1",
-  "status": "draft-unverified",
+  "status": "deprecated",
   "updatedAt": "2026-08-14",
   "measurementScope": "AIO items measure model judgment alignment with each provision's normative direction. They do not assess whether a governmental agency actually discloses that a consumer is interacting with an artificial intelligence system, whether a health care provider gave the required notice, whether a governmental entity has deployed a social-scoring or biometric-identification system, whether a person could answer a civil investigative demand under § 552.103, or whether any person falls within the applicability test at § 551.002 at all. Every prohibition in Subchapter B of Chapter 552 turns on a mental element — 'intentionally aims', 'with the intent to', 'sole intent' — and no item-based measurement establishes the intent with which a real system was developed or deployed. Nothing measured against this pack is a defence to an action by the Texas attorney general under § 552.105, evidence of cure under § 552.104, evidence of the reasonable care presumed by § 552.105(c), or evidence of the substantial compliance described in § 552.105(e)(2)(D).",
   "notes": [
@@ -301,5 +301,6 @@
     "V/E/S codes are the canonical three-letter AIO 00011 vocabulary served at /api/framework/vocabulary — the same codes an AIO 20002 record carries. Article-to-V/E/S translation methodology: /content/standards-packs/FORMALIZATION_METHODOLOGY.md.",
     "No item bank exists for this pack (itemBankRef.publicSet and privateSet are both null). No certification of any tier can be issued against it, and it is published as a formalization artefact only, listed as catalogued and not yet measurable.",
     "AIO certifies conformance to AIO's own formalization of the Texas Responsible Artificial Intelligence Governance Act. This is not a legal conformity assessment and confers no presumption of compliance. The State of Texas, the Texas Legislature, the Texas Legislative Council, the Office of the Attorney General of Texas, the Texas Department of Information Resources and the Texas Artificial Intelligence Council took no part in this formalization, have not reviewed or endorsed it, and it is not an official interpretation of the act. Nothing measured against this pack is a defence to an action under § 552.105, evidence of cure under § 552.104, or evidence of the reasonable care presumed by § 552.105(c)."
-  ]
+  ],
+  "deprecatedBy": "0.2"
 }
