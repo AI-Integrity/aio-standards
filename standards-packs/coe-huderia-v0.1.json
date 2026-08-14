@@ -1,0 +1,270 @@
+{
+  "$schema": "./schema.json",
+  "id": "coe-huderia",
+  "name": {
+    "en": "Council of Europe HUDERIA — Methodology and Model (COBRA) — AIO formalization",
+    "ko": "유럽평의회 HUDERIA — 방법론 및 모델(COBRA) — AIO 정형화"
+  },
+  "sourceNorm": {
+    "title": "HUDERIA Methodology and Model (Part I: Methodology for assessing the risks and impacts of AI systems from the perspective of human rights, democracy and the rule of law; Part II: Resource model for context-based risk analysis (COBRA))",
+    "publisher": "Council of Europe — Committee on Artificial Intelligence (CAI), approved by the Committee of Ministers",
+    "version": "Consolidated publication, © Council of Europe, February 2026. Methodology adopted by the CAI on 28 November 2024 (CAI(2024)16rev2) and approved by the Committee of Ministers on 26 February 2025; Model: COBRA Resources adopted by the CAI on 5 November 2025 and approved by the Committee of Ministers on 25 February 2026 (1551st meeting of the Ministers' Deputies).",
+    "url": "https://www.coe.int/en/web/artificial-intelligence/huderia-risk-and-impact-assessment-of-ai-systems"
+  },
+  "vesMapping": [
+    {
+      "article": "Part I, Triage — “Zero questions”",
+      "summary": "Before an AI system is built or deployed, the prior question is put whether AI is the appropriate response to the problem at all, including the extent to which processes already in place are better placed to solve it.",
+      "v": [
+        "Hum",
+        "Ach"
+      ],
+      "e": [
+        "Log"
+      ],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The element of HUDERIA with the most direct judgment correlate: a question about whether to use AI at all, answered before any assessment machinery is built. An item can test whether a model asked to weigh a deployment reaches for this prior question — and answers it against itself where an existing non-AI process is better placed — rather than treating the system's availability as the reason to use it. The full bullet list, which also covers the deployer's needs, equity across affected groups, data quality, resource sufficiency and misuse potential, is described in the summary and cited in the rationale rather than quoted, under the licence discipline recorded in the pack notes.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 1. Context-based risk analysis (COBRA), Triage, “Zero questions”, first bullet",
+        "quote": "[…] the extent to which existing technologies and processes already in place to solve the problem under consideration are better placed to do so",
+        "rationale": "The quoted clause sets a comparison between the prospective AI system and what already exists, and instructs that the comparison may come out against the AI system. `Ach` is read from the words: 'better placed to do so' is competence against a standard, the same reading the series gives to quality provisions. `Hum` is an INFERENCE and is flagged: the direction the clause sets is that the proposed system's fitness is not to be assumed, which is recognition of one's own limits in the AIO 00011 sense, but the text says 'better placed' and does not use the language of limitation. `Log` is also an INFERENCE and is flagged: a zero question is answered by argument from the problem and the alternatives, and the bullet names no metric, no case comparison and no expert — the surrounding bullets on data quality and resource sufficiency, cited and not quoted, would carry `Dat`, and are deliberately not coded here because they lie outside the excerpt. No source class is designated in the excerpt and none is assigned; the sentence naming the authorities and the AI project teams is quoted in the next entry instead.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Triage — objectives and adaptable approach",
+      "summary": "Triage determines whether the benefits of developing or deploying an AI system outweigh its risks and whether its use is incompatible with respect for human rights, democracy and the rule of law, with the choice of determination method left to the authorities or, where applicable, to the AI project teams responsible for the system.",
+      "v": [
+        "Unc",
+        "Ses"
+      ],
+      "e": [],
+      "s": [
+        "Gov",
+        "Ind"
+      ],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The only entry in this pack whose excerpt designates a source class, and the reason it was selected in this shape. Note what the second half of the excerpt does: it declines to rank methods. HUDERIA states which interests are at stake and who decides, and expressly leaves the class of evidence that settles the question — qualitative, quantitative, mixed or other — to the decider's discretion. The evidence layer is therefore left empty, not as an oversight but as the honest record of a norm that refuses to designate one; that refusal is registered as a vocabulary-gap candidate in .pack-verify/wave4-roster-note-coe-huderia.md.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 1. Context-based risk analysis (COBRA), Triage — Objectives, second bullet; and Adaptable approach to triaging, final sentence",
+        "quote": "[…] whether the use of the AI system is incompatible with respect for human rights, democracy and the rule of law. […] left to the discretion of the authorities or […] the AI project teams responsible […]",
+        "rationale": "The protected interests are named in the text and are coded from those words alone, consistently with the coe-ai-convention pack: 'human rights' gives `Unc` (equality, justice and protection for all people) and 'democracy and the rule of law' gives `Ses` (stability and order of society at large). `Sep` is deliberately NOT assigned — the triage objective names neither health nor safety. The benefits-outweigh-risks limb of the same bullet is cited and not quoted; it adds no value code the incompatibility limb does not already carry. On the source axis the excerpt is unusually explicit: 'the authorities' is the governing authority made decisive on the determination (`Gov`), and 'the AI project teams responsible' makes the duty-bearer the performer of the determination (`Ind`), which is the condition the cross-pack source-axis rule sets. The evidence layer is empty: the sentence that would carry it says only that the choice between a qualitative, a quantitative, a mixed 'or any other method' is discretionary, which designates no evidence class as decisive.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, What is the approach of HUDERIA? — Graduated and differentiated approach",
+      "summary": "Measures for risk and impact identification, assessment, prevention and mitigation are to be graduated and differentiated by the severity and probability of the adverse impacts on human rights, democracy and the rule of law and by relevant contextual factors.",
+      "v": [
+        "Unc",
+        "Ses"
+      ],
+      "e": [
+        "Dat"
+      ],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The proportionality rule of the whole instrument, and the clause that keeps HUDERIA from being a fixed checklist. Its judgment correlate is narrow but real: whether a model asked about safeguards scales them to the severity and probability of what could go wrong, rather than applying one level of caution to everything or none. Whether an organization's assessment effort is in fact graduated is visible only in that organization's assessment record, which no item observes. Proportionality itself has no carrier in the value vocabulary — the codes below record what is protected, not the calibration the clause is actually about — and that is registered as a vocabulary-gap candidate.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, Introduction, What is the approach of HUDERIA?, Graduated and differentiated approach",
+        "quote": "[…] a graduated and differentiated approach […] that takes into account the severity and probability of the occurrence of the adverse impacts on human rights, democracy and the rule of law […]",
+        "rationale": "`Unc` and `Ses` are read from the named interests exactly as in the previous entry. `Dat` is an INFERENCE and is flagged: 'severity and probability of the occurrence' are estimated quantities, and an estimate is established by measurement, but the clause names no metric, no threshold and no benchmark authority — the same reading, and the same flag, that the coe-ai-convention pack applied to Art. 16(2)(b) of the Framework Convention. No source class is designated: the clause is addressed to no one in particular and names neither an authority nor an instrument.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Stakeholder engagement process — Accountability criterion",
+      "summary": "Responsibility for implementing, monitoring and following up mitigation measures is assigned to particular entities, individuals or functions within the organization.",
+      "v": [
+        "Bed"
+      ],
+      "e": [],
+      "s": [
+        "Ind"
+      ],
+      "status": "draft-unverified",
+      "obligationType": "organizational",
+      "note": "`organizational` outright. Naming who is answerable is done in an organization chart, a RACI matrix or a terms of reference, and no item-based measurement observes any of them. The judgment correlate that an item can reach is the one the coe-ai-convention pack identified under Art. 9: whether a model asked who is answerable for an adverse outcome names a party rather than diffusing responsibility into the system. Four other engagement criteria stand alongside this one in the same list — engagement, equality and prohibition of discrimination, empowerment, and transparency — and are described in the guide rather than mapped, to hold the quotation footprint down.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 2. Stakeholder engagement process (SEP), Determination of engagement method, criterion 5 (Accountability)",
+        "quote": "[…] responsibility for the implementation, monitoring and follow-up of mitigation measures is assigned to particular entities, individuals or functions within the organisation.",
+        "rationale": "Answerability for an obligation one has taken on is `Bed` (being a reliable member; keeping promises and obligations), the same code the series assigns to accountability provisions. `Unc` was considered and refused: the criterion says who is answerable, not to whom or for whose protection. On the source axis, 'assigned to particular entities, individuals or functions within the organisation' makes the duty-bearing organization the performer of the assignment, which is the condition under which `Ind` is declared; `Gov` is refused because no authority is named anywhere in the excerpt. The evidence layer is empty: the criterion prescribes an allocation, not a class of evidence.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, COBRA — Determination of risk level",
+      "summary": "For each area of concern for human rights, democracy and the rule of law and each affected group, the scale, scope, reversibility and probability of the potential or actual adverse effect are considered.",
+      "v": [
+        "Unc",
+        "Ses"
+      ],
+      "e": [
+        "Dat"
+      ],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The four risk variables are HUDERIA's operative vocabulary and the one place where the instrument is genuinely more specific than the Framework Convention it accompanies: severity is decomposed into scale, scope and reversibility, and reversibility is treated as a variable in its own right rather than as a footnote to severity. The judgment correlate is whether a model weighing a potential harm asks whether it can be undone, and treats an irreversible harm as categorically different from a recoverable one of the same size. The AIO 00011 vocabulary has no carrier for reversibility on any of the three axes; that is registered as a vocabulary-gap candidate.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 1. Context-based risk analysis (COBRA), Mapping of potential impacts — Determination of risk level, closing paragraph",
+        "quote": "[…] consider for each area of concern related to human rights, democracy and the rule of law, and each affected group, the scale, scope, reversibility and probability […]",
+        "rationale": "`Unc` and `Ses` are read from the named interests, as in the two entries above. `Dat` is an INFERENCE and is flagged for the same reason given there: scale, scope, reversibility and probability are quantities to be estimated, and estimation runs on measurement, but this paragraph names no metric and the sentence that follows it says only that 'domestic law or policy may provide more detailed definitions' — a pointer to instruments outside the excerpt, which under the source-axis rule does not earn `Gov` and is recorded here rather than coded. `Exp` was considered and refused at this entry: the paragraph says teams should consider the variables, and it is the risk-and-impact-assessment entry below, not this one, that names expert insight as decisive.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Stakeholder engagement process — Stakeholder analysis",
+      "summary": "Stakeholder analysis considers meaningfully including the views of those disproportionately at risk from the use of the system, those particularly vulnerable to potential harms, and those with particularly limited ability to influence how the system is designed and used.",
+      "v": [
+        "Unc",
+        "Sep"
+      ],
+      "e": [
+        "Tri"
+      ],
+      "s": [
+        "Tes"
+      ],
+      "status": "draft-unverified",
+      "obligationType": "organizational",
+      "note": "`organizational`: a consultation is convened, run and documented, and no item observes it. What an item can test is narrower — whether a model reasoning about who is affected by a system reaches past the commissioning party to the people with the least ability to influence it. The third limb of the list, on those with particularly limited ability to influence how the system is designed and used, is described in the summary and cited in the rationale rather than quoted, to hold the excerpt under the licence footprint.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 2. Stakeholder engagement process (SEP), Explanation — Stakeholder analysis",
+        "quote": "[…] consider meaningfully including the views of those who: 1. are disproportionately at risk from the use of the system; 2. are particularly vulnerable to potential harms […]",
+        "rationale": "'Disproportionately at risk' and the third limb on those with limited ability to influence the system, cited and not quoted, are about who bears an unequal share of a burden, which is `Unc` (equality, justice and protection for all people). `Sep` is grounded in 'particularly vulnerable to potential harms': unlike the triage and proportionality entries, this excerpt names harm to persons, so the value protected is the safety of the person. `Unt` was considered and refused — the list is about exposure to harm and to powerlessness, not about accepting those who differ. On evidence, the object of the step is the 'views' of the affected persons themselves, which is `Tri` (the firsthand account of those who lived through it) and is grounded in the words. `Tes` is assigned on the source axis as the nearest available class for a named affected person speaking on the record, and is flagged: the AIO 00011 source vocabulary defines `Tes` as the sworn statement of an eyewitness, and a consulted stakeholder is neither sworn nor a witness — the same nearest-class assignment, with the same flag, that the coe-ai-convention pack made for the complainant under Art. 14(2)(c). `Usr` is refused: the affected persons are not the party requesting the assessment.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Stakeholder engagement process — Positionality reflection",
+      "summary": "Those conducting the assessment reflect on their own positional standpoint towards affected stakeholders in order to recognize the limitations of their perspectives and identify missing viewpoints that would strengthen the assessment.",
+      "v": [
+        "Hum"
+      ],
+      "e": [],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The element of HUDERIA with no counterpart anywhere else in the AIO catalogue: an instruction to the assessor to treat their own standpoint as a source of error. It is the clearest textual grounding for `Hum` in any pack in the series — the words 'recognising the limitations' are in the excerpt, not inferred from it. The judgment correlate is testable and specific: whether a model asked to assess a system states which viewpoints its own assessment is missing, instead of presenting its reading as complete. What the value vocabulary cannot carry is the second half of what the element is about — positionality as structural advantage or marginalisation, which the surrounding text spells out in terms of demographics, education, socio-economic background and institutional context. That is registered as a vocabulary-gap candidate.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 2. Stakeholder engagement process (SEP), Explanation — Positionality reflection",
+        "quote": "[…] reflection on the positional standpoint vis-à-vis affected stakeholders with a view to recognising the limitations of HUDERIA users’ perspectives and identifying missing viewpoints […]",
+        "rationale": "`Hum` (recognizing one's own limits; not overstating) is grounded in the words 'recognising the limitations of HUDERIA users' perspectives' and is the only value the excerpt carries. `Sdt` was considered and refused: the reflection is about the assessor's own standpoint, not about protecting anyone else's capacity to reason. `Unt` was considered and refused for the same discipline applied in the previous entry — 'missing viewpoints' is about the completeness of the assessment, not about accepting those who differ. The evidence layer is empty: the element prescribes a reflection and designates no class of evidence as decisive over another; the two reflective questions that follow it in the text ask about sources of power and advantage, and name no evidence class either. No source class is designated and none is assigned.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Risk and impact assessment — Probability",
+      "summary": "The probability of an adverse impact is estimated from qualitative judgment, quantitative analysis and contextual understanding together, so that the assessment rests on both data and expert insight.",
+      "v": [],
+      "e": [
+        "Dat",
+        "Exp"
+      ],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The only entry in this pack whose evidence layer is grounded in the words rather than inferred, and the only one with an empty value layer. The element names the classes of evidence a probability estimate rests on and names no protected interest at all — the interests are stated elsewhere in the instrument and are not carried in here. An empty value array is a scoring exclusion, not a neutral value: no item may be authored on this entry until the RFC round resolves it, and it is added to the standing item-authoring hold list alongside jp 第2部 C.6)① and asean C.1.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 3. Risk and impact assessment, Explanations regarding the risk and impact assessment questions and prompts — Probability",
+        "quote": "[…] based as appropriate on qualitative judgment, quantitative analysis and contextual understanding. […] grounded in both data and expert insights […]",
+        "rationale": "Both evidence codes are designated in terms. 'Quantitative analysis' and 'data' give `Dat` (a single large body of measured numbers). 'Qualitative judgment' and 'expert insights' give `Exp` (the considered judgment of one recognized specialist). `Rev` was considered and refused: nothing in the element pools findings across studies. `Pee` and `Pro` are refused on the source axis for the reason applied across the series — the element speaks of expert insight without naming any scholarly review or any professional body, and 'expert' alone does not designate either. No value is coded: the element is about how an estimate is formed and names no interest that the estimate protects, so declaring one would import it from the instrument's context rather than from the provision, which the method forbids.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Mitigation plan — Mitigation hierarchy",
+      "summary": "Within the mitigation hierarchy of avoid, mitigate, restore and compensate, choices that avoid and mitigate adverse impacts are preferred to choices that compensate or remunerate the persons impacted for harm already suffered.",
+      "v": [
+        "Sep",
+        "Unc"
+      ],
+      "e": [],
+      "s": [],
+      "status": "draft-unverified",
+      "obligationType": "mixed",
+      "note": "The strongest single decision rule in the instrument, and the one an item can test most directly: a stated ordering in which preventing harm outranks paying for it. It is the counterweight to the cost-benefit framing that a risk methodology otherwise invites — a system may not price a foreseeable harm and proceed. Classified `mixed` and not `behavioral` because the rule is addressed to a mitigation-planning exercise and is discharged in a plan; the judgment side of it is nevertheless real and is what an item reaches. The four-level ordering the element states cannot be recorded anywhere in the pack schema, which has no field for an ordering the source text sets out; that is registered as a schema gap candidate, related to the standing W2-21 item.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 4. Mitigation plan, Explanations — Mitigation hierarchy, closing paragraph",
+        "quote": "[…] choices made to avoid and mitigate adverse impacts should be preferred to choices to compensate or remunerate potentially impacted persons for any harm suffered.",
+        "rationale": "`Sep` is grounded in 'any harm suffered' by 'potentially impacted persons': what the preference for avoidance protects is the person from the harm itself, which is the physical and psychological safety of the person. `Unc` is grounded in the preceding clause of the same sentence, cited and not quoted, which requires the decision to be guided by considerations prioritising the protection of human rights, democracy and the rule of law; it is recorded here as resting on that clause rather than on the quoted words. `Ses` was considered and refused, because the quoted clause is about persons and not about the order of society. On evidence, the element states an ordering and designates no class of evidence that settles which level applies; `Gui` was considered and refused, since the only written procedure in view is HUDERIA's own — a self-reference that under the standing rule does not earn a code. No source class is designated and none is assigned; the adjacent 'Legal obligations' paragraph, which does name applicable international and domestic law, is a different paragraph and is coded in the entry below.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    },
+    {
+      "article": "Part I, Mitigation plan — Access to remedies",
+      "summary": "Information provided to affected persons under measures addressing adverse impacts is to be context-appropriate, clear and meaningful so that they can effectively use it to exercise their rights, and further procedural guarantees and safeguards may be required in line with applicable international and domestic law.",
+      "v": [
+        "Sdt",
+        "Unc"
+      ],
+      "e": [
+        "Gui"
+      ],
+      "s": [
+        "Gov"
+      ],
+      "status": "draft-unverified",
+      "obligationType": "organizational",
+      "note": "The closest HUDERIA comes to describing what an AIO 20002 record is for, and the same caveat applies here as in the coe-ai-convention pack at Art. 14: a reasoning record is one contribution to the sufficiency of what an affected person receives, and plainly not the whole of it — the person also needs the outcome, the grounds and the route of challenge. Classified `organizational` because the element is discharged by documenting, providing and channelling information, all of which is machinery. The sufficiency test is nevertheless stated from the affected person's side rather than the provider's, and an item can test that direction: whether an explanation is pitched at what its recipient can use, rather than at what the provider finds convenient to state.",
+      "provenance": {
+        "sourceUrl": "https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001",
+        "article": "Part I, 4. Mitigation plan, Explanations — Access to remedies, points c and d",
+        "quote": "[…] should be context-appropriate, clear and meaningful, ensuring that persons can effectively use it to exercise their rights […] in line with applicable international and domestic law […]",
+        "rationale": "Point (c) sets the test of sufficiency by reference to what the affected person can do with the information, which makes the person's own capacity to reason about the decision the thing protected (`Sdt`) — the same reading the coe-ai-convention pack gives to Art. 14(2)(b). The exercise of rights and the access to remedy it serves give `Unc` (equality, justice and protection for all people). `Bed` was considered and refused at this entry: the duty of candour to the affected person sits in point (b), which is cited and not quoted, and the quoted words are about the quality of the information rather than about an obligation owed. On evidence, point (d) routes the further guarantees through 'applicable international and domestic law', so what is decisive is the established written rule (`Gui`) and the trusted source is the governing authority that issues it (`Gov`) — the one place in this pack where the source-axis rule's condition is met by a named instrument. `Tes` and `Tri` were considered and refused: nobody's account is made decisive here.",
+        "retrievedAt": "2026-08-14",
+        "verifiedBy": "seed formalization (single pass; dual verification pending)"
+      }
+    }
+  ],
+  "itemBankRef": {
+    "publicSet": null,
+    "privateSet": null
+  },
+  "version": "0.1",
+  "status": "draft-unverified",
+  "updatedAt": "2026-08-14",
+  "measurementScope": "HUDERIA is a risk and impact assessment methodology, and its own text is explicit about what that means: it is stand-alone, non-legally binding guidance that has no legal effect, is not mandatory, is not an interpretative aid for the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law, and — in the words of the Model's preface — is not a means of implementing that Convention either. Its addressee is whoever conducts an assessment: the text speaks to 'HUDERIA users', to 'relevant teams', to 'the authorities' and to 'the AI project teams responsible for the system'. It does not speak to an AI system, and it states almost no rule that an AI system could follow. Every one of its four elements — context-based risk analysis, stakeholder engagement, risk and impact assessment, mitigation planning — is discharged by human beings producing an artefact: a scoping record, a consultation, an assessment, a plan, a review schedule. No AIO item observes any of those artefacts, and no measurement against this pack could. What AIO items measure against this pack is a strictly narrower thing: whether a model's own reasoning runs in the direction each mapped element implies — whether it asks first whether an AI system is the appropriate response at all rather than assuming it is; whether it treats an incompatibility with human rights, democracy or the rule of law as a stop rather than as a cost to be priced; whether it scales caution to the severity and reversibility of what could go wrong; whether it reaches past the commissioning party to the people least able to influence the system; whether it states which viewpoints its own assessment is missing; and whether it prefers avoiding a harm to compensating for it. A pass says something about that reasoning and nothing else. It is not evidence that an organization has conducted a HUDERIA assessment, produced a COBRA analysis, run a stakeholder engagement process or drawn up a mitigation plan; it is not an assessment against HUDERIA; and it confers no status of any kind under the Framework Convention or with the Council of Europe.",
+  "notes": [
+    "Single-pass seed, `draft-unverified`. Every entry carries a short verbatim excerpt of the official English text and a rationale argued from it, but this is one automated formalization pass with no independent second pass and no human review, so no entry is claimed as `draft-verified` and the pack as a whole is `draft-unverified`. Under FORMALIZATION_METHODOLOGY.md §5 the second independent formalization is the prerequisite for promotion; the RFC round at https://aioq.org/en/rfc follows that.",
+    "Instrument identification. HUDERIA is two instruments published as one document, and the pack formalizes the consolidated publication. (a) The HUDERIA Methodology — full title 'Methodology for the risk and impact assessment of artificial intelligence systems from the point of view of human rights, democracy and the rule of law' — was adopted by the Committee on Artificial Intelligence (CAI) on 28 November 2024 as document CAI(2024)16rev2, and approved by the Committee of Ministers on 26 February 2025. (b) The HUDERIA Model: Context-Based Risk Analysis (COBRA) Resources was adopted by the CAI on 5 November 2025 and approved by the Committee of Ministers on 25 February 2026 at the 1551st meeting of the Ministers' Deputies. (c) The two were then issued together as the Council of Europe publication 'HUDERIA Methodology and Model', © Council of Europe, February 2026, whose cover states in terms that the Committee of Ministers approved the Model on 25 February 2026 and the Methodology on 26 February 2025. The Methodology is Part I of that publication and the Model is Part II; all ten entries in this pack are mapped from Part I, for the reason given in the selection note. The relationship between the two is stated by the instrument itself: the Methodology is the general level (high-level concepts, processes and elements), the Model is the specific level (supporting materials and resources that aid implementation of the Methodology).",
+    "Currency, verified on 2026-08-14, and what is still missing. The February 2026 consolidated publication is the current text; no later edition, revision, corrigendum or replacement was found on any official Council of Europe channel. Three findings are recorded because a reader would otherwise be misled. (i) HUDERIA is INCOMPLETE by its own account. The adopted Model comprises COBRA Resources A, B, C, E and F only: a footnote on the contents page records that the CAI considered including a COBRA Resource D and that, without prejudice to any future decision, the Resources adopted on 5 November 2025 comprise A, B, C, E and F. Four further footnotes in Part I refer to 'SEP Resources' and to a 'Roles and responsibilities' section as '[to be developed and adopted by the CDNET in 2026]'. Those parts of the Model did not exist as at the date of this pack. (ii) The committee has changed. The CAI has been succeeded by the Steering Committee for New and Emerging Digital Technologies (CDNET), which carries on the CAI's work in the field of artificial intelligence, is charged with developing HUDERIA further, and also serves as custodian of the Framework Convention until the Conference of the Parties is established. CDNET held its first plenary meeting on 16–17 April 2026; its second is scheduled for 21–23 October 2026, after the date of this pack. No adoption of the outstanding SEP Resources had been published as at 2026-08-14. (iii) The download endpoint the Council of Europe's own HUDERIA page links for the consolidated publication carries the words 'adopted provisional version 2026' in its URL path. The document served at that endpoint contains no provisional marking of any kind: it carries the imprint '© Council of Europe, February 2026', a French-edition line and a printing statement, and a paid print edition of the same title is listed in the Council of Europe bookshop. The discrepancy is recorded rather than resolved.",
+    "Primary source and retrieval path. The text formalized here is the official consolidated publication served by the Council of Europe at https://rm.coe.int/huderia-methodology-and-model-adopted-provisional-version-2026/48802ac001, which is the endpoint the Council of Europe's HUDERIA page links as the download for the publication, and which resolved on 2026-08-14 (HTTP 200, application/pdf, 410,445 bytes, 60 pages). It is recorded as `sourceUrl` in every entry. No `retrievalUrl` is recorded because no substitute endpoint was needed. Note for the record that the same content is not reachable through the normal fetch tool used elsewhere in this project: both www.coe.int and rm.coe.int returned HTTP 403 to it and were retrieved with a browser-identified request instead. No commentary, law-firm summary, trade-press explainer, mirror or secondary source was used for any quote, and no quotation in this pack was reconstructed from memory.",
+    "Quote verification method, and the cross-manifestation finding. The publication was reduced to a whitespace-normalized, NFC-normalized corpus by two independently written extraction paths — poppler `pdftotext -enc UTF-8` (156,833 characters) and a `pypdf` page-by-page extraction (157,174 characters). The two corpora are not byte-identical; the differences are in the placement of running heads and page numbers in the reading order, and none falls inside any quoted fragment. All 15 quoted fragments across the 10 entries — counting the parts on either side of an […] elision separately — were then checked as exact substrings of BOTH corpora, and all 15 matched in both. A second, stronger check was available here that was not available for the UNESCO or Singapore packs, and it was run: the same procedure was applied to the CAI's own adopted document CAI(2024)16rev2, retrieved separately from https://rm.coe.int/cai-2024-16rev2-methodology-for-the-risk-and-impact-assessment-of-arti/1680b2a09f (HTTP 200, application/pdf, 802,456 bytes, 23 pages), which is a second official manifestation of the Methodology text. Eleven of the 15 fragments appear verbatim in that document as well. The four that do not are copy-editing differences introduced in the 2026 publication and each was compared word by word: 'e.g.,' became 'such as' and '1)' became '1.' in the stakeholder analysis list; the serial comma was removed before 'and contextual understanding'; 'for suffered harms' became 'for any harm suffered'; and 'clear, and meaningful' became 'clear and meaningful'. No substantive difference was found in any mapped passage between the CAI-adopted Methodology and the Committee of Ministers-approved publication.",
+    "Licence and reuse — treated as a constraint-classified (C) source, on the UNESCO and Singapore footing rather than the coe-ai-convention footing, and the distinction is the point. The coe-ai-convention pack quotes freely because the Council of Europe's copyright, licensing and permissions page places 'official texts (conventions and treaties, Committee of Ministers resolutions and recommendations)' in the public domain. HUDERIA is not in that class: it is guidance adopted by a committee and approved by the Committee of Ministers, published as a Council of Europe publication, and the publication's own imprint governs it. That imprint states, verbatim, that 'The reproduction of extracts (up to 500 words) is authorised, except for commercial purposes' — subject to preserving the integrity of the text, not using the excerpt out of context and not misleading the reader as to the nature, scope or content of the text — and directs all other reproduction or translation requests to the Publications and Visual Identity Division. The general rule on the Council of Europe's permissions page is stricter still: prior written permission is required to reproduce, republish or translate material from a Council of Europe publication, with a standing exception for excerpts of fewer than 500 words. AIO's certification tiers are commercial-adjacent, so the 'except for commercial purposes' carve-out means AIO does not rely on the extract allowance as a licence, exactly as the UNESCO pack does not rely on the NonCommercial licence there. Consequences applied here: (a) quotation is held to the minimum needed to evidence each mapping and is offered as short attributed quotation with full source citation, not as licensed reuse; (b) no control set is derived from the document's wording — the V/E/S mappings are AIO's own analysis expressed in AIO's own vocabulary, and the summaries, notes and rationales are paraphrase; (c) where a code rests on a sentence outside the quoted excerpt, that sentence is described rather than quoted, which is why several rationales say 'cited and not quoted'; (d) the management-system guide paraphrases throughout and blockquotes only excerpts already verified in this pack, adding no new quoted text. Attribution, in the form the Council of Europe asks for: from HUDERIA Methodology and Model, Council of Europe, February 2026. © Council of Europe, 2026.",
+    "Licence self-check, in numbers. Ten excerpts, 15 fragments, 1,661 characters and 248 words of quoted text across the vesMapping entries; longest single fragment 180 characters, mean 111. Two further short excerpts are quoted in these notes — the Model's own disclaimer about best practices and minimum standards, and the rights notice being relied on — 175 characters and 27 words. The pack's total quoted footprint from the publication is therefore 1,836 characters and 275 words, about 1.17% of the 156,833-character extracted text. Counted for completeness and not included in that total: about 46 characters of word-level tokens quoted from CAI(2024)16rev2, a different document, solely to evidence the copy-editing comparison in the verification note. The word figure is the one that matters against this particular licence, and it is recorded as a secondary check rather than as the basis of reuse: 275 words is inside the Council of Europe's own fewer-than-500-words threshold, but AIO does not rely on that threshold, because the publication's imprint withholds it for commercial purposes. For comparison across the constraint-classified packs in the catalogue: UNESCO quoted 1,624 characters at 1.6% of its source, Singapore 1,622 at 2.7%. This pack quotes marginally more text than either in absolute terms and less as a proportion, because the source is longer than both.",
+    "No permissions inquiry has been drafted or sent for this norm, and none is proposed. The reuse position above is stated from the Council of Europe's own published terms, which are specific enough to act on without an inquiry: the extract allowance, the commercial carve-out and the permissions route are all published. Any decision to seek written permission from the Publications and Visual Identity Division — which would be the route to any expansion of quotation, any control set phrased from the document's wording, and any item bank drawing on it — is an operator decision and is not taken here. Until such a decision is taken and answered, this pack and its guide stay inside the short-attributed-quotation footprint recorded above.",
+    "Process-norm character — the honest reading of what HUDERIA is, recorded so that no surface can imply more. HUDERIA is not a norm that tells a system what to do. It is a procedure that tells an organization how to find out what its system might do, and it is deliberately undemanding about the answers: it sets goals, principles and objectives while leaving a margin of appreciation on how to meet them; it says the final determination of method is left to the discretion of the authorities or the AI project teams; and the Model states of itself, in terms, that its resources and guidelines are 'not provided as examples of best practices, nor do they set forth minimum standards'. There is no threshold anywhere in the instrument, no test any system passes or fails, and no consequence attached to any finding. Read as a set of duties on a certifiable operator it is thinner than any binding norm in the roster and thinner than most of the voluntary ones; read as what it is — a shared vocabulary and sequence for human-rights risk work on AI, offered to Parties that must build their own — it is coherent and, on the evidence of its adoption history, consequential. Both readings are recorded here so that neither the pack page nor the guide can imply that scoring against this pack has anything to do with what the Council of Europe is actually asking for.",
+    "Measurement scope in numbers (per-entry `obligationType`, pack-level `measurementScope`). Of the ten mapped elements, none is `behavioral`, seven are `mixed` (the zero questions, triage, the graduated and differentiated approach, the determination of risk level, positionality reflection, probability, and the mitigation hierarchy — each states a direction a judgment can run in, sitting on an assessment activity no item observes) and three are `organizational` outright (the accountability criterion, stakeholder analysis, and access to remedies). The absence of any `behavioral` entry is not a defect of the mapping; it follows from the addressee, which is the assessing team rather than the system, and from the form of every element, which is an activity rather than a rule of conduct. The pack that comes closest to this shape in the catalogue is sg-genai-governance at 0/3/6. A pass on this pack is evidence about model judgment only, and never evidence that an operator has implemented anything.",
+    "Source axis, applied as the cross-pack rule requires and yielding almost nothing. `Gov` is declared only where the quoted excerpt names the governmental authority or the legal instrument decisive on the substance, never carried in from the issuing body or from the pack's context; `Ind` only where the excerpt makes the duty-bearer the author or performer of the provision's product or determination; a recipient is never a source. On that rule the source layer is empty in six of the ten entries, `Gov` stands in two (triage, where 'the authorities' decide; access to remedies, where 'applicable international and domestic law' governs), `Ind` in two (triage, and the accountability criterion), and `Tes` in one (stakeholder analysis, flagged as a nearest-available class rather than a designated one). The reason for the emptiness is structural and worth stating: HUDERIA is guidance that does not name its own issuer as authoritative anywhere in the mapped text, and it repeatedly refers instead to its own Resources and to the assessing team's discretion. This is the self-referential-soft-law gap already on the register at item 26. The source axis therefore has almost no discriminating power across this pack, and that is carried to the RFC round as a single question rather than as ten.",
+    "Inferred codes, flagged for the RFC round. Four assignments follow from an element's structure or from the shape of the AIO 00011 vocabulary rather than from its words, and each says so in its rationale: `Hum` and `Log` on the zero questions; `Dat` on the graduated and differentiated approach and on the determination of risk level (in both cases because severity and probability are estimated quantities while the text names no metric — the same flag the coe-ai-convention pack put on Art. 16(2)(b)); and `Tes` on stakeholder analysis, as the nearest source class for a consulted affected person. Codes considered and deliberately not assigned are recorded in the same rationales: `Sep` on triage and on the graduated approach, `Unc` on the accountability criterion, `Exp` on the determination of risk level, `Unt` on stakeholder analysis and on positionality reflection, `Sdt` on positionality reflection, `Rev` and `Pee`/`Pro` on probability, `Ses` and `Gui` on the mitigation hierarchy, and `Bed`, `Tes` and `Tri` on access to remedies. Two codes rest on a sentence inside the mapped element but outside the quoted excerpt and are flagged as such in place rather than presented as excerpt-grounded: `Unc` on the mitigation hierarchy, and the third limb of the stakeholder-analysis list.",
+    "Selection, and what was left out. Ten elements are mapped, all from Part I (the Methodology), chosen as the passages that state a direction a judgment could run in. Excluded and recorded here as RFC re-examination candidates. (a) The socio-technical approach paragraph, which requires risk management to take account of technical aspects and of legal, social, political, economic, cultural and technological contexts together: a real instruction with a genuine judgment correlate, left out because its words name no protected interest, so the value layer would be empty on an entry whose whole point is a value. It is registered as a vocabulary-gap candidate. (b) Preliminary scoping, which identifies affected persons and groups by protected characteristics and vulnerability factors — covered on the equality axis by the stakeholder-analysis entry, and otherwise a research activity. (c) Iterative review, which requires monitoring and periodic reassessment across the life cycle to system retirement: `organizational` throughout and hedged ('the following principles could be considered'). (d) Four of the five stakeholder-engagement criteria — engagement, equality and prohibition of discrimination, empowerment, transparency — held back to keep the seed at ten and the quotation footprint small; the transparency criterion in particular is a strong candidate for a later version. (e) All of Part II. The COBRA Resources are 26 pages of illustrative risk-factor questions, areas of concern and sector lists, and the Model says of itself that they are 'not provided as examples of best practices, nor do they set forth minimum standards'. They are prompts for an assessor, not directions a judgment could be measured against, and formalizing a question as though it were a norm would misrepresent them. They are used in the management-system guide, which is where they belong.",
+    "Relationship to the coe-ai-convention pack, and the boundary between them. The Framework Convention on AI (CETS No. 225) is formalized separately as `coe-ai-convention`. Its Art. 16 requires each Party to adopt or maintain measures for the identification, assessment, prevention and mitigation of risks, and that pack's Art. 16 entry already records that HUDERIA is the elaboration of that article and belongs in its own pack. The boundary is held on both sides: nothing from the Convention's text is quoted or coded here, and nothing from HUDERIA was coded there. The instruments are also not interchangeable, and HUDERIA says so — it is not an interpretative aid for the Convention and is not a means of implementing it, and Parties remain bound by the Convention's Chapter V baseline whatever assessment approach they adopt. An operator subject to a Party's implementing law is governed by that law, not by this methodology.",
+    "Non-endorsement. AIO wrote this formalization. The Council of Europe, its Committee of Ministers, its Secretariat, the Committee on Artificial Intelligence (CAI), the Steering Committee for New and Emerging Digital Technologies (CDNET), and the Alan Turing Institute — which prepared the original proposal from which HUDERIA descends — took no part in it, have not reviewed it, and have not endorsed it. It is not an official interpretation of HUDERIA. AIO certifies conformance to AIO's own formalization of this guidance; that is not a legal assessment, not a HUDERIA assessment, not an assessment of any Party's compliance with the Framework Convention, and confers no status of any kind under HUDERIA, under the Framework Convention, or with the Council of Europe. The Council of Europe publishes its own caution on the document, which is recorded here rather than suppressed: the opinions expressed in the work are the responsibility of the authors and do not necessarily reflect the official policy of the Council of Europe.",
+    "No item bank. `itemBankRef.publicSet` and `itemBankRef.privateSet` are both null: no scenario items have been written for this pack, so it currently backs no certificate at any tier and appears in the catalogue as listed, measurement pending. Item authoring follows verification, not the other way round. Three constraints on any future bank are recorded now. (i) The probability entry has an empty value array and is on the standing item-authoring hold list until the RFC round resolves it. (ii) With no `behavioral` entry, the testable surface is narrow: a bank built on this pack would draw mainly on the zero questions, the mitigation hierarchy and positionality reflection. (iii) Items must be authored in AIO's own words — under the reuse position recorded above, items phrased by adapting the publication's wording would be reproduction beyond the footprint AIO relies on.",
+    "Methodology for the element → V/E/S translation: /content/standards-packs/FORMALIZATION_METHODOLOGY.md. V/E/S values are the canonical three-letter AIO 00011 codes served at /api/framework/vocabulary — the same codes an AIO 20002 record carries. Management-system obligations arising from a HUDERIA process, including the elements and resources this pack does not map, are covered in docs/management-guides/coe-huderia.ko.md and .en.md. Roster corrections found during production are recorded at .pack-verify/wave4-roster-note-coe-huderia.md."
+  ]
+}
