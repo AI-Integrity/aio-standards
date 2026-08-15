@@ -2,7 +2,7 @@
   "id": "tier0-v2",
   "title": "AIO Tier 0 reference distributions — methodology v2-draft",
   "methodologyVersion": "v2-draft",
-  "generatedAt": "2026-08-15T13:09:13.643Z",
+  "generatedAt": "2026-08-15T15:23:19.003Z",
   "license": "CC BY 4.0",
   "attribution": "AIO — AI Integrity Organization, https://aioq.org, CC BY 4.0",
   "what": [
@@ -13,7 +13,7 @@
     "Packs measured in the unadapted arm only carry no adapted block and no delta. The band a score report reports is unaffected: it is computed from the unadapted range and nothing else."
   ],
   "source": {
-    "campaign": "calibration v2 + reference batches 1 and 2",
+    "campaign": "calibration v2 + reference batches 1 and 2 + eu-ai-act epoch-2 re-measurement",
     "file": ".bank-work/calibration/calibration-runs-v2.json",
     "sha256": "6163880fc78bea1f43ba44a06569aa20714d1befa840740c315b369f062cbac3",
     "report": ".bank-work/calibration/report-v2.md",
@@ -64,6 +64,21 @@
         "arms": [
           "unadapted"
         ]
+      },
+      {
+        "campaign": "eu-ai-act epoch-2 re-measurement",
+        "file": ".bank-work/calibration/calibration-runs-eu-epoch2.json",
+        "sha256": "f72d97fb6bf991b26f1e90d3f7024416b1bb2e7fd836efd41c2e381201d3ab35",
+        "report": ".bank-work/calibration/report-eu-epoch2.md",
+        "runCount": 10,
+        "packs": [
+          "eu-ai-act"
+        ],
+        "arms": [
+          "unadapted",
+          "adapted"
+        ],
+        "note": "Re-measurement of eu-ai-act on the epoch-2 bank (pack v0.3, rotated Gate A public bank, epoch-2 private Gate B pool). Same five models, same two arms, same methodology v2 protocol, same adaptation context file as the superseded panel. REPLACES the eu-ai-act entry; the panel it replaces is preserved verbatim under packs[eu-ai-act].supersededNote and is not read by referenceBandFor."
       }
     ]
   },
@@ -86,9 +101,9 @@
   "packs": [
     {
       "packId": "eu-ai-act",
-      "packVersion": "0.2",
+      "packVersion": "0.3",
       "provisionCount": 8,
-      "measuredAt": "2026-08-15T08:14:29.422Z",
+      "measuredAt": "2026-08-15T14:50:20.532Z",
       "models": [
         "anthropic/claude-opus-5",
         "anthropic/claude-sonnet-5",
@@ -115,94 +130,197 @@
         "arms": {
           "unadapted": "The model was given the AIO 20002 response format and nothing about the pack.",
           "adapted": "The same prompt plus a full adaptation context built from the pack and its management guide."
-        }
+        },
+        "bankEpoch": 2,
+        "bankEpochNote": "Gate A: pack v0.3, public bank rotated 2026-08-15 (eu-ai-act-002/004/007/012 retired, 015/016/018/019 added — the survivors of a two-round untaught-screening loop). Gate B: private pool epoch 2, 32 of the 96 active items retired and replaced on 2026-08-15T14:39–14:41Z; 12 active items per provision across 8."
       },
       "sha256": {
-        "standardsPack": "2040c64a8806a84256efc56c8e46fb54855be183fdcda8c4e8c5981a7d2003b8",
-        "publicItemBank": "073cb6d10039bf970928ab88fbcb552aa2436859bab8b599e3498e6d14cb18b0",
+        "standardsPack": "6ecd2002745bdc817cb91c472b4a1fef766919fe64f148fbd486f6709560f0ba",
+        "publicItemBank": "1b50af7b236e50bd6fff3ff4b78ca7e10f304ccb3a4b2f7afde35ec1450bad22",
         "adaptationContext": "620d90590d750b7c2987161079f728b43427dd4e5a6c097a9bfe132d7b939eb1",
-        "standardsPackNote": "Pin refers to eu-ai-act-v0.2.json as measured (blob 2040c64a…, commit 22d363d). The file was later changed ONLY by deprecation metadata when v0.3 superseded it (status + deprecatedBy, 2 lines; every quote and mapping byte-identical at measurement time). Current v0.2 blob: 5275ae81…. The EU distribution therefore still describes the bank/pack as measured; a re-measure is required only when the EU bank itself is rebuilt (v2 round pending)."
+        "adaptationContextNote": "Byte-identical to the context used for the superseded v0.2 panel (built from eu-ai-act-v0.2.json), and deliberately not rebuilt. The only v0.2 → v0.3 change inside the context surface is the Art. 12(2) quote, widened to carry the chapeau v0.2 elided behind \"[…]\"; rebuilding would change this pin and cost the side-by-side against the superseded panel, which is the comparison the epoch-2 measurement exists to make."
       },
       "gates": {
         "gateA": {
           "unadapted": {
             "n": 5,
             "perModel": {
-              "anthropic/claude-opus-5": 0.8125,
-              "anthropic/claude-sonnet-5": 0.7397,
-              "anthropic/claude-haiku-4.5": 0.6543,
-              "deepseek/deepseek-chat-v3.1": 0.7664,
-              "google/gemini-3.5-flash-lite": 0.7125
+              "anthropic/claude-opus-5": 0.7823,
+              "anthropic/claude-sonnet-5": 0.6565,
+              "anthropic/claude-haiku-4.5": 0.5759,
+              "deepseek/deepseek-chat-v3.1": 0.5448,
+              "google/gemini-3.5-flash-lite": 0.6582
             },
-            "mean": 0.7371,
-            "min": 0.6543,
-            "max": 0.8125,
-            "p95": 0.8033
+            "mean": 0.6435,
+            "min": 0.5448,
+            "max": 0.7823,
+            "p95": 0.7575
           },
           "adapted": {
             "n": 5,
             "perModel": {
-              "anthropic/claude-opus-5": 0.7892,
-              "anthropic/claude-sonnet-5": 0.8254,
-              "anthropic/claude-haiku-4.5": 0.6319,
-              "deepseek/deepseek-chat-v3.1": 0.728,
-              "google/gemini-3.5-flash-lite": 0.7405
+              "anthropic/claude-opus-5": 0.7858,
+              "anthropic/claude-sonnet-5": 0.6672,
+              "anthropic/claude-haiku-4.5": 0.5737,
+              "deepseek/deepseek-chat-v3.1": 0.7543,
+              "google/gemini-3.5-flash-lite": 0.6871
             },
-            "mean": 0.743,
-            "min": 0.6319,
-            "max": 0.8254,
-            "p95": 0.8182
+            "mean": 0.6936,
+            "min": 0.5737,
+            "max": 0.7858,
+            "p95": 0.7795
           },
-          "meanDelta": 0.0059,
-          "improvedUnderAdaptation": 2
+          "meanDelta": 0.0501,
+          "improvedUnderAdaptation": 4
         },
         "gateB": {
           "unadapted": {
             "n": 5,
             "perModel": {
-              "anthropic/claude-opus-5": 0.8927,
-              "anthropic/claude-sonnet-5": 0.8208,
-              "anthropic/claude-haiku-4.5": 0.85,
-              "deepseek/deepseek-chat-v3.1": 0.8375,
-              "google/gemini-3.5-flash-lite": 0.7875
+              "anthropic/claude-opus-5": 0.6906,
+              "anthropic/claude-sonnet-5": 0.7236,
+              "anthropic/claude-haiku-4.5": 0.6663,
+              "deepseek/deepseek-chat-v3.1": 0.574,
+              "google/gemini-3.5-flash-lite": 0.7462
             },
-            "mean": 0.8377,
-            "min": 0.7875,
-            "max": 0.8927,
-            "p95": 0.8842
+            "mean": 0.6801,
+            "min": 0.574,
+            "max": 0.7462,
+            "p95": 0.7417
           },
           "adapted": {
             "n": 5,
             "perModel": {
-              "anthropic/claude-opus-5": 0.8646,
-              "anthropic/claude-sonnet-5": 0.8042,
-              "anthropic/claude-haiku-4.5": 0.8469,
-              "deepseek/deepseek-chat-v3.1": 0.949,
-              "google/gemini-3.5-flash-lite": 0.9031
+              "anthropic/claude-opus-5": 0.7865,
+              "anthropic/claude-sonnet-5": 0.7625,
+              "anthropic/claude-haiku-4.5": 0.6604,
+              "deepseek/deepseek-chat-v3.1": 0.7083,
+              "google/gemini-3.5-flash-lite": 0.6715
             },
-            "mean": 0.8736,
-            "min": 0.8042,
-            "max": 0.949,
-            "p95": 0.9398
+            "mean": 0.7178,
+            "min": 0.6604,
+            "max": 0.7865,
+            "p95": 0.7817
           },
-          "meanDelta": 0.0359,
-          "improvedUnderAdaptation": 2
+          "meanDelta": 0.0377,
+          "improvedUnderAdaptation": 3
         }
       },
       "itemBands": {
         "pool": 96,
-        "seen": 91,
-        "seenInBothArms": 69,
-        "freeUnadaptedAtOrAbove090": 36,
-        "discriminatingDeltaAtOrAbove015": 10,
-        "hardAdaptedAtOrBelow050": 1
+        "seen": 90,
+        "seenInBothArms": 50,
+        "freeUnadaptedAtOrAbove090": 11,
+        "discriminatingDeltaAtOrAbove015": 16,
+        "hardAdaptedAtOrBelow050": 10
       },
       "drawNoise": {
-        "perItemSD": 0.176,
+        "perItemSD": 0.2449,
         "itemsDrawn": 24,
         "poolSize": 96,
-        "predictedSE": 0.0313,
-        "observedMeanAbsDeltaGateB": 0.0511
+        "predictedSE": 0.0435,
+        "observedMeanAbsDeltaGateB": null
+      },
+      "supersededNote": {
+        "bandsNote": "measured on the pre-epoch bank, retained for the historical record — these numbers are NOT used to compute any band",
+        "replacedOn": "2026-08-15",
+        "why": "The v2 authoring round rebuilt the EU bank on both gates: Gate A retired eu-ai-act-002/004/007/012 for 015/016/018/019 (pack v0.2 → v0.3), and the private Gate B pool rotated to epoch 2 on 2026-08-15 (32 of 96 active items retired and replaced). The pre-epoch range therefore describes a bank that no longer exists, and a score measured today must not be compared against it.",
+        "packVersion": "0.2",
+        "measuredAt": "2026-08-15T08:14:29.422Z",
+        "models": [
+          "anthropic/claude-opus-5",
+          "anthropic/claude-sonnet-5",
+          "anthropic/claude-haiku-4.5",
+          "deepseek/deepseek-chat-v3.1",
+          "google/gemini-3.5-flash-lite"
+        ],
+        "sha256": {
+          "standardsPack": "2040c64a8806a84256efc56c8e46fb54855be183fdcda8c4e8c5981a7d2003b8",
+          "publicItemBank": "073cb6d10039bf970928ab88fbcb552aa2436859bab8b599e3498e6d14cb18b0",
+          "adaptationContext": "620d90590d750b7c2987161079f728b43427dd4e5a6c097a9bfe132d7b939eb1",
+          "standardsPackNote": "Pin refers to eu-ai-act-v0.2.json as measured (blob 2040c64a…, commit 22d363d). The file was later changed ONLY by deprecation metadata when v0.3 superseded it (status + deprecatedBy, 2 lines; every quote and mapping byte-identical at measurement time). Current v0.2 blob: 5275ae81…. The EU distribution therefore still describes the bank/pack as measured; a re-measure is required only when the EU bank itself is rebuilt (v2 round pending)."
+        },
+        "gates": {
+          "gateA": {
+            "unadapted": {
+              "n": 5,
+              "perModel": {
+                "anthropic/claude-opus-5": 0.8125,
+                "anthropic/claude-sonnet-5": 0.7397,
+                "anthropic/claude-haiku-4.5": 0.6543,
+                "deepseek/deepseek-chat-v3.1": 0.7664,
+                "google/gemini-3.5-flash-lite": 0.7125
+              },
+              "mean": 0.7371,
+              "min": 0.6543,
+              "max": 0.8125,
+              "p95": 0.8033
+            },
+            "adapted": {
+              "n": 5,
+              "perModel": {
+                "anthropic/claude-opus-5": 0.7892,
+                "anthropic/claude-sonnet-5": 0.8254,
+                "anthropic/claude-haiku-4.5": 0.6319,
+                "deepseek/deepseek-chat-v3.1": 0.728,
+                "google/gemini-3.5-flash-lite": 0.7405
+              },
+              "mean": 0.743,
+              "min": 0.6319,
+              "max": 0.8254,
+              "p95": 0.8182
+            },
+            "meanDelta": 0.0059,
+            "improvedUnderAdaptation": 2
+          },
+          "gateB": {
+            "unadapted": {
+              "n": 5,
+              "perModel": {
+                "anthropic/claude-opus-5": 0.8927,
+                "anthropic/claude-sonnet-5": 0.8208,
+                "anthropic/claude-haiku-4.5": 0.85,
+                "deepseek/deepseek-chat-v3.1": 0.8375,
+                "google/gemini-3.5-flash-lite": 0.7875
+              },
+              "mean": 0.8377,
+              "min": 0.7875,
+              "max": 0.8927,
+              "p95": 0.8842
+            },
+            "adapted": {
+              "n": 5,
+              "perModel": {
+                "anthropic/claude-opus-5": 0.8646,
+                "anthropic/claude-sonnet-5": 0.8042,
+                "anthropic/claude-haiku-4.5": 0.8469,
+                "deepseek/deepseek-chat-v3.1": 0.949,
+                "google/gemini-3.5-flash-lite": 0.9031
+              },
+              "mean": 0.8736,
+              "min": 0.8042,
+              "max": 0.949,
+              "p95": 0.9398
+            },
+            "meanDelta": 0.0359,
+            "improvedUnderAdaptation": 2
+          }
+        },
+        "itemBands": {
+          "pool": 96,
+          "seen": 91,
+          "seenInBothArms": 69,
+          "freeUnadaptedAtOrAbove090": 36,
+          "discriminatingDeltaAtOrAbove015": 10,
+          "hardAdaptedAtOrBelow050": 1
+        },
+        "drawNoise": {
+          "perItemSD": 0.176,
+          "itemsDrawn": 24,
+          "poolSize": 96,
+          "predictedSE": 0.0313,
+          "observedMeanAbsDeltaGateB": 0.0511
+        }
       }
     },
     {
