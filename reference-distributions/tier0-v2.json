@@ -1,0 +1,276 @@
+{
+  "id": "tier0-v2",
+  "title": "AIO Tier 0 reference distributions — methodology v2-draft",
+  "methodologyVersion": "v2-draft",
+  "generatedAt": "2026-08-15T08:51:45.403Z",
+  "license": "CC BY 4.0",
+  "attribution": "AIO — AI Integrity Organization, https://aioq.org, CC BY 4.0",
+  "what": [
+    "For each pack this file records what a small panel of models actually scored under the deployed Tier 0 v2-draft configuration, in two arms: unadapted (the model was told nothing about the pack) and adapted (the model was given the pack and its management guide first).",
+    "It is a descriptive reference, not a threshold. A score report places an attempt inside or outside the unadapted range of this panel and says nothing further; no band is a pass and no band is a failure.",
+    "The panel is five models measured once per cell on 2026-08-15. It is small, it is not a random sample of anything, and the run-to-run spread on a single configuration is large enough (mean |delta| 0.0649 across eight repeat pairs) that a difference smaller than roughly 0.16 should not be read as a difference at all.",
+    "The adapted arm is included so an operator can run the same comparison on their own model: measure once unadapted, once after supplying the pack, and report the delta. That within-model delta is a more informative quantity than either score alone, because it does not require the two models being compared to be equally capable."
+  ],
+  "source": {
+    "campaign": "calibration v2",
+    "file": ".bank-work/calibration/calibration-runs-v2.json",
+    "sha256": "6163880fc78bea1f43ba44a06569aa20714d1befa840740c315b369f062cbac3",
+    "report": ".bank-work/calibration/report-v2.md",
+    "runCount": 24,
+    "note": "Every run in the campaign carries calibration: true and certificateIssued: false — the submit endpoint was never called, so none of these numbers came from an issued record."
+  },
+  "bands": {
+    "below-unadapted-range": "The score is below the lowest score any panel model reached without being shown the pack.",
+    "within-unadapted-range": "The score falls inside the range the panel reached without being shown the pack.",
+    "above-unadapted-range": "The score is above the highest score any panel model reached without being shown the pack.",
+    "no-reference-data-yet": "This pack has no reference distribution in this file. No band is reported."
+  },
+  "limits": [
+    "Five models, one draw per cell. Ranges are the observed minimum and maximum of that panel, not a population interval.",
+    "Each attempt is scored on a different draw from the private pool, so two measurements of one model differ by roughly 0.05 (eu-ai-act) to 0.12 (kr-ai-framework-act) on Gate B for that reason alone.",
+    "Gate A items and their expected hierarchies are published, so Gate A numbers in both arms are floors.",
+    "Every choice item in both packs was answered correctly by every model in both arms, contributing a constant to roughly a quarter of each Gate B score."
+  ],
+  "packs": [
+    {
+      "packId": "eu-ai-act",
+      "packVersion": "0.2",
+      "provisionCount": 8,
+      "measuredAt": "2026-08-15T08:14:29.422Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 24,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 96,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack.",
+          "adapted": "The same prompt plus a full adaptation context built from the pack and its management guide."
+        }
+      },
+      "sha256": {
+        "standardsPack": "2040c64a8806a84256efc56c8e46fb54855be183fdcda8c4e8c5981a7d2003b8",
+        "publicItemBank": "073cb6d10039bf970928ab88fbcb552aa2436859bab8b599e3498e6d14cb18b0",
+        "adaptationContext": "620d90590d750b7c2987161079f728b43427dd4e5a6c097a9bfe132d7b939eb1"
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.8125,
+              "anthropic/claude-sonnet-5": 0.7397,
+              "anthropic/claude-haiku-4.5": 0.6543,
+              "deepseek/deepseek-chat-v3.1": 0.7664,
+              "google/gemini-3.5-flash-lite": 0.7125
+            },
+            "mean": 0.7371,
+            "min": 0.6543,
+            "max": 0.8125,
+            "p95": 0.8033
+          },
+          "adapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.7892,
+              "anthropic/claude-sonnet-5": 0.8254,
+              "anthropic/claude-haiku-4.5": 0.6319,
+              "deepseek/deepseek-chat-v3.1": 0.728,
+              "google/gemini-3.5-flash-lite": 0.7405
+            },
+            "mean": 0.743,
+            "min": 0.6319,
+            "max": 0.8254,
+            "p95": 0.8182
+          },
+          "meanDelta": 0.0059,
+          "improvedUnderAdaptation": 2
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.8927,
+              "anthropic/claude-sonnet-5": 0.8208,
+              "anthropic/claude-haiku-4.5": 0.85,
+              "deepseek/deepseek-chat-v3.1": 0.8375,
+              "google/gemini-3.5-flash-lite": 0.7875
+            },
+            "mean": 0.8377,
+            "min": 0.7875,
+            "max": 0.8927,
+            "p95": 0.8842
+          },
+          "adapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.8646,
+              "anthropic/claude-sonnet-5": 0.8042,
+              "anthropic/claude-haiku-4.5": 0.8469,
+              "deepseek/deepseek-chat-v3.1": 0.949,
+              "google/gemini-3.5-flash-lite": 0.9031
+            },
+            "mean": 0.8736,
+            "min": 0.8042,
+            "max": 0.949,
+            "p95": 0.9398
+          },
+          "meanDelta": 0.0359,
+          "improvedUnderAdaptation": 2
+        }
+      },
+      "itemBands": {
+        "pool": 96,
+        "seen": 91,
+        "seenInBothArms": 69,
+        "freeUnadaptedAtOrAbove090": 36,
+        "discriminatingDeltaAtOrAbove015": 10,
+        "hardAdaptedAtOrBelow050": 1
+      },
+      "drawNoise": {
+        "perItemSD": 0.176,
+        "itemsDrawn": 24,
+        "poolSize": 96,
+        "predictedSE": 0.0313,
+        "observedMeanAbsDeltaGateB": 0.0511
+      }
+    },
+    {
+      "packId": "kr-ai-framework-act",
+      "packVersion": "0.3",
+      "provisionCount": 9,
+      "measuredAt": "2026-08-15T08:31:12.580Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 27,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 108,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack.",
+          "adapted": "The same prompt plus a full adaptation context built from the pack and its management guide."
+        }
+      },
+      "sha256": {
+        "standardsPack": "a3af36c97dd47bfc52f908e3c5828a34e69b91e126989af3a3d4df68b52036b4",
+        "publicItemBank": "c0efd44bf1c0a6b170af95bb24ac4b433619e9ffc8b3a2403da60f7641d05802",
+        "adaptationContext": "70e5230e1f62788a1080f7c0f1741483779399fe0a94cd1f55a325d3e7359095"
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6346,
+              "anthropic/claude-sonnet-5": 0.5815,
+              "anthropic/claude-haiku-4.5": 0.6369,
+              "deepseek/deepseek-chat-v3.1": 0.4735,
+              "google/gemini-3.5-flash-lite": 0.4615
+            },
+            "mean": 0.5576,
+            "min": 0.4615,
+            "max": 0.6369,
+            "p95": 0.6364
+          },
+          "adapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.854,
+              "anthropic/claude-sonnet-5": 0.7479,
+              "anthropic/claude-haiku-4.5": 0.6244,
+              "deepseek/deepseek-chat-v3.1": 0.5575,
+              "google/gemini-3.5-flash-lite": 0.4485
+            },
+            "mean": 0.6465,
+            "min": 0.4485,
+            "max": 0.854,
+            "p95": 0.8328
+          },
+          "meanDelta": 0.0889,
+          "improvedUnderAdaptation": 3
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6713,
+              "anthropic/claude-sonnet-5": 0.5972,
+              "anthropic/claude-haiku-4.5": 0.6454,
+              "deepseek/deepseek-chat-v3.1": 0.5685,
+              "google/gemini-3.5-flash-lite": 0.4324
+            },
+            "mean": 0.583,
+            "min": 0.4324,
+            "max": 0.6713,
+            "p95": 0.6661
+          },
+          "adapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.8787,
+              "anthropic/claude-sonnet-5": 0.6898,
+              "anthropic/claude-haiku-4.5": 0.6676,
+              "deepseek/deepseek-chat-v3.1": 0.5157,
+              "google/gemini-3.5-flash-lite": 0.5241
+            },
+            "mean": 0.6552,
+            "min": 0.5157,
+            "max": 0.8787,
+            "p95": 0.8409
+          },
+          "meanDelta": 0.0722,
+          "improvedUnderAdaptation": 4
+        }
+      },
+      "itemBands": {
+        "pool": 108,
+        "seen": 103,
+        "seenInBothArms": 70,
+        "freeUnadaptedAtOrAbove090": 22,
+        "discriminatingDeltaAtOrAbove015": 27,
+        "hardAdaptedAtOrBelow050": 30
+      },
+      "drawNoise": {
+        "perItemSD": 0.3187,
+        "itemsDrawn": 27,
+        "poolSize": 108,
+        "predictedSE": 0.0534,
+        "observedMeanAbsDeltaGateB": 0.1241
+      }
+    }
+  ]
+}
