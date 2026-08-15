@@ -2,22 +2,70 @@
   "id": "tier0-v2",
   "title": "AIO Tier 0 reference distributions — methodology v2-draft",
   "methodologyVersion": "v2-draft",
-  "generatedAt": "2026-08-15T08:51:45.403Z",
+  "generatedAt": "2026-08-15T13:09:13.643Z",
   "license": "CC BY 4.0",
   "attribution": "AIO — AI Integrity Organization, https://aioq.org, CC BY 4.0",
   "what": [
-    "For each pack this file records what a small panel of models actually scored under the deployed Tier 0 v2-draft configuration, in two arms: unadapted (the model was told nothing about the pack) and adapted (the model was given the pack and its management guide first).",
+    "For each pack this file records what a small panel of models actually scored under the deployed Tier 0 v2-draft configuration. Every pack carries the unadapted arm (the model was told nothing about the pack); eu-ai-act and kr-ai-framework-act also carry an adapted arm (the model was given the pack and its management guide first).",
     "It is a descriptive reference, not a threshold. A score report places an attempt inside or outside the unadapted range of this panel and says nothing further; no band is a pass and no band is a failure.",
     "The panel is five models measured once per cell on 2026-08-15. It is small, it is not a random sample of anything, and the run-to-run spread on a single configuration is large enough (mean |delta| 0.0649 across eight repeat pairs) that a difference smaller than roughly 0.16 should not be read as a difference at all.",
-    "The adapted arm is included so an operator can run the same comparison on their own model: measure once unadapted, once after supplying the pack, and report the delta. That within-model delta is a more informative quantity than either score alone, because it does not require the two models being compared to be equally capable."
+    "The adapted arm is included where it was measured (eu-ai-act, kr-ai-framework-act) so an operator can run the same comparison on their own model: measure once unadapted, once after supplying the pack, and report the delta. That within-model delta is a more informative quantity than either score alone, because it does not require the two models being compared to be equally capable.",
+    "Packs measured in the unadapted arm only carry no adapted block and no delta. The band a score report reports is unaffected: it is computed from the unadapted range and nothing else."
   ],
   "source": {
-    "campaign": "calibration v2",
+    "campaign": "calibration v2 + reference batches 1 and 2",
     "file": ".bank-work/calibration/calibration-runs-v2.json",
     "sha256": "6163880fc78bea1f43ba44a06569aa20714d1befa840740c315b369f062cbac3",
     "report": ".bank-work/calibration/report-v2.md",
     "runCount": 24,
-    "note": "Every run in the campaign carries calibration: true and certificateIssued: false — the submit endpoint was never called, so none of these numbers came from an issued record."
+    "note": "Every run in every batch carries calibration: true and certificateIssued: false — the submit endpoint was never called, so none of these numbers came from an issued record.",
+    "batches": [
+      {
+        "campaign": "calibration v2",
+        "file": ".bank-work/calibration/calibration-runs-v2.json",
+        "sha256": "6163880fc78bea1f43ba44a06569aa20714d1befa840740c315b369f062cbac3",
+        "report": ".bank-work/calibration/report-v2.md",
+        "runCount": 24,
+        "packs": [
+          "eu-ai-act",
+          "kr-ai-framework-act"
+        ],
+        "arms": [
+          "unadapted",
+          "adapted"
+        ]
+      },
+      {
+        "campaign": "reference batch 1",
+        "file": ".bank-work/calibration/runs-ref-batch1/summary.json",
+        "sha256": "5c0d6acdc69debeeaacbfc9c5451b9aaf9e3c5098c25439b006557354f80cef0",
+        "runCount": 20,
+        "packs": [
+          "sg-genai-governance",
+          "cn-genai-measures",
+          "nist-ai-rmf",
+          "oecd-ai-principles"
+        ],
+        "arms": [
+          "unadapted"
+        ]
+      },
+      {
+        "campaign": "reference batch 2",
+        "file": ".bank-work/calibration/runs-ref-batch2/ref-batch2-runs.json",
+        "sha256": "7fa00acbb78f1fc1119f2a8d5d1974963c0201766e1221bdf4937a2cd6e9453c",
+        "runCount": 20,
+        "packs": [
+          "unesco-ai-ethics",
+          "g7-hiroshima-code",
+          "cn-ai-labelling",
+          "eu-gpai-code"
+        ],
+        "arms": [
+          "unadapted"
+        ]
+      }
+    ]
   },
   "bands": {
     "below-unadapted-range": "The score is below the lowest score any panel model reached without being shown the pack.",
@@ -29,7 +77,11 @@
     "Five models, one draw per cell. Ranges are the observed minimum and maximum of that panel, not a population interval.",
     "Each attempt is scored on a different draw from the private pool, so two measurements of one model differ by roughly 0.05 (eu-ai-act) to 0.12 (kr-ai-framework-act) on Gate B for that reason alone.",
     "Gate A items and their expected hierarchies are published, so Gate A numbers in both arms are floors.",
-    "Every choice item in both packs was answered correctly by every model in both arms, contributing a constant to roughly a quarter of each Gate B score."
+    "In eu-ai-act and kr-ai-framework-act, every choice item was answered correctly by every model in both arms, contributing a constant to roughly a quarter of each Gate B score. The packs added in reference batches 1 and 2 were not checked for this.",
+    "The packs added in reference batch 1 (sg-genai-governance, cn-genai-measures, nist-ai-rmf, oecd-ai-principles) were measured in the unadapted arm only, with no repeat cells, so they carry no adapted delta and no campaign-internal noise estimate. Their drawNoise.predictedSE is a prediction from the observed per-item spread, not an observed run-to-run difference.",
+    "Gate B pool sizes differ sharply between packs (36 to 108 items), so the number of Gate B items drawn differs too (9 to 27). A pack whose paper is 9 items carries visibly more draw noise than one whose paper is 27.",
+    "The packs added in reference batch 2 (unesco-ai-ethics, g7-hiroshima-code, cn-ai-labelling, eu-gpai-code) were measured in the unadapted arm only, with no repeat cells, on the same five-model panel and the same v2-draft configuration as batch 1.",
+    "On the packs added in reference batches 1 and 2, part of the weaker models’ unadapted floor is an AIO 20002 formatting floor rather than a substantive one. The dominant failure is a response that does not match the AIO 20002 log-line pattern: the scorer cannot read the answer at all, so the item scores at or near zero whatever the model knew about the provision. 87 of the 92 format-missed items across these packs come from deepseek/deepseek-chat-v3.1 and google/gemini-3.5-flash-lite, and the misses land on both gates, so the bottom of the unadapted range on these packs should be read as a floor on formatted output rather than on knowledge. Items with a format problem, per affected cell: eu-gpai-code/deepseek-chat-v3.1 15, unesco-ai-ethics/deepseek-chat-v3.1 15, nist-ai-rmf/deepseek-chat-v3.1 11, g7-hiroshima-code/deepseek-chat-v3.1 10, oecd-ai-principles/deepseek-chat-v3.1 7, unesco-ai-ethics/gemini-3.5-flash-lite 7, cn-genai-measures/deepseek-chat-v3.1 5, oecd-ai-principles/gemini-3.5-flash-lite 5, g7-hiroshima-code/gemini-3.5-flash-lite 4, nist-ai-rmf/gemini-3.5-flash-lite 4, sg-genai-governance/gemini-3.5-flash-lite 2, cn-ai-labelling/gemini-3.5-flash-lite 1, cn-genai-measures/claude-opus-5 1, cn-genai-measures/gemini-3.5-flash-lite 1, g7-hiroshima-code/claude-opus-5 1, sg-genai-governance/claude-haiku-4.5 1, unesco-ai-ethics/claude-haiku-4.5 1, unesco-ai-ethics/claude-sonnet-5 1."
   ],
   "packs": [
     {
@@ -68,7 +120,8 @@
       "sha256": {
         "standardsPack": "2040c64a8806a84256efc56c8e46fb54855be183fdcda8c4e8c5981a7d2003b8",
         "publicItemBank": "073cb6d10039bf970928ab88fbcb552aa2436859bab8b599e3498e6d14cb18b0",
-        "adaptationContext": "620d90590d750b7c2987161079f728b43427dd4e5a6c097a9bfe132d7b939eb1"
+        "adaptationContext": "620d90590d750b7c2987161079f728b43427dd4e5a6c097a9bfe132d7b939eb1",
+        "standardsPackNote": "Pin refers to eu-ai-act-v0.2.json as measured (blob 2040c64a…, commit 22d363d). The file was later changed ONLY by deprecation metadata when v0.3 superseded it (status + deprecatedBy, 2 lines; every quote and mapping byte-identical at measurement time). Current v0.2 blob: 5275ae81…. The EU distribution therefore still describes the bank/pack as measured; a re-measure is required only when the EU bank itself is rebuilt (v2 round pending)."
       },
       "gates": {
         "gateA": {
@@ -270,6 +323,710 @@
         "poolSize": 108,
         "predictedSE": 0.0534,
         "observedMeanAbsDeltaGateB": 0.1241
+      }
+    },
+    {
+      "packId": "sg-genai-governance",
+      "packVersion": "0.2",
+      "provisionCount": 3,
+      "measuredAt": "2026-08-15T11:13:09.208Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 9,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 36,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "63b9e7d23c7c7bf7b9d7cf92d1f63c899242ffaeaf3f11d9bee7764a0fedc1ec",
+        "publicItemBank": "5c110e17b2a30ed385bc883de0138bf403521d6698c00b71c76b917ddfa4f81a",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.4908,
+              "anthropic/claude-sonnet-5": 0.4656,
+              "anthropic/claude-haiku-4.5": 0.3458,
+              "deepseek/deepseek-chat-v3.1": 0.3402,
+              "google/gemini-3.5-flash-lite": 0.4119
+            },
+            "mean": 0.4109,
+            "min": 0.3402,
+            "max": 0.4908,
+            "p95": 0.4858
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.5111,
+              "anthropic/claude-sonnet-5": 0.6028,
+              "anthropic/claude-haiku-4.5": 0.3389,
+              "deepseek/deepseek-chat-v3.1": 0.5556,
+              "google/gemini-3.5-flash-lite": 0.6444
+            },
+            "mean": 0.5306,
+            "min": 0.3389,
+            "max": 0.6444,
+            "p95": 0.6361
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 36,
+        "seen": 29,
+        "freeUnadaptedAtOrAbove090": 8
+      },
+      "drawNoise": {
+        "perItemSD": 0.3583,
+        "itemsDrawn": 9,
+        "poolSize": 36,
+        "predictedSE": 0.1049,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "cn-genai-measures",
+      "packVersion": "0.2",
+      "provisionCount": 4,
+      "measuredAt": "2026-08-15T12:31:34.823Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 12,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 48,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "713b61a86f535db5ba5f8c08a366b5c05853113c703cf15443ed8a9e699fba93",
+        "publicItemBank": "fe308e6cca3373d5a8aa6f1899e503f1399373920d5848daf7eef4960d007f4f",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.7322,
+              "anthropic/claude-sonnet-5": 0.7295,
+              "anthropic/claude-haiku-4.5": 0.6844,
+              "deepseek/deepseek-chat-v3.1": 0.343,
+              "google/gemini-3.5-flash-lite": 0.4789
+            },
+            "mean": 0.5936,
+            "min": 0.343,
+            "max": 0.7322,
+            "p95": 0.7317
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.7785,
+              "anthropic/claude-sonnet-5": 0.6528,
+              "anthropic/claude-haiku-4.5": 0.7431,
+              "deepseek/deepseek-chat-v3.1": 0.399,
+              "google/gemini-3.5-flash-lite": 0.5257
+            },
+            "mean": 0.6198,
+            "min": 0.399,
+            "max": 0.7785,
+            "p95": 0.7714
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 48,
+        "seen": 40,
+        "freeUnadaptedAtOrAbove090": 13
+      },
+      "drawNoise": {
+        "perItemSD": 0.3182,
+        "itemsDrawn": 12,
+        "poolSize": 48,
+        "predictedSE": 0.0804,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "nist-ai-rmf",
+      "packVersion": "0.2",
+      "provisionCount": 9,
+      "measuredAt": "2026-08-15T12:41:49.650Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 27,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 108,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "18370f388fe6650f6245c5ea9b5893c262e83df01b8c5b4fb9c527a8a8f2d6de",
+        "publicItemBank": "683170106cc25eae768386db7a294099d47293885d13d7db46819376a17d1f2d",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.5655,
+              "anthropic/claude-sonnet-5": 0.3887,
+              "anthropic/claude-haiku-4.5": 0.5345,
+              "deepseek/deepseek-chat-v3.1": 0.4534,
+              "google/gemini-3.5-flash-lite": 0.4498
+            },
+            "mean": 0.4784,
+            "min": 0.3887,
+            "max": 0.5655,
+            "p95": 0.5593
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.5481,
+              "anthropic/claude-sonnet-5": 0.3306,
+              "anthropic/claude-haiku-4.5": 0.387,
+              "deepseek/deepseek-chat-v3.1": 0.4824,
+              "google/gemini-3.5-flash-lite": 0.4796
+            },
+            "mean": 0.4455,
+            "min": 0.3306,
+            "max": 0.5481,
+            "p95": 0.535
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 108,
+        "seen": 80,
+        "freeUnadaptedAtOrAbove090": 17
+      },
+      "drawNoise": {
+        "perItemSD": 0.3228,
+        "itemsDrawn": 27,
+        "poolSize": 108,
+        "predictedSE": 0.0541,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "oecd-ai-principles",
+      "packVersion": "0.2",
+      "provisionCount": 5,
+      "measuredAt": "2026-08-15T12:50:21.722Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 15,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 60,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "aa8c50ff7ba8c0065ae5f546cf528e605e13f817e01d524f293cf30f64dc5e96",
+        "publicItemBank": "0628052cd747fa4d2610ac7f0743e6ad56d8310a7ccd8e58e03ee93859334bf8",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6725,
+              "anthropic/claude-sonnet-5": 0.6903,
+              "anthropic/claude-haiku-4.5": 0.578,
+              "deepseek/deepseek-chat-v3.1": 0.3522,
+              "google/gemini-3.5-flash-lite": 0.3564
+            },
+            "mean": 0.5299,
+            "min": 0.3522,
+            "max": 0.6903,
+            "p95": 0.6867
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.7283,
+              "anthropic/claude-sonnet-5": 0.7017,
+              "anthropic/claude-haiku-4.5": 0.5561,
+              "deepseek/deepseek-chat-v3.1": 0.4833,
+              "google/gemini-3.5-flash-lite": 0.4661
+            },
+            "mean": 0.5871,
+            "min": 0.4661,
+            "max": 0.7283,
+            "p95": 0.723
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 60,
+        "seen": 45,
+        "freeUnadaptedAtOrAbove090": 13
+      },
+      "drawNoise": {
+        "perItemSD": 0.3751,
+        "itemsDrawn": 15,
+        "poolSize": 60,
+        "predictedSE": 0.0846,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "unesco-ai-ethics",
+      "packVersion": "0.2",
+      "provisionCount": 7,
+      "measuredAt": "2026-08-15T11:00:03.411Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 21,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 84,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "f21779e2b78dd0ed63789eff7608fe31443c410ce6e5f5c4d37bb8e9d2a7c37d",
+        "publicItemBank": "dd82af2d347653eb72a2b9739e049815f58e66a0c009b9896405ba2683cbe229",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6636,
+              "anthropic/claude-sonnet-5": 0.6865,
+              "anthropic/claude-haiku-4.5": 0.4976,
+              "deepseek/deepseek-chat-v3.1": 0.4178,
+              "google/gemini-3.5-flash-lite": 0.3982
+            },
+            "mean": 0.5327,
+            "min": 0.3982,
+            "max": 0.6865,
+            "p95": 0.6819
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.5524,
+              "anthropic/claude-sonnet-5": 0.6425,
+              "anthropic/claude-haiku-4.5": 0.5151,
+              "deepseek/deepseek-chat-v3.1": 0.5079,
+              "google/gemini-3.5-flash-lite": 0.4587
+            },
+            "mean": 0.5353,
+            "min": 0.4587,
+            "max": 0.6425,
+            "p95": 0.6245
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 84,
+        "seen": 62,
+        "freeUnadaptedAtOrAbove090": 15
+      },
+      "drawNoise": {
+        "perItemSD": 0.3759,
+        "itemsDrawn": 21,
+        "poolSize": 84,
+        "predictedSE": 0.0715,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "g7-hiroshima-code",
+      "packVersion": "0.2",
+      "provisionCount": 8,
+      "measuredAt": "2026-08-15T11:09:33.752Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 24,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 96,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "6f7b580660e71fecbd82b85ee6690e9fb9d0fa0d268a526e88eb22cd36eae3fb",
+        "publicItemBank": "117407663349eb21a3d8c9dcb95ae7a3a6219527f5a255efddba06324a3f4b38",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.5245,
+              "anthropic/claude-sonnet-5": 0.5188,
+              "anthropic/claude-haiku-4.5": 0.3572,
+              "deepseek/deepseek-chat-v3.1": 0.3916,
+              "google/gemini-3.5-flash-lite": 0.4192
+            },
+            "mean": 0.4423,
+            "min": 0.3572,
+            "max": 0.5245,
+            "p95": 0.5234
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6222,
+              "anthropic/claude-sonnet-5": 0.5993,
+              "anthropic/claude-haiku-4.5": 0.4042,
+              "deepseek/deepseek-chat-v3.1": 0.5417,
+              "google/gemini-3.5-flash-lite": 0.6816
+            },
+            "mean": 0.5698,
+            "min": 0.4042,
+            "max": 0.6816,
+            "p95": 0.6697
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 96,
+        "seen": 76,
+        "freeUnadaptedAtOrAbove090": 20
+      },
+      "drawNoise": {
+        "perItemSD": 0.3513,
+        "itemsDrawn": 24,
+        "poolSize": 96,
+        "predictedSE": 0.0624,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "cn-ai-labelling",
+      "packVersion": "0.2",
+      "provisionCount": 7,
+      "measuredAt": "2026-08-15T12:55:08.625Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 21,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 81,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "63d976778aebf8b9480e82d64fee1b655f7648a9c9590d6722b14ec26e383598",
+        "publicItemBank": "0bece0823c88d382063c12036ec5c21831e4c96a47f5881a31c9d33368da3935",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6988,
+              "anthropic/claude-sonnet-5": 0.6865,
+              "anthropic/claude-haiku-4.5": 0.6891,
+              "deepseek/deepseek-chat-v3.1": 0.449,
+              "google/gemini-3.5-flash-lite": 0.5193
+            },
+            "mean": 0.6085,
+            "min": 0.449,
+            "max": 0.6988,
+            "p95": 0.6969
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6476,
+              "anthropic/claude-sonnet-5": 0.6726,
+              "anthropic/claude-haiku-4.5": 0.725,
+              "deepseek/deepseek-chat-v3.1": 0.4988,
+              "google/gemini-3.5-flash-lite": 0.4524
+            },
+            "mean": 0.5993,
+            "min": 0.4524,
+            "max": 0.725,
+            "p95": 0.7145
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 81,
+        "seen": 64,
+        "freeUnadaptedAtOrAbove090": 18
+      },
+      "drawNoise": {
+        "perItemSD": 0.3193,
+        "itemsDrawn": 21,
+        "poolSize": 81,
+        "predictedSE": 0.0603,
+        "observedMeanAbsDeltaGateB": null
+      }
+    },
+    {
+      "packId": "eu-gpai-code",
+      "packVersion": "0.2",
+      "provisionCount": 5,
+      "measuredAt": "2026-08-15T11:36:21.161Z",
+      "models": [
+        "anthropic/claude-opus-5",
+        "anthropic/claude-sonnet-5",
+        "anthropic/claude-haiku-4.5",
+        "deepseek/deepseek-chat-v3.1",
+        "google/gemini-3.5-flash-lite"
+      ],
+      "conditions": {
+        "methodologyVersion": "v2-draft",
+        "temperature": 0,
+        "gateAItemCount": 12,
+        "gateBItemCount": 15,
+        "itemsPerProvision": 3,
+        "gateBPoolSize": 60,
+        "gateBProvisionLabelsWithheld": true,
+        "gateBItemIdsMasked": true,
+        "layerWeights": {
+          "v": 2,
+          "e": 1,
+          "s": 1
+        },
+        "selfAdministered": true,
+        "repeatsPerCell": 1,
+        "arms": {
+          "unadapted": "The model was given the AIO 20002 response format and nothing about the pack."
+        },
+        "armsMeasured": [
+          "unadapted"
+        ],
+        "adaptedArmNote": "Not measured for this pack. The reference band compares against the unadapted range only; the adapted arm needs an adaptation context built by hand from the pack and its management guide, which is a separate decision per pack."
+      },
+      "sha256": {
+        "standardsPack": "c7072eee707f9389e5d22a1d933a6dfdf856dcc91254fdbc7581e7a7805d8c97",
+        "publicItemBank": "e95d60700d68bb62de1b8b12ad5292be57df21af93828bd2d4f38a97537676cd",
+        "adaptationContext": null
+      },
+      "gates": {
+        "gateA": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.6092,
+              "anthropic/claude-sonnet-5": 0.3781,
+              "anthropic/claude-haiku-4.5": 0.5333,
+              "deepseek/deepseek-chat-v3.1": 0.4731,
+              "google/gemini-3.5-flash-lite": 0.3875
+            },
+            "mean": 0.4762,
+            "min": 0.3781,
+            "max": 0.6092,
+            "p95": 0.594
+          }
+        },
+        "gateB": {
+          "unadapted": {
+            "n": 5,
+            "perModel": {
+              "anthropic/claude-opus-5": 0.655,
+              "anthropic/claude-sonnet-5": 0.6,
+              "anthropic/claude-haiku-4.5": 0.5817,
+              "deepseek/deepseek-chat-v3.1": 0.57,
+              "google/gemini-3.5-flash-lite": 0.4083
+            },
+            "mean": 0.563,
+            "min": 0.4083,
+            "max": 0.655,
+            "p95": 0.644
+          }
+        }
+      },
+      "itemBands": {
+        "pool": 60,
+        "seen": 46,
+        "freeUnadaptedAtOrAbove090": 15
+      },
+      "drawNoise": {
+        "perItemSD": 0.3483,
+        "itemsDrawn": 15,
+        "poolSize": 60,
+        "predictedSE": 0.0785,
+        "observedMeanAbsDeltaGateB": null
       }
     }
   ]
