@@ -1,0 +1,260 @@
+{
+  "packId": "eu-gpai-code",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:39:37.257Z",
+  "itemCount": 60,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "eu-gpai-gb-cr1-3-01",
+      "sha256": "7deb87ec8a3c9b233ec7f1e25fe71e47f5fdea1f7e13a76f523582d39e071ef8"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-02",
+      "sha256": "6034e4cc7a00c6708789810fe938ca253eaf30b29b9380348d1b92c7b6dbbd93"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-03",
+      "sha256": "fcd502464e9072425261256883c8a8f9ccf824c289da8cb8e2536f6dc8d7d7b5"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-04",
+      "sha256": "ab1ad3e0bfa3d3dce8544a7ffe8d7b7ed9df9356faa1e8be7a9b99c7156f96d0"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-05",
+      "sha256": "04d25af750b75bc9579e63ba232da8c397a7b949ff72cf705c23442b5dd921fc"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-06",
+      "sha256": "359af8563ef945ab6506807473e8dc1cf9072503e6f7624fbfa6aef71a41f7f0"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-07",
+      "sha256": "513c8ba7119fcbd3fcbbd1442e4ce24d31ef09e6b767717c4b92fdd1a1f75a50"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-08",
+      "sha256": "8335122a05671fdd993eda07ae2b2344db847edd730910d879ef61e01d92cf6a"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-09",
+      "sha256": "5e794d24a62c212ca9bada7cd8eb0e56ef1a98dd30a871a3eda5b2599bdb2452"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-10",
+      "sha256": "37227f4ae103601dbf009a3ebe2f6ca546e07db8ce1cf72927a013d6774d81d8"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-11",
+      "sha256": "8d8c2d7ca279b77e5bd525579cf2eebeffc8e2491805a9768168fab972d29acf"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-3-12",
+      "sha256": "28e8a8d761f1d82807438c46d733cfe0b35376544fd6a902b3bac943ce32b152"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-01",
+      "sha256": "f32707613901b3c737d3e5b1feb27211dfbc75b84e76b43519399f03d523c846"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-02",
+      "sha256": "94f47358fb8d6f6fcbfb6afb4105837665012293d203100c32808db75c6fd896"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-03",
+      "sha256": "89c20daa510d1f7a0c9d279ef93dbb28e1a20f7c81455e079dcca35e2f91daa8"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-04",
+      "sha256": "dc659167be283e2e9a947b75febc22eea11469ac3e3f993734e050ec16db2f68"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-05",
+      "sha256": "6b46a6b874775aa755dd90dce980e35a88c05abf2bf7b96c199c8eb8872d2c7f"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-06",
+      "sha256": "51d64fffbffc175e88194557450bcea7459c9db2161df725cf717638638042cf"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-07",
+      "sha256": "0b6ad428a42a73ab458b50b71c2ef749acf8d97fd9e1c1fa89f4de9ba9ee6ae8"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-08",
+      "sha256": "22bad9f4e5d119505622e80df8501f8464e9c90ae02b487e0f627b37249092d7"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-09",
+      "sha256": "e80bfaf607bda385881c2df1ca2f83eedd5867df796d320e1c69c64e8e5a653a"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-10",
+      "sha256": "c4f8373b4b4a23f9f707ae66a346776d1f3d3b1c59e4f30e90e011d8e356f0e2"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-11",
+      "sha256": "34bb98a47e12961dee5f15878cf4352535b291c25b512af85b44b341bf3be38e"
+    },
+    {
+      "id": "eu-gpai-gb-cr1-5-12",
+      "sha256": "b88d87604bf938d89340c9645a1b4a4bb3994eb2ce2b2f0b77e17050e5d68035"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-01",
+      "sha256": "4b08d451138898957ad21502fb0531f498e2c7c61a184407139c382a943c687c"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-02",
+      "sha256": "530619d489c33b98044888ae1ac37baa42062804a852cde6dd93d9a9d39dbdea"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-03",
+      "sha256": "6025e5d39cdccd68c83cbc566872476e1a324d5efbb0b77535daf820af5e4b88"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-04",
+      "sha256": "7496b01419e8bbb1ef0e52f3a9f05034eed69e5767759c6761cca65f8d8e2122"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-05",
+      "sha256": "0a65413a6c4e70dfbce6dd9bfbc363530efb832e85ea9e58b5e2870e13d75469"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-06",
+      "sha256": "5afec6751421a15c20b52417f0ade01662005eecee38a9e3cd6ae8d246c94200"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-07",
+      "sha256": "144e2063cae7e8efcbd9c89dc8ca75fe9db41ec135b2db2c83ad446fc1518236"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-08",
+      "sha256": "86623de1d36af3c161b65508b093027595f6b87b1da46ab82ee9582cbdd74219"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-09",
+      "sha256": "d753ef782036878fcb24fba605abd75914ee07082435383f0714c2fd0e5d1ec7"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-10",
+      "sha256": "dc91d78b58b47aa3e17adfeb91e8ba820e31e9f3f72e19bd6652c9cc82630863"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-11",
+      "sha256": "81fa7563dadc509f2e8f92cbaf3d1ab6a9d06ce9e3e44acf060f4034c0a3bf2b"
+    },
+    {
+      "id": "eu-gpai-gb-ss4-12",
+      "sha256": "4e7ec7b2bfdf077a2b5e7569d4e9488a67ff376b3a9c223225d2f857e7ebf1a8"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-01",
+      "sha256": "b7c9e232b540176a0b616a824bd8ab8ac2af935020f28beb782c99bcf6d40976"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-02",
+      "sha256": "4e25201bde736e0bdaf1fc639f1702f639c65eedce72ee3d8e53386d1e6757b5"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-03",
+      "sha256": "6829af9f7b2a1760ccf02e49b41b39b5f6c5636480d34a741b0dab7d3e158d41"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-04",
+      "sha256": "7075ee7d8efb67b3665b3fda33d51f571b24172f9c51eab8310f08d3823d1f2d"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-05",
+      "sha256": "4983f6810662e4d5ee7ad0dac5674a9496253d332fe99c9af33748bf40731a25"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-06",
+      "sha256": "ba625b068b4870802b04565218c020d941efd98af80e2409617aaf9d6bf43241"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-07",
+      "sha256": "32163231a83b3fe280eb7fdc2cdf6987c8146803cbdc20f2a9881cf59a292430"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-08",
+      "sha256": "d704732e99ccf48d2f2d058826596a49f30314fc7158fbce24142b56929f7484"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-09",
+      "sha256": "0d3493565fdd77d9666a34c120ca77b8284702a6f38ce13191479bd53b386928"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-10",
+      "sha256": "3eedbef523ab43dd2eda9ef929396c18e6c7e4fb4880ba52d1ed22fb6095b96a"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-11",
+      "sha256": "bdaf643d44c92da3bbf76a04daba8efcff7a077428db1a5ad139db6d6af99fd6"
+    },
+    {
+      "id": "eu-gpai-gb-ss7-2-12",
+      "sha256": "dbd501dffc19dfa0675851a1716a2f97ccef2e3b62cd930dfcee1036b4eaf057"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-01",
+      "sha256": "410948f8bc7c116ee9e05ba38ed81648be17c99773f98c097f891d17bd0c46c6"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-02",
+      "sha256": "bc42d28cb9ccd2ad6e8d9405ca8c358eccfe2e4c14593cf429e3e3644858dd66"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-03",
+      "sha256": "ca5a5a54631fb1a1e7c101466ec8e50a81cd4144fcf36dbdb2230a9d7cf8cef8"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-04",
+      "sha256": "70f2735981d58643bbe332bbd17a10ac07c4419299fb0a11d52bb9b1359cf7fe"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-05",
+      "sha256": "59b434ff43de87f2cb71e05c0e12d7d3355b96fab2ca20d0c81160af54f5ef8c"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-06",
+      "sha256": "62d1d24801ec3c27f99b8b1aa44b9099f774aeb106a2ae3ad90df5ab9d312f9e"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-07",
+      "sha256": "9eb11faf99781a5ec274ee9457e4497a8f87f69c393623f728dadaac07a6a772"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-08",
+      "sha256": "eb1f22374317f582c031ac69a362813e6a244a924a237c999638b34a51c4d494"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-09",
+      "sha256": "b049b71d31373aeef0b9454536ae284908459a220dfb6e3fd7c4987bdb57f382"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-10",
+      "sha256": "8a6e97e25bc3e3d9ddce684493a7f8f6e30a23d72a302e3769c7196669d31588"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-11",
+      "sha256": "c65d6a0236d25e3accac48d8084c9f66559e0e873b08097e8c35fb2aa8f404b2"
+    },
+    {
+      "id": "eu-gpai-gb-tr1-2-12",
+      "sha256": "4bf7fbc941eb30c3a2fdd533e6f8c6be93b21533b74897f1e0253dd5a4009077"
+    }
+  ],
+  "snapshotSha256": "19432830dad5471353149b2f644ec33c9aec8095db23f0b77cee682e64571f14",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "Yyb_In44s-7ISR257fKWRtxt2oAwxZUWIvwXVWLwEXv1L0wnf0Xs3VSRByGZJm6x8ipoFejcZEzitxwdvQumAg",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}

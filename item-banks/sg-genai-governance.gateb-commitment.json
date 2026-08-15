@@ -1,0 +1,164 @@
+{
+  "packId": "sg-genai-governance",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:37:02.985Z",
+  "itemCount": 36,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "sg-genai-gb-dim3-01",
+      "sha256": "47add076418defe68b638ff84b61f2de50b18471e2efea8442abba64571657ca"
+    },
+    {
+      "id": "sg-genai-gb-dim3-02",
+      "sha256": "f348e16d7dc8f8805f537a2e2dca31b9b39376da81e15ed76544527b4c0ac242"
+    },
+    {
+      "id": "sg-genai-gb-dim3-03",
+      "sha256": "972906e37c213a59f11f3e127a12ab000f00d5dbf7fcfa5b7621bdf7fbfed1e8"
+    },
+    {
+      "id": "sg-genai-gb-dim3-04",
+      "sha256": "540604d9a4e90c8f03443dea9268f3de53f9480cd3e9743a62400dd5c5db29d3"
+    },
+    {
+      "id": "sg-genai-gb-dim3-05",
+      "sha256": "f73adfe8761c314c71ed014a7db8b33b915ca69e6f17762ab51a1a48a14c38ee"
+    },
+    {
+      "id": "sg-genai-gb-dim3-06",
+      "sha256": "6d8c2973330dffa5a33458accd37be0149f9b121fdbc26c4e6bde4fe4856edf4"
+    },
+    {
+      "id": "sg-genai-gb-dim3-07",
+      "sha256": "4be88c0fb11dbbcd839c4f6fb1f4f45a569b449c861c1888367a4709db6a5801"
+    },
+    {
+      "id": "sg-genai-gb-dim3-08",
+      "sha256": "c028a6c2dfdcdc0731ce89b93126b395c333619c2a27738e636ff0ba84e8be3a"
+    },
+    {
+      "id": "sg-genai-gb-dim3-09",
+      "sha256": "c4c1a4ec5f51975d43a3c9e25bd04bfaea1399dabd5d87c67f762bc3a2ded557"
+    },
+    {
+      "id": "sg-genai-gb-dim3-10",
+      "sha256": "8b8d2b4567b0f57d39808b8ced6e5d4dbb4fc71bebb1e1f156637644411fc8f9"
+    },
+    {
+      "id": "sg-genai-gb-dim3-11",
+      "sha256": "1eb6f9f7bca18bc9eea928d6551fd38cf5fc05abe42d91675b8f063de2aebb42"
+    },
+    {
+      "id": "sg-genai-gb-dim3-12",
+      "sha256": "df2fe9141b22b01d4b51c69ffee857f21603099a6cbc00d936f089ba36c9a015"
+    },
+    {
+      "id": "sg-genai-gb-dim4-01",
+      "sha256": "37e50c808e7f978b9f5aa6e796668cbd26cb3bbde279f85adbff0f641a886680"
+    },
+    {
+      "id": "sg-genai-gb-dim4-02",
+      "sha256": "731006cd179f1e142e91136766d84e38e771ea17e980c46978d448ec56ae8010"
+    },
+    {
+      "id": "sg-genai-gb-dim4-03",
+      "sha256": "69cbd8ab1e7dcf08cf0b01cc93b800ca5485b9ba6ce16f5ea84a2f96b353b94f"
+    },
+    {
+      "id": "sg-genai-gb-dim4-04",
+      "sha256": "b27d75c35fa66e3ca1ae481675d2cb965b84f960cc80e79941fa5ef6c80685a4"
+    },
+    {
+      "id": "sg-genai-gb-dim4-05",
+      "sha256": "a097fa8550d287cc306517a1521287c5dd6d34183a340c23599d112543ef0f70"
+    },
+    {
+      "id": "sg-genai-gb-dim4-06",
+      "sha256": "9896d72a4926132df5747494081d1cc1e4320d31a6b982d2748d354f77e95bba"
+    },
+    {
+      "id": "sg-genai-gb-dim4-07",
+      "sha256": "a07618f911b5841ce86af877968d91ef7035cba11e09aa3a69b852971ba23031"
+    },
+    {
+      "id": "sg-genai-gb-dim4-08",
+      "sha256": "e749d4871572cb088274a5ed55931e4d19c9739d1e7336556212fc6dffa02959"
+    },
+    {
+      "id": "sg-genai-gb-dim4-09",
+      "sha256": "66815350012f5a3788de1adb7da42b05a3590be5cb841319094e4970f4f4e388"
+    },
+    {
+      "id": "sg-genai-gb-dim4-10",
+      "sha256": "33d7be154c2383190436146ec3d487084f07eb15e8916b917300c20c96758059"
+    },
+    {
+      "id": "sg-genai-gb-dim4-11",
+      "sha256": "9088e444daf1467d92c3a7a78a3e5a0817c34c112763c43940420d632ed4e459"
+    },
+    {
+      "id": "sg-genai-gb-dim4-12",
+      "sha256": "d92bc13aa8ff949e31b019cb80e51c7b7df2a3f5dd46c05f0da32a1bf4c204de"
+    },
+    {
+      "id": "sg-genai-gb-dim7-01",
+      "sha256": "6eecf7d05188c2ef249054e01800286feb01723351ee9654b34d42b19cc3e1ab"
+    },
+    {
+      "id": "sg-genai-gb-dim7-02",
+      "sha256": "1d0fa7b6964dbf53d6555e7473986ebb0f3324f3c5280e2bf2fef1dc7c699516"
+    },
+    {
+      "id": "sg-genai-gb-dim7-03",
+      "sha256": "562da1d1bbb1fea819a19c00c30debb60b29012758e98405615cffd9bc129de4"
+    },
+    {
+      "id": "sg-genai-gb-dim7-04",
+      "sha256": "9f5fdd8973a89985f025d72ec4e83d71e7cc9326750e37dd4a7cd4b096c19388"
+    },
+    {
+      "id": "sg-genai-gb-dim7-05",
+      "sha256": "5c3f0782540bcf4027ee84407ff318b4504eb65b4344ef661a90d384411b1cc2"
+    },
+    {
+      "id": "sg-genai-gb-dim7-06",
+      "sha256": "bcb4d90f8a72d43b20360538308f11cb3de5f818ce44f14a0dc4f465e6768fd8"
+    },
+    {
+      "id": "sg-genai-gb-dim7-07",
+      "sha256": "99ad58e86ce837d9441669597dbb63490f2411cdbc043157b3b401a00cc47581"
+    },
+    {
+      "id": "sg-genai-gb-dim7-08",
+      "sha256": "b6dded7c06c96391dd5867fc57329c8c79f02605d785d7dacb803f83da822f07"
+    },
+    {
+      "id": "sg-genai-gb-dim7-09",
+      "sha256": "5fc2d48d076ebe385f4c03fcebfbc8725e582526592f68e22b52b29bcb900c29"
+    },
+    {
+      "id": "sg-genai-gb-dim7-10",
+      "sha256": "70adb9cc9d47ee2e92924b71725562f7908c85a1d8864c0c32490dab7042bb54"
+    },
+    {
+      "id": "sg-genai-gb-dim7-11",
+      "sha256": "998d13d2e45c74e67057f94dfe0982bc2b9e45c245b84f5d82d0fa2c6f877036"
+    },
+    {
+      "id": "sg-genai-gb-dim7-12",
+      "sha256": "f5f67f12b2f4089ead6bcc10cfc628bee311cbe3238866df1546c164e4d8a4b8"
+    }
+  ],
+  "snapshotSha256": "84b25050774afc8b31af270bbcaeed82777bb212a79d243a9c341cdb3063bf4c",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "EvCOs4AV4C14v9La1XciNnVSDXGjD-arC6CXpHwFLZb0l1-VBVoAL8k0cKlK5-Hx14wfLcuRf-ioitVz-xc7AA",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}

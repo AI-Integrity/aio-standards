@@ -1,0 +1,452 @@
+{
+  "packId": "nist-ai-rmf",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:37:55.858Z",
+  "itemCount": 108,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "nist-gb-govern-3-2-01",
+      "sha256": "3e144ff86bae0fe9cdffd0b5505fc3308dcb66b04eefded35d9fcf52c9745d33"
+    },
+    {
+      "id": "nist-gb-govern-3-2-02",
+      "sha256": "9f764ab04b376c9ce728d2f8c39554b36d3e513896eee536449667699d3b1cb3"
+    },
+    {
+      "id": "nist-gb-govern-3-2-03",
+      "sha256": "f74995c614b3970b61d05de61c600f7e8bcb2fc80830a4ead0c2cc9377bc169b"
+    },
+    {
+      "id": "nist-gb-govern-3-2-04",
+      "sha256": "2ee082e64c97d1d2539aac12618a42a71ff755dcb929e0abbe97bb04b5a7a071"
+    },
+    {
+      "id": "nist-gb-govern-3-2-05",
+      "sha256": "33c40e32a4194ef7d3a970445dca1ae04cd07a1a53bbd946b9c2557e7bf8f5fd"
+    },
+    {
+      "id": "nist-gb-govern-3-2-06",
+      "sha256": "1d33c7bcfb3893ddf772ba7fb0660f35b73ad07e2a01301725f93146d2719536"
+    },
+    {
+      "id": "nist-gb-govern-3-2-07",
+      "sha256": "4ea5067d9f85e5be0c7a2619f6bf5b236e1665dce50541bfd0616f9e2b514b18"
+    },
+    {
+      "id": "nist-gb-govern-3-2-08",
+      "sha256": "bf58aad87974f4d4a8c595a287f573d6f65b4983d285e3885e5bdc48475a8986"
+    },
+    {
+      "id": "nist-gb-govern-3-2-09",
+      "sha256": "f0f4f8d7386c2321a1536a9293524aa13596e9fa54f15b5eb6e5cd03a5af9998"
+    },
+    {
+      "id": "nist-gb-govern-3-2-10",
+      "sha256": "af288d175aae1709b5404716221c3219a0ea967a0521aacc581ccc9221f80780"
+    },
+    {
+      "id": "nist-gb-govern-3-2-11",
+      "sha256": "bdb29b98032c86ae2356eec22c683ad4da11bbfcb72d69147baaf2a435370d61"
+    },
+    {
+      "id": "nist-gb-govern-3-2-12",
+      "sha256": "1a2372b833316975393fd6b61061837601db2fa784e0e82e0471ee6b71f28d1a"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-01",
+      "sha256": "65abec612b9804edfcd838331668ec5697b92bac2e6cf0cd5edb11508fede724"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-02",
+      "sha256": "051964df9c96e7d201ceb491e8b1e4fbc1249ea4a257ad9172da15cd3b13d110"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-03",
+      "sha256": "ba248b9c7a05444511fae5acc9d7e915807da1a11ada08442175b5385c95c41f"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-04",
+      "sha256": "e4818d725f5232b38a0617f6c04888b53ab3c8f5292467204fb01422d8d9875f"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-05",
+      "sha256": "821837323c1f4168e9a56cde69ad4ed5838de56d8ae8c76628ee58863b44e1ba"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-06",
+      "sha256": "f7d2e9b10d9fef2b6364dffe049350bc7039695e41af315d150f60abb10e0c6f"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-07",
+      "sha256": "00ae6c0223d9c019f09168e88a8d4b740093b2a42dc394cc265a9b5cf9283c22"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-08",
+      "sha256": "d7deba4ea83f549743d99c4e54c906a1ac0347d72c8e71fcbbe8bcb800a7f37d"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-09",
+      "sha256": "660b14236638983f545ed29539ba9a022b03924e8b9bda6be8b79d0cafb64180"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-10",
+      "sha256": "68df64d33995dbcf543232de470448fc63ca2b1844d133e8d0c6ea3d4792ac0a"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-11",
+      "sha256": "8ae7dd14baa2c7c65854fddf42de5ffdce19e21d0764fc87ff5943c8df915436"
+    },
+    {
+      "id": "nist-gb-gv-1-3-007-12",
+      "sha256": "e57843095cbcb16deb33696013013a6e43ce464c2045d28ee5f3909ba476341a"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-01",
+      "sha256": "b7f3916c9dc43d7babfc3c49370119336f8d6865543aa3804dc9e72fcaaf7145"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-02",
+      "sha256": "42e7f98c884b1799634f45ba6813f6eaabef24e44d3f98036afaae3ee13e8c0b"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-03",
+      "sha256": "4636848a2d61473bfde6edfbbdee5ed399685c410287ff57d4d588b0c168a0f1"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-04",
+      "sha256": "e05c336853dbd82ea1c13c47d2a9e04514ec0e8015a696a7b3cd44eeb390089d"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-05",
+      "sha256": "e39320bbff631f53604f00c40c718143aaded89d4222c69f10ce84434e1e7f50"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-06",
+      "sha256": "da05e44aaffdafb86d9cffd496fc789bffb40f8dd6eca33135be9405c9b809da"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-07",
+      "sha256": "1bfcbb58482e0902c6aadc31395a0df000f7c964e2d06be8c43840ddcffae62a"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-08",
+      "sha256": "dab8d4e7906a2d5a9b8a88f50c0605c8e14e5b09494316db50dd5881ea015407"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-09",
+      "sha256": "a45f2eb3b4cbf1dbd24f68368fc6c424b54ca5880f3deb8961abb8f80338880f"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-10",
+      "sha256": "44a27447074fa2056d5009785285d83a8585f80c03b74cb4e102f3c3b02f20d7"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-11",
+      "sha256": "a0c53be618dc7bd43f9ff9b0b044ab88bda56ae762b27eb81c58b2758e502ea0"
+    },
+    {
+      "id": "nist-gb-gv-3-2-003-12",
+      "sha256": "420771d9a1f43d6d700d2f428ec98cbdee8192b3404034b564ea62a775bfaca8"
+    },
+    {
+      "id": "nist-gb-manage-1-1-01",
+      "sha256": "a9362c73bab242be851364bee4c0c7f08ea2d20dbb04aef697d28479ff625b90"
+    },
+    {
+      "id": "nist-gb-manage-1-1-02",
+      "sha256": "6907b0fd4c5af02fe4553aeff6fb651bc64401fb7d93c5483892046bf637d501"
+    },
+    {
+      "id": "nist-gb-manage-1-1-03",
+      "sha256": "9cfad33f49fd545675916bd7f316cfcc35041debec156fd63b4affa2ae4469aa"
+    },
+    {
+      "id": "nist-gb-manage-1-1-04",
+      "sha256": "5e66d728fe6ae14aca630c1bb02da2344163b8eccdaa07817deefe10d91e3566"
+    },
+    {
+      "id": "nist-gb-manage-1-1-05",
+      "sha256": "d1c28c39572dee64135e0978ea0dc36aa57228c2b4c68856fd7d850cb4b89ced"
+    },
+    {
+      "id": "nist-gb-manage-1-1-06",
+      "sha256": "d9c8c5e7b4c624f6516dabade30b2195bfba2f15aff7d12cad3c171dd034f139"
+    },
+    {
+      "id": "nist-gb-manage-1-1-07",
+      "sha256": "f269d1636b39f4ff8c39e22691faa2417c7bd263d27b4d817269ad90a70302b7"
+    },
+    {
+      "id": "nist-gb-manage-1-1-08",
+      "sha256": "b5f89f5d67baee2390cc4312d3da917a0b4133b2d065a62a7865090e8c901d5a"
+    },
+    {
+      "id": "nist-gb-manage-1-1-09",
+      "sha256": "b42f7db84f6eda71ca1eb5ce747a616c032e2aa6bef29c2c847c754f508a0434"
+    },
+    {
+      "id": "nist-gb-manage-1-1-10",
+      "sha256": "c2175cd3e58f727060e0561fe1d1e42013fd9c58b9ab4c5631456baf884895ad"
+    },
+    {
+      "id": "nist-gb-manage-1-1-11",
+      "sha256": "05689d97545aff0d97d114929b83ccdbf8c2a9b46e2ffe177d1ae0f97dc240de"
+    },
+    {
+      "id": "nist-gb-manage-1-1-12",
+      "sha256": "918253322e5d9414b01bff5fad34cb77fe7e8bc1bd2c14f1626055112f2bc81c"
+    },
+    {
+      "id": "nist-gb-manage-2-4-01",
+      "sha256": "27622bcfcad7b46f8064b14086214c46ea88a137a2ff03671179054f9b70d5a3"
+    },
+    {
+      "id": "nist-gb-manage-2-4-02",
+      "sha256": "f711d83714fea87c1b187bb2f60bc047fd1dd0028edecf12425008d94f81dcd1"
+    },
+    {
+      "id": "nist-gb-manage-2-4-03",
+      "sha256": "88515ca6eccffa26f09ce790f64614f56eac52ec8dc7fcc751df68d07333f89a"
+    },
+    {
+      "id": "nist-gb-manage-2-4-04",
+      "sha256": "ff396ea151463cf04aac6919ce3f439971967222c9329c8ba47cdb9b661f108b"
+    },
+    {
+      "id": "nist-gb-manage-2-4-05",
+      "sha256": "52cc2b0fc3a0f8bc08578455154a05041c1f68a0b2d2d2236229e9cb83fa4d9d"
+    },
+    {
+      "id": "nist-gb-manage-2-4-06",
+      "sha256": "ebcb059490e75cbad0239cf83ce2d1ff6fc5c0a429bc7994ff0179dd94c1c241"
+    },
+    {
+      "id": "nist-gb-manage-2-4-07",
+      "sha256": "238ff607a3b276e1576d9bee20bd7cbd6596680fc4f4af530951410d3969a0e5"
+    },
+    {
+      "id": "nist-gb-manage-2-4-08",
+      "sha256": "bc47da5dc58342683d5ae34da871586c3f6a65648a7ea79dfd4933bc737ee8f3"
+    },
+    {
+      "id": "nist-gb-manage-2-4-09",
+      "sha256": "b0903a38d8a04f557520a9c5b6b8cce3d9672e31dfcd1f6719b7b822bf4184b3"
+    },
+    {
+      "id": "nist-gb-manage-2-4-10",
+      "sha256": "be93e8606f8dd9397861a743408fe174207d8367cca416a4d591c56cb48d0da4"
+    },
+    {
+      "id": "nist-gb-manage-2-4-11",
+      "sha256": "0cacbf12b4ead072561a4044e5d0e43f8921eec04374928f9f6db9c80b802872"
+    },
+    {
+      "id": "nist-gb-manage-2-4-12",
+      "sha256": "69bd55e0730d8844e9ec06b7680d675e036c7ec8c4d35ca5b08c0a4a6ee1e79f"
+    },
+    {
+      "id": "nist-gb-map-2-2-01",
+      "sha256": "3485422fdb2353bde61a8b46327250791cd7bf2a73afc0246d0f2c481cfb58ca"
+    },
+    {
+      "id": "nist-gb-map-2-2-02",
+      "sha256": "eca182be1168379d2a05398497713533aac1b325d497288a5a4e6e5cc10b3820"
+    },
+    {
+      "id": "nist-gb-map-2-2-03",
+      "sha256": "79f396334c1c7078b8727c815ffe85ec0125abb43ab8830562317dcf355033b0"
+    },
+    {
+      "id": "nist-gb-map-2-2-04",
+      "sha256": "acfc1b41d1e769873e2db4002f4e591a081fa7e776797d4ec2fcaa9d50415058"
+    },
+    {
+      "id": "nist-gb-map-2-2-05",
+      "sha256": "b8d4b35d4660e170c46d7d1ca3055dfd9b3dbfc7826380e3d189649f30367fed"
+    },
+    {
+      "id": "nist-gb-map-2-2-06",
+      "sha256": "5221db854b0d978172b938e5d8f9400718e8112e34dbce82a0b5ea8c803dbb84"
+    },
+    {
+      "id": "nist-gb-map-2-2-07",
+      "sha256": "092dfcb5723dc92adad54ebdad2ddf6499de8a44280add912b4c7210c9d755b3"
+    },
+    {
+      "id": "nist-gb-map-2-2-08",
+      "sha256": "82e10b60fc1097484353f3276e49925669c2364311ee67eb6d3cd1941b61cd1b"
+    },
+    {
+      "id": "nist-gb-map-2-2-09",
+      "sha256": "7b4c4c4b541bb5d953a410518eb899617139c26416cd9c39493882e7f45473d3"
+    },
+    {
+      "id": "nist-gb-map-2-2-10",
+      "sha256": "12bcb1993ce35e818224d9b640dde6a9942be7035286b9b3bcd8287798e82882"
+    },
+    {
+      "id": "nist-gb-map-2-2-11",
+      "sha256": "0526613b7d744629b9e6eb3ea25b09b36c5fb032a03b492f4aa45c09c0a1566b"
+    },
+    {
+      "id": "nist-gb-map-2-2-12",
+      "sha256": "527bcb11e81ffe719ff5c7a754139cced1f259efd657f8633ddaca9377d37300"
+    },
+    {
+      "id": "nist-gb-measure-1-1-01",
+      "sha256": "957b1fb0c2aaaed1ad332bed14f2b303334a008ad99fb539e5902eeaeb49430e"
+    },
+    {
+      "id": "nist-gb-measure-1-1-02",
+      "sha256": "4e08ebd8788952d299d9c9fc3c7878a4f8dc301e58b311ae2bfad7fa1a3beaef"
+    },
+    {
+      "id": "nist-gb-measure-1-1-03",
+      "sha256": "aa768f0b76b32fec94d64db57b677eb42aee69884385668b9e76ba84e7eb4a4a"
+    },
+    {
+      "id": "nist-gb-measure-1-1-04",
+      "sha256": "baa0ac0e473b1ea503b828813b519fa57bd6a26a4655f767921ff6d5726e2a69"
+    },
+    {
+      "id": "nist-gb-measure-1-1-05",
+      "sha256": "44fad216271a083778c76d67f73cc447e01b0152e68c42837e3010dfc4101c1a"
+    },
+    {
+      "id": "nist-gb-measure-1-1-06",
+      "sha256": "8cfa4959def0f4918d3e818b2a4447322e8c31841d43cc0f58852b45fc882ee5"
+    },
+    {
+      "id": "nist-gb-measure-1-1-07",
+      "sha256": "4e5760d3dadd89ff94df3edc5a82172683fefd309818172b93f72feb1a006c4c"
+    },
+    {
+      "id": "nist-gb-measure-1-1-08",
+      "sha256": "528eaa782ca47a5b43d2c0e545332cfaa6b3390297504943b7f4993999a1db44"
+    },
+    {
+      "id": "nist-gb-measure-1-1-09",
+      "sha256": "8686e730905ed13dadf075944fe2d8195506e284e5c8d53fcd88b11d8a498e07"
+    },
+    {
+      "id": "nist-gb-measure-1-1-10",
+      "sha256": "289ca3f4c395db51f672ca3a57d3bae8cba649a5f8eea24ffa050dc406748c34"
+    },
+    {
+      "id": "nist-gb-measure-1-1-11",
+      "sha256": "193c984605f0579555494c7a1c2609ae9f04b0e94d80d09f47ac4c0cc6e6b743"
+    },
+    {
+      "id": "nist-gb-measure-1-1-12",
+      "sha256": "73b976e0ece18c1165640d05cb12ae239b2204f621aa009d0f5e81d9aa8a7f9f"
+    },
+    {
+      "id": "nist-gb-measure-2-6-01",
+      "sha256": "ce750fad98a12aaba959ac6dbf2679af51130d9e918ea52a155c3e7a0bcc40cf"
+    },
+    {
+      "id": "nist-gb-measure-2-6-02",
+      "sha256": "722b8cbe9d798569b33db59638a390c87f36880f83e2a71acec9b9872c6fbad9"
+    },
+    {
+      "id": "nist-gb-measure-2-6-03",
+      "sha256": "421c2aa024f2648928f0de3d1473f42a9a425386dafb8977e936e9afc4bb2fed"
+    },
+    {
+      "id": "nist-gb-measure-2-6-04",
+      "sha256": "2d0da46679e27ce028a478b42312e4f2918d028d3252b0f3f0eef7ecab17bf16"
+    },
+    {
+      "id": "nist-gb-measure-2-6-05",
+      "sha256": "f2182e25beca772e6a938735185fad933908a438cc0224b8a241cbb11381de18"
+    },
+    {
+      "id": "nist-gb-measure-2-6-06",
+      "sha256": "83f80dc2a30c5276ebee674b2892972630f2cf2cfc7e9560da688d3b13a5e5a7"
+    },
+    {
+      "id": "nist-gb-measure-2-6-07",
+      "sha256": "61284f54ad65965f10b69827fb1d96261e5549334f69e348b837078e731eaa48"
+    },
+    {
+      "id": "nist-gb-measure-2-6-08",
+      "sha256": "d4c5578450feb9ce2af8fc160bd089e059f6afff4ea3ab61833b58786d8d4c10"
+    },
+    {
+      "id": "nist-gb-measure-2-6-09",
+      "sha256": "6e8a32be0ffd53a0392f09b9db989135861d5062bb730ace3a607c625cdce811"
+    },
+    {
+      "id": "nist-gb-measure-2-6-10",
+      "sha256": "d49cc6f4aad33d1a3c37f640fe05057e0e33fa6ec5dbe2f590a7b157c1deb78c"
+    },
+    {
+      "id": "nist-gb-measure-2-6-11",
+      "sha256": "03059a7bea7866791d4d152e9eb16aeb7828c6686b71737259737637adca4382"
+    },
+    {
+      "id": "nist-gb-measure-2-6-12",
+      "sha256": "d1f81d7f1f12c58de42b870b53164e60ca8b0d88c66822102b6fb58a8c91c001"
+    },
+    {
+      "id": "nist-gb-measure-2-9-01",
+      "sha256": "39fd2485606692a1ed556e66bf81f34a3c617897031fbdc3509310e56c1f525a"
+    },
+    {
+      "id": "nist-gb-measure-2-9-02",
+      "sha256": "0843edaaa96e5c96c33b0257a244a9f6d5dafd3b47c43c1d889420381063001c"
+    },
+    {
+      "id": "nist-gb-measure-2-9-03",
+      "sha256": "17d8ced1239a74384ebd13c16c3603e60d0f8876c19b10d5478fc09f4485add6"
+    },
+    {
+      "id": "nist-gb-measure-2-9-04",
+      "sha256": "91b46d7f305cb3255c440fee012a6f6f0156d0b709884c3915665bcee1bfd8c3"
+    },
+    {
+      "id": "nist-gb-measure-2-9-05",
+      "sha256": "2ab78019781582ed36b53a6e48a231f9d1ab70d26319c22330de493abf6257e5"
+    },
+    {
+      "id": "nist-gb-measure-2-9-06",
+      "sha256": "2584be4d604913791cbac69f0b13d71b16f0d0f981711ba50d845eb6a409664a"
+    },
+    {
+      "id": "nist-gb-measure-2-9-07",
+      "sha256": "84f955d0bf146b2c8179f41fb6d4bf8eef6c3f311e533d063a1fba105344d068"
+    },
+    {
+      "id": "nist-gb-measure-2-9-08",
+      "sha256": "e211b2d23c33957732f90cddd07acb8fc9af32ecf57b7410525a0ca94c15afdf"
+    },
+    {
+      "id": "nist-gb-measure-2-9-09",
+      "sha256": "9f338a064d474761ce71315a097d6b7a54f720fb0d0bc691f5ec29a40a762e26"
+    },
+    {
+      "id": "nist-gb-measure-2-9-10",
+      "sha256": "8e34f7e38f4bee8afc7d3e9453eddc095e8b4192cef9e8e18051e34c05600d6c"
+    },
+    {
+      "id": "nist-gb-measure-2-9-11",
+      "sha256": "62ddb70f0e060c1189bf21893626b7e8061bb44945b54b8512f5d4ce9214f986"
+    },
+    {
+      "id": "nist-gb-measure-2-9-12",
+      "sha256": "3648c03c50b9589cbb68f2240067c3f894c0f0cd7b3af68df757527a5b3da626"
+    }
+  ],
+  "snapshotSha256": "2127ce3e03520c5cf9183b668375548819675e754fe97c2ea7780c6111e7c1de",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "n1WJnT5-HEBax636VZJC33L0yxWMGLitdBBgknO8ci04pQ6ilo6dEytywLgfQwnGbDzmmdwYmjlUa4GvJ62lAg",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}

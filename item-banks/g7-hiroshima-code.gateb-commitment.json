@@ -1,0 +1,404 @@
+{
+  "packId": "g7-hiroshima-code",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:39:00.803Z",
+  "itemCount": 96,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "g7-gb-a01-01",
+      "sha256": "479d02393207265dd091a6bc748dae6753f4f220ecc19488b98906f8541444de"
+    },
+    {
+      "id": "g7-gb-a01-02",
+      "sha256": "a041da76ff433aebff82e03114db713532de8694433e00923cd32d98263f6102"
+    },
+    {
+      "id": "g7-gb-a01-03",
+      "sha256": "14217b66aa4e4c454d65c3a4f300e0d71f694ec806517f9891a73eefe988e5a6"
+    },
+    {
+      "id": "g7-gb-a01-04",
+      "sha256": "d19e94cff95c1033b028010a354752969783224aa1b0bbd832f1c4e66585e834"
+    },
+    {
+      "id": "g7-gb-a01-05",
+      "sha256": "974248bc16d5758e0adf8aacd3104e5c0611e3e82e037caf852b56177daa26bf"
+    },
+    {
+      "id": "g7-gb-a01-06",
+      "sha256": "bfc689d30eae20d932be851ff5dfd3d1a6635cee0e7a9b60717d0df91dcbb55e"
+    },
+    {
+      "id": "g7-gb-a01-07",
+      "sha256": "b523db4eb1441e890301d9570cdfa6ce14c102b78ca7ac41b22c1c5890f986e5"
+    },
+    {
+      "id": "g7-gb-a01-08",
+      "sha256": "667ac9c30931969c0bdfe221980734b68fa674019ac2aac80a8c1f11dc234a3b"
+    },
+    {
+      "id": "g7-gb-a01-09",
+      "sha256": "8883f236dea80b70483af903574c82559b88a08edf019cd34b2f0313b20a95fe"
+    },
+    {
+      "id": "g7-gb-a01-10",
+      "sha256": "06d98d9bbc37438cd93f4c18cebb3d35de4370cf90ec5219a691ac3da8f84e7d"
+    },
+    {
+      "id": "g7-gb-a01-11",
+      "sha256": "6c4bdc0ff4a55a439e493ffd5c9756ed5f6eaa068a46b05eb0308ae6fb8e58b1"
+    },
+    {
+      "id": "g7-gb-a01-12",
+      "sha256": "c6f71ffade4565f255925db81795d8257f363d0c795a2034a2d1d070d65a80f5"
+    },
+    {
+      "id": "g7-gb-a02-01",
+      "sha256": "af6bfcad08d8786ec36d207e420faac3fc5d5a1e401456ab3a1ef777693bd95a"
+    },
+    {
+      "id": "g7-gb-a02-02",
+      "sha256": "6774787184881d0762356c9a4c706c3680690e1bf98203c3b2acf1da4a79c7fc"
+    },
+    {
+      "id": "g7-gb-a02-03",
+      "sha256": "38ef9f78a74979b766bba07064a176c026b2125647841cbe695f4270a26fb6cc"
+    },
+    {
+      "id": "g7-gb-a02-04",
+      "sha256": "dd3382190fa2ea70e25e7de0186fe7d1fb2f7c2cb8c657687ed39b9dbb532145"
+    },
+    {
+      "id": "g7-gb-a02-05",
+      "sha256": "84b58f498ad36046031a85a60854c5723ffb95db9dfe5f88cf5349b312c2c9be"
+    },
+    {
+      "id": "g7-gb-a02-06",
+      "sha256": "71ae6262d8916aa6beee7bb3e93899487f3c32e8697582ea77a8146ad2e1d73f"
+    },
+    {
+      "id": "g7-gb-a02-07",
+      "sha256": "0848fa3d3f102a0e4bf662c6d6ff2439dc194e4e95d916c529d75278c94ed846"
+    },
+    {
+      "id": "g7-gb-a02-08",
+      "sha256": "ec67c3821356557ca862c8b156213036b3061fcddb9df483bf058c4f18c48fe3"
+    },
+    {
+      "id": "g7-gb-a02-09",
+      "sha256": "3dc798aec6001ebf9021be4035857d3e48d0b89d5a3c21d30e72bbb1055bc0eb"
+    },
+    {
+      "id": "g7-gb-a02-10",
+      "sha256": "537f0f939a2063deabc563348fa3bc99f5f8b8203e777bdf90535209d9e382a3"
+    },
+    {
+      "id": "g7-gb-a02-11",
+      "sha256": "54997b5a9144bfa40034e4095252937155381d4fb51a8074a5790b6b4bc62db0"
+    },
+    {
+      "id": "g7-gb-a02-12",
+      "sha256": "271d7316d5fc27ff19c7c3a71eceb2ccc1bf710f1a0dd2324f32cf88aefcc66c"
+    },
+    {
+      "id": "g7-gb-a03-01",
+      "sha256": "6232d8d773725f27e0c7df4b209fdaf6452967e53919cf6df7490d578fabc780"
+    },
+    {
+      "id": "g7-gb-a03-02",
+      "sha256": "ac4ca732bc108be42ecb679efbb878661dbcc2e8da202c80e26e502cbff35eca"
+    },
+    {
+      "id": "g7-gb-a03-03",
+      "sha256": "d7a8419f879378bc51e09a704208a8308e927e39ef629f5ce6d05e0d63c8cba2"
+    },
+    {
+      "id": "g7-gb-a03-04",
+      "sha256": "a02100f64288e33a1af32d619e4f1f74aa73d76bbfb2eed3b2031794064446f2"
+    },
+    {
+      "id": "g7-gb-a03-05",
+      "sha256": "5bb55c0198a395fd9d58a1f800846cbfda909d5261cf677432e99665136a1355"
+    },
+    {
+      "id": "g7-gb-a03-06",
+      "sha256": "0eeeb3d9167664e168883ea4d440e32a27e70899c7a30ab84856befbe90c5d92"
+    },
+    {
+      "id": "g7-gb-a03-07",
+      "sha256": "22665d59a3e88f6e1d61e621fdb9d00180e5c6ca70601e7221ff2a1feeab547b"
+    },
+    {
+      "id": "g7-gb-a03-08",
+      "sha256": "2e33a6d1f8d024d65102acdba82f79383dc379e4edbe94773d2a1c3a3e946dbb"
+    },
+    {
+      "id": "g7-gb-a03-09",
+      "sha256": "ce919d055021684ad2a14d3e64d2900b0f0814abaeea1cd022e04bc8fd1a3380"
+    },
+    {
+      "id": "g7-gb-a03-10",
+      "sha256": "b593bfaf6ba0d91755660289da3c7a8272e13bcb769ff46af5ed650be70d0402"
+    },
+    {
+      "id": "g7-gb-a03-11",
+      "sha256": "8c98045b90a96c8b74464e6b39ff370abb44dc6967d5d06710fc7cd93d237f65"
+    },
+    {
+      "id": "g7-gb-a03-12",
+      "sha256": "ab9edb899f43edf172ce05fbfc54ad06c5135db1186b97d1cf7d7211da9130f2"
+    },
+    {
+      "id": "g7-gb-a04-01",
+      "sha256": "f7d67bb69725c608416a922325252caec58f27894e152003f60d02a3cb2ca146"
+    },
+    {
+      "id": "g7-gb-a04-02",
+      "sha256": "43e13776b1eb8e6608430aa7367cb686b5e15dc6b2e0cd4c2807c8e865487057"
+    },
+    {
+      "id": "g7-gb-a04-03",
+      "sha256": "dae3c5b30fe2c97d1850738674afb38269f177e4e3dcece6f9dffee6b840c1ef"
+    },
+    {
+      "id": "g7-gb-a04-04",
+      "sha256": "b9427941db4f390065014bcbab7c3fc0ae2653a641636c4ec7a54f5ea4bfbea1"
+    },
+    {
+      "id": "g7-gb-a04-05",
+      "sha256": "83b86d003b7aee806c145e7ddcbbb65534410999068825103028d741fe963ee0"
+    },
+    {
+      "id": "g7-gb-a04-06",
+      "sha256": "7aa3fc68b390a8fff0ea1255b8e004f13d381eacbaa38ffbb9bd4d83940bb879"
+    },
+    {
+      "id": "g7-gb-a04-07",
+      "sha256": "cde85ab58bf6020d7316d603af30a64d2d70de9e6474bc6ceb67e1675c717279"
+    },
+    {
+      "id": "g7-gb-a04-08",
+      "sha256": "ada20be26adcee3010a21dc300df827c41a90410c36c548477e1215f02c610cc"
+    },
+    {
+      "id": "g7-gb-a04-09",
+      "sha256": "97c7d9058b7edfa190f09384a7877996f7dec221ad25fdfa65de5bed94203613"
+    },
+    {
+      "id": "g7-gb-a04-10",
+      "sha256": "cdf02ae8f38279232cfbb44eba5c93af8a01d5293c2f5afa115ac2e3c5cd1498"
+    },
+    {
+      "id": "g7-gb-a04-11",
+      "sha256": "04961126cce4ced8733720e76608eaf1d26260e9bfda4a41832028a65c054b76"
+    },
+    {
+      "id": "g7-gb-a04-12",
+      "sha256": "93fe92bc8cfb3d88b62f967f93efeb7a04aa121aabedb4998cd56ae8abd4cec5"
+    },
+    {
+      "id": "g7-gb-a06-01",
+      "sha256": "1b000f775cd25fcebf7bc4d274e1c49765fa736e39da972d5b565d18280675e2"
+    },
+    {
+      "id": "g7-gb-a06-02",
+      "sha256": "6a22d062d43b1a57ef296825874c59e5463f82e5c4be8975044a69a05b2f9f64"
+    },
+    {
+      "id": "g7-gb-a06-03",
+      "sha256": "f1e05fda6171cd4d2a9cd2991a1d24ffdb0dc8bdf2bc2cd7f0ab4a8fef4fae1f"
+    },
+    {
+      "id": "g7-gb-a06-04",
+      "sha256": "5e7ad06809a98017f8c84f790ca02d3930ef26b41e5368078359a5e08d00d822"
+    },
+    {
+      "id": "g7-gb-a06-05",
+      "sha256": "a8560e457a1c5ff67666502d54b4671e976409e89dbe995ecf53a0c515aa4a8a"
+    },
+    {
+      "id": "g7-gb-a06-06",
+      "sha256": "81504bd1755a24f96b9eb0b381cb9c58f75950647e5a7bb99c8dcb1338050875"
+    },
+    {
+      "id": "g7-gb-a06-07",
+      "sha256": "cfa10499b90366cd805ef525a87fdd002f864365f03e5e307e2dc8b81b8354d6"
+    },
+    {
+      "id": "g7-gb-a06-08",
+      "sha256": "409550e3a313a81b5c14f9ae4de6e2a29facd71bf0f072dd4c6b3e4f53be5539"
+    },
+    {
+      "id": "g7-gb-a06-09",
+      "sha256": "746c05aca9a3beb6c08aec16647237261454957f0ac16de844bb3e73b3780ae1"
+    },
+    {
+      "id": "g7-gb-a06-10",
+      "sha256": "9688e5b0b63026c226313ded18ee0a437575a63239f251a95f5b5a70c03d6d5f"
+    },
+    {
+      "id": "g7-gb-a06-11",
+      "sha256": "cb28ca01e9e1e58e5cfaa012c16a3bd97b2f78b4ab2059ae0514f8e2dcb14f93"
+    },
+    {
+      "id": "g7-gb-a06-12",
+      "sha256": "e56b5a16b6eaa64aacc4600f11451de37a6b15c7bb079e01ab7d625c5c2ea0b8"
+    },
+    {
+      "id": "g7-gb-a07-01",
+      "sha256": "0cfcd4ab8c6e6f0166711fb0e214fc862fe4dcb9057a7055975ac7b5a107cfce"
+    },
+    {
+      "id": "g7-gb-a07-02",
+      "sha256": "bbbfe98a2156a59c23daa042cece0b6e133823edaecce3d79c327ea47912e1e2"
+    },
+    {
+      "id": "g7-gb-a07-03",
+      "sha256": "0d4fa2f2de07ece4356d876965fd5fbc79a93959b2128309e1d79f94db8270fb"
+    },
+    {
+      "id": "g7-gb-a07-04",
+      "sha256": "b14ee9bc8b42adc42d7aa363922d2f619823a9eee1e91ec11acf96ea80211477"
+    },
+    {
+      "id": "g7-gb-a07-05",
+      "sha256": "507f428696e90274ed83bff2ae6931afcf23cfc930df488077a0525c5bf62622"
+    },
+    {
+      "id": "g7-gb-a07-06",
+      "sha256": "e35643afc65d1de65b3c4eb8313381f8771d91273ee8ca7a7186da60c1bf9196"
+    },
+    {
+      "id": "g7-gb-a07-07",
+      "sha256": "6102e6411aa51eff8f055475dbce3ad08763ea8b72895e52a14cb1962854a2b1"
+    },
+    {
+      "id": "g7-gb-a07-08",
+      "sha256": "db80f013fd6a7319a7cec7a940e4bde1307355b38476ed5ccdb56cff1e188e7b"
+    },
+    {
+      "id": "g7-gb-a07-09",
+      "sha256": "1b09abc545d701941e1be52f0adb4726fe9949f68cff8801d8c5894c92b5951d"
+    },
+    {
+      "id": "g7-gb-a07-10",
+      "sha256": "795b35c97d882afb2250a515fcf687e2a52f98d36453d619eba6e518234ace51"
+    },
+    {
+      "id": "g7-gb-a07-11",
+      "sha256": "d7b1c9622c28e0339c5efdb6bfbee2f5e007d9b165317f74fcbd1c5bf5ee3580"
+    },
+    {
+      "id": "g7-gb-a07-12",
+      "sha256": "3ee21249b33de0ea89c00b8dcda68bb0d80e6e5d2c900d49661f7abdc5690a92"
+    },
+    {
+      "id": "g7-gb-a10-01",
+      "sha256": "19b339c73516672026c8c75eaf574ba6fedbd93b1f41e0039e37920644443b34"
+    },
+    {
+      "id": "g7-gb-a10-02",
+      "sha256": "ae79456e85813aa5286ae8c0bd6a5a6ed8e089c55ab3df8959b3db0a4eeab8fc"
+    },
+    {
+      "id": "g7-gb-a10-03",
+      "sha256": "f95a5bc275b5244398ace64b63b12b7118671efcd781ce183d607df47ce26bc0"
+    },
+    {
+      "id": "g7-gb-a10-04",
+      "sha256": "bf7de99391fb7a52eeebe258b52fb1e5addaf10fa343d7d0e2c7c923f9211500"
+    },
+    {
+      "id": "g7-gb-a10-05",
+      "sha256": "7703ff78202e431d1bc6191cf23336cf3124171278c01ed256f14b5b954aba15"
+    },
+    {
+      "id": "g7-gb-a10-06",
+      "sha256": "b5bb88b59d4824c941799c483cd2069979cd0322319f5ab2c5d744961b2ca984"
+    },
+    {
+      "id": "g7-gb-a10-07",
+      "sha256": "532c9e69ba10760383dd642c9539ffb0cb6a30b42c41653179f0c2320b7f8022"
+    },
+    {
+      "id": "g7-gb-a10-08",
+      "sha256": "8c90c111dc38132f6593939d39ba1333424f451a9c780a0dd3396c20d30180d3"
+    },
+    {
+      "id": "g7-gb-a10-09",
+      "sha256": "b938787b3c9d4e2617bb9c775d046ae19acdf157aed4bd6930ba72ef24f42fc7"
+    },
+    {
+      "id": "g7-gb-a10-10",
+      "sha256": "e1b79f49e2a86ab7ec77649825a95cbb9899f209f874e5c25c2b474aa5df825d"
+    },
+    {
+      "id": "g7-gb-a10-11",
+      "sha256": "d1e7d53b594a346cdf2476a8980ab53cc0abd09556dd87d868b2ffbae6837aef"
+    },
+    {
+      "id": "g7-gb-a10-12",
+      "sha256": "06dd8d0d7c05c08dbcbfbccf5a252a769a3cbd8146d81110521c69c69c615b6d"
+    },
+    {
+      "id": "g7-gb-a11-01",
+      "sha256": "3514f39701c86342ccb09fb11c2976c20fad07ca389e32096117fbe4f10e7e72"
+    },
+    {
+      "id": "g7-gb-a11-02",
+      "sha256": "24cbea1455ce1cc2bec20172b82a1b2ea0ce603e913878202e2d465449ab43ae"
+    },
+    {
+      "id": "g7-gb-a11-03",
+      "sha256": "2c9aa87a85863afb90615315935e9ea8bfe1ba33e3f47592c54f97d8bc9da24e"
+    },
+    {
+      "id": "g7-gb-a11-04",
+      "sha256": "2c5127e1c915000321bf748c1c2155a39a488b417a36a7d459260ee923c4554a"
+    },
+    {
+      "id": "g7-gb-a11-05",
+      "sha256": "7871332dcb9ddf550ffc8b6a0a5d9c8fdfe1bf001d88e5ee87acb0e9e9d7fef0"
+    },
+    {
+      "id": "g7-gb-a11-06",
+      "sha256": "f70c06c71cff1482623197994cf0aaff0af55abf09a3dd3dc60c59d454d1d784"
+    },
+    {
+      "id": "g7-gb-a11-07",
+      "sha256": "adcb67b15f37acf1a95041931ebe945d6cafea0c9d0979777424163678be3422"
+    },
+    {
+      "id": "g7-gb-a11-08",
+      "sha256": "da046ec12d02c5b367fe3ec3bf9f3cb72454a50f4421a9efa96b714bcac12fde"
+    },
+    {
+      "id": "g7-gb-a11-09",
+      "sha256": "72518ed0506964b0d8c4ecd40c453ea42c1cb3f8ee00da8951066d9b365bb24b"
+    },
+    {
+      "id": "g7-gb-a11-10",
+      "sha256": "4dd18beb57a2e00fdc41614160761a0808837c209088d08b4ffbd3de89dbbc16"
+    },
+    {
+      "id": "g7-gb-a11-11",
+      "sha256": "cc1a238b76c84ed93967cb34f20317b01f5a02e84c7b6f85e34d12ba889da418"
+    },
+    {
+      "id": "g7-gb-a11-12",
+      "sha256": "554c2ef9ddfaf7407a3dc019a169080564b837e2a5efbb888e48d549825ed243"
+    }
+  ],
+  "snapshotSha256": "8d2d5d693744c462629aed0575d4201afe165c701ed6dc50417fe58f557c6f52",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "f-AGg_wA_3fNYpgKVRJ5NRotxCz1xZV5ASHcJu104ucOfSEN4tCZ32HsxNt4aftUn6pwUy7ZlyIfcFz5pLIgCg",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}

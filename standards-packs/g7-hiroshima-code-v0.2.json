@@ -258,7 +258,7 @@
     }
   ],
   "itemBankRef": {
-    "publicSet": null,
+    "publicSet": "/content/standards-packs/item-banks/g7-hiroshima-code.public.json",
     "privateSet": null
   },
   "version": "0.2",

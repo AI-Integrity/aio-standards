@@ -1,0 +1,260 @@
+{
+  "packId": "oecd-ai-principles",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:38:11.476Z",
+  "itemCount": 60,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "oecd-gb-p12a-01",
+      "sha256": "063a8eab51dadff82dacb49992bf5372376ebedfd54a522f96187a7df9a6f6a9"
+    },
+    {
+      "id": "oecd-gb-p12a-02",
+      "sha256": "9f18eef3ef69930a80104966755fea8d9fc4404f783657d9265681a42c0b2feb"
+    },
+    {
+      "id": "oecd-gb-p12a-03",
+      "sha256": "4e626903491d012ce336b6d1f56993915e7359e1ee9c2ec33cdecca91a9862d5"
+    },
+    {
+      "id": "oecd-gb-p12a-04",
+      "sha256": "0ee23c2cd270ac9540eea033a12b4fd2e1b4d27244f17f7992dc47bcc955316a"
+    },
+    {
+      "id": "oecd-gb-p12a-05",
+      "sha256": "f17b8895b5caf44f4e351d258e00f78d0f6e34235599486c8227e959a34919fb"
+    },
+    {
+      "id": "oecd-gb-p12a-06",
+      "sha256": "383a6f0057f625095d5b3d3f21651c7f1c11a52cf5220b2445c7606cc1e812a1"
+    },
+    {
+      "id": "oecd-gb-p12a-07",
+      "sha256": "2478d6c0e8d75a2e8f58c5d937cb77aa5488b0bca5d6dfad0f49a569b225a7c1"
+    },
+    {
+      "id": "oecd-gb-p12a-08",
+      "sha256": "aebe0ca4e7fc69e41a71a6c38257a1962ba5f0722a281ac929784c941800af03"
+    },
+    {
+      "id": "oecd-gb-p12a-09",
+      "sha256": "c1a706c84c68ff1dcc57d13864f2d51bb368e2fcbb5ae4b0a573b7d82de5e730"
+    },
+    {
+      "id": "oecd-gb-p12a-10",
+      "sha256": "e170721bbdeec987182cd86c7694765375ac37b6e68a01f30c63995f42574783"
+    },
+    {
+      "id": "oecd-gb-p12a-11",
+      "sha256": "9440e0d695870547182505af33cba07a9bc6e6d2757ddf2bb6b2076f976257ae"
+    },
+    {
+      "id": "oecd-gb-p12a-12",
+      "sha256": "2710715ff6293f1e1076e43adeb4d79ea448001b4e6b2b9872e243da64bf4026"
+    },
+    {
+      "id": "oecd-gb-p12b-01",
+      "sha256": "e8920c1c80931134c15d66f1f933813aad5e6985b3c9efbea510c7c5cfb753b5"
+    },
+    {
+      "id": "oecd-gb-p12b-02",
+      "sha256": "0c7787865da0592f36dcb512dc0d95a048feb08302fae5a33a752758d4fdcd33"
+    },
+    {
+      "id": "oecd-gb-p12b-03",
+      "sha256": "8ea793817ab8825cedac1f4c60ba1eb6bff85e86cabcceb21668fae4305bf66a"
+    },
+    {
+      "id": "oecd-gb-p12b-04",
+      "sha256": "fe0c3803c5e73fb6127dff501f8ffb2acb3dd8c2091c5acbf474eb8c0cf6c2be"
+    },
+    {
+      "id": "oecd-gb-p12b-05",
+      "sha256": "4359e9cfdba1a48cc8f23f540137e9c6c46527bbfadaf8ead31e5383dd0cf06c"
+    },
+    {
+      "id": "oecd-gb-p12b-06",
+      "sha256": "a9f343bd6b2a15e6e10a1cdaac43378689f4e700333d2c0e127895748d379706"
+    },
+    {
+      "id": "oecd-gb-p12b-07",
+      "sha256": "cf8f1286bf4dc6936563fbdf0dd913ed6eff00e3537156ba3318bbc3d5a581af"
+    },
+    {
+      "id": "oecd-gb-p12b-08",
+      "sha256": "85a7c226c929c254d3af0d8aeeaf2b06dc4510654dde6014c877e53b3c227449"
+    },
+    {
+      "id": "oecd-gb-p12b-09",
+      "sha256": "1789564ccc23eb30cca298eb9e776b56bb73c4d2449ccfe92e299f38b8987662"
+    },
+    {
+      "id": "oecd-gb-p12b-10",
+      "sha256": "51adcba8cdb0f9214779c226f50e851bb4573a8a14da7b68e57deeb38bcb53b9"
+    },
+    {
+      "id": "oecd-gb-p12b-11",
+      "sha256": "9019dc4449d2a7d716c0b1c6a8e52e22278d8445f94ecbc587c703da186ca893"
+    },
+    {
+      "id": "oecd-gb-p12b-12",
+      "sha256": "0701696ec2e97ef57d5986f95665eeb57d85af7cf17684b0231282a8c7edb2b5"
+    },
+    {
+      "id": "oecd-gb-p13-01",
+      "sha256": "74fb5fe81a14b51b00a8057e1db626ccc7bfdcf0597a9787676d2be802a5ecf8"
+    },
+    {
+      "id": "oecd-gb-p13-02",
+      "sha256": "868fde46299010acf633986c3588d42c7ddaeab627f4dd8d919c54e3a194faae"
+    },
+    {
+      "id": "oecd-gb-p13-03",
+      "sha256": "28ee3e2ed033a26856a59a867f879a6a695348ab7e4ca9ea7c727b008ae57052"
+    },
+    {
+      "id": "oecd-gb-p13-04",
+      "sha256": "0a1091bb4b58bbc6264c5d2a420e4113d8f9322aa326a8a5ef21fdd9495d9385"
+    },
+    {
+      "id": "oecd-gb-p13-05",
+      "sha256": "5562c18147c21140b4b5c1ce1e092ede61b4ebcd629395c1c164d981fc303c5f"
+    },
+    {
+      "id": "oecd-gb-p13-06",
+      "sha256": "50205017cbcb229e5a1222044827dace3361099485869767c4703c921cc94310"
+    },
+    {
+      "id": "oecd-gb-p13-07",
+      "sha256": "7f6b4db5128418fd2b3929381a235e17576edf10ee04395508dab95b85bcb9ba"
+    },
+    {
+      "id": "oecd-gb-p13-08",
+      "sha256": "32e1045caf2624dac32f03268202ecaa9313418f97894c60c7bc6def5887e55e"
+    },
+    {
+      "id": "oecd-gb-p13-09",
+      "sha256": "dca56c7cea599a3eec0a59e874ceb787535470ac6b44639f34d9e0f839141cfc"
+    },
+    {
+      "id": "oecd-gb-p13-10",
+      "sha256": "a6458556a0e15a67239ecafc63734ec2de4f8d9f31b4f8d3035012f168f08266"
+    },
+    {
+      "id": "oecd-gb-p13-11",
+      "sha256": "d36d12eaa9389787a86d7bf6791d3810fba36acf9003b34171ea8a49f9fbe871"
+    },
+    {
+      "id": "oecd-gb-p13-12",
+      "sha256": "a0bc9a4427eedd20b45700e8c62e3cef3b52d8d16ebc8e145363253ad259e8e4"
+    },
+    {
+      "id": "oecd-gb-p14a-01",
+      "sha256": "fa9ef66abd634835ef1996cfcb58c937c6561ac0bfbe9587ea3b30c7d1d62d77"
+    },
+    {
+      "id": "oecd-gb-p14a-02",
+      "sha256": "e4a78a4e7716687d24ee946eaa27494101a328d5a4ec26373483b0dd39147623"
+    },
+    {
+      "id": "oecd-gb-p14a-03",
+      "sha256": "36cfa848783e8f03172810b311b36cbe9e1a764d4a88ad591d3a45cc1548ae71"
+    },
+    {
+      "id": "oecd-gb-p14a-04",
+      "sha256": "fb7e48178f6b1fd7e868c697a94f11e445db8434e6ee4e972225902507925f04"
+    },
+    {
+      "id": "oecd-gb-p14a-05",
+      "sha256": "46ec50ebe65b28267c910da2279226b7565504b4c28868d8c6a84ca5dd5f307c"
+    },
+    {
+      "id": "oecd-gb-p14a-06",
+      "sha256": "21a82f55b078fd68a24ab12d2646b2c89b7b3c12d82e978b7b8265165e0351cd"
+    },
+    {
+      "id": "oecd-gb-p14a-07",
+      "sha256": "4d54b58d60c0ac5d2f74124886de7480ae3245dceaa73e55e8148f0c19b5056f"
+    },
+    {
+      "id": "oecd-gb-p14a-08",
+      "sha256": "0654f2ed92325107821ba29c12ace3811ffce7fd0509e3163b6c5af0f5f3b26d"
+    },
+    {
+      "id": "oecd-gb-p14a-09",
+      "sha256": "2a3717be6c1345a1beb1ebbc6473e1b29b48e21423504f100dccf5ee6eca845b"
+    },
+    {
+      "id": "oecd-gb-p14a-10",
+      "sha256": "8870d28fa20d98e9dda9887b9caf9a464915a4b2869075f7d5bf1aaa2f94631a"
+    },
+    {
+      "id": "oecd-gb-p14a-11",
+      "sha256": "110fa27b73aaeda79dd4420d7890a40e7ad9ab789ca6cfe778e1f3aaca564426"
+    },
+    {
+      "id": "oecd-gb-p14a-12",
+      "sha256": "17ee3fd706ba71ef1eaa84d5366fd8c58a9ab7fcc614031ac0c10edaa1a14ccd"
+    },
+    {
+      "id": "oecd-gb-p15ab-01",
+      "sha256": "0f1e372e4b597b64f37cbac21b9eb34f4b07f442b2955777ffb5998031d6d2b8"
+    },
+    {
+      "id": "oecd-gb-p15ab-02",
+      "sha256": "29cf1d91c91b7dc3db195702721747890954423eb88a67c820a2f21fa85f25d8"
+    },
+    {
+      "id": "oecd-gb-p15ab-03",
+      "sha256": "a1c16a15e8e652f9bd495f54f48a64784cd19e1e624403b3e46e5f8700adc278"
+    },
+    {
+      "id": "oecd-gb-p15ab-04",
+      "sha256": "736c2b90999c81e2f64792d3ff07a24639face6b5d6147a545e3704af9a7ce25"
+    },
+    {
+      "id": "oecd-gb-p15ab-05",
+      "sha256": "14161014286e5064b4835d8c28ec7beb363f49ff4cf02443ea8f41caafe37b07"
+    },
+    {
+      "id": "oecd-gb-p15ab-06",
+      "sha256": "e78ce38244982bf11873e3d86325c0ba87098a3514fe1b748fce4b3133c8cf7b"
+    },
+    {
+      "id": "oecd-gb-p15ab-07",
+      "sha256": "da9a40d4a8f28cc8e6e7f8dfacf3bee4bc04a11395b577241bc105c116f4b8c5"
+    },
+    {
+      "id": "oecd-gb-p15ab-08",
+      "sha256": "7cb37cdd212b365e55adeca73387ad0fd7ea2f9759ccb58e18bd25de7ab34593"
+    },
+    {
+      "id": "oecd-gb-p15ab-09",
+      "sha256": "6a91c777f58833cdb661bbb44a71c536fca2274c2867d01bd64600c94e89febf"
+    },
+    {
+      "id": "oecd-gb-p15ab-10",
+      "sha256": "6a5b38c112020fcd5512e35fbd17147f14acf58c05b47faf95c8c0513a351db6"
+    },
+    {
+      "id": "oecd-gb-p15ab-11",
+      "sha256": "11b01fa64f05f2e21f244fdc81a7fb6471f10228bc87ff1f85afc956810f845e"
+    },
+    {
+      "id": "oecd-gb-p15ab-12",
+      "sha256": "7c5dde8b7bf150b58198289a5f26f6fa738531305aefe72cd661ece3c588d26e"
+    }
+  ],
+  "snapshotSha256": "e70e5673095c34f3c65275f80bd5c2ed6ec66d903f4bd429072288f6697cf678",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "WFv8zWlNPXHoCdXVoRXkHkb9C0FTXDe7h2lceJcCX_lZQ8fmPIT6IYoN8-AgXMQ3At2Duv9Wn767QbUjqINDAw",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}

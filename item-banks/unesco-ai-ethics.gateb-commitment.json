@@ -1,0 +1,356 @@
+{
+  "packId": "unesco-ai-ethics",
+  "set": "private-gate-b",
+  "snapshotAt": "2026-08-15T02:38:36.820Z",
+  "itemCount": 84,
+  "algorithm": "sha256",
+  "hashedFields": "sha256(id + canonicalJson({scenario, question, options?, expected, article}))",
+  "hashes": [
+    {
+      "id": "unesco-gb-127-01",
+      "sha256": "b72d393b9ab3776fb3c2c3885458b9187ac68cc67bd1b6b4e61c83df3923e1bd"
+    },
+    {
+      "id": "unesco-gb-127-02",
+      "sha256": "a48f4b20c408b548e22eb4f8f6f41b3aaa15efda746ea7140e945e0f18a5a56b"
+    },
+    {
+      "id": "unesco-gb-127-03",
+      "sha256": "1c854ce229eb581fa0ed21d327171ccd691c8cec76a0e935ee8eb37934595cbb"
+    },
+    {
+      "id": "unesco-gb-127-04",
+      "sha256": "4a74cf076a994d6b4230488b1bd0c1fb0cbe4fd4af277bbf57440c0365e263c2"
+    },
+    {
+      "id": "unesco-gb-127-05",
+      "sha256": "04d8b9637d2304916b30f34f69ae46a028b5504af94241de04f24af2382b87e7"
+    },
+    {
+      "id": "unesco-gb-127-06",
+      "sha256": "c47d84e5b2d944326cb2be629a2168cd59b0f4d2eb0315c4cecd9d8dc1144e2d"
+    },
+    {
+      "id": "unesco-gb-127-07",
+      "sha256": "ffd3b95bdb87ad6ade71eced4fc3c51eb87e25af69dbac2c032a544ad495c10c"
+    },
+    {
+      "id": "unesco-gb-127-08",
+      "sha256": "4acc1685758f2739ba89b1b0a6ca36b855ad95493ccfa9487f69d649d03962ee"
+    },
+    {
+      "id": "unesco-gb-127-09",
+      "sha256": "ed926522be49db68d1ad4938f21aeaf06bf2e93af01fd5cedf6f594069919220"
+    },
+    {
+      "id": "unesco-gb-127-10",
+      "sha256": "75a189ee90375003329dd604c009524d013205af194eda82f7ee37c3befb8ce9"
+    },
+    {
+      "id": "unesco-gb-127-11",
+      "sha256": "adbca6018d73036de9ec6ef7f8105f045918108871c3ba4bf9dc60f43e69e3d8"
+    },
+    {
+      "id": "unesco-gb-127-12",
+      "sha256": "67ddd872b95c1ff2c60c392d767fcc9aced7e9a1b04a0b449aed21c7b84f9006"
+    },
+    {
+      "id": "unesco-gb-26-01",
+      "sha256": "ddc7dfdb1e8aaaf95c457f9565bdc485947c1debd240aabdfa01155c5a0b61ee"
+    },
+    {
+      "id": "unesco-gb-26-02",
+      "sha256": "6b2fda54bce2b00454305b7832f1185b068202e5e5302198ad44a283b7afd6cf"
+    },
+    {
+      "id": "unesco-gb-26-03",
+      "sha256": "c8992d25c78e13c2284b3ef3405ad97f65e75f79ce064e5ce51bf454f44ba96e"
+    },
+    {
+      "id": "unesco-gb-26-04",
+      "sha256": "e8a0666ea96a078876df8c00811753d7b32ad5c05192a5f2f4e26b8926263ac0"
+    },
+    {
+      "id": "unesco-gb-26-05",
+      "sha256": "04e0738e7753731ba9a76b3176303fb773ba5217d56bf9afd3bc12110fc77e78"
+    },
+    {
+      "id": "unesco-gb-26-06",
+      "sha256": "bf66c577a513d40760693c1189b115173cf1898081f320a2e162bbf930050e4f"
+    },
+    {
+      "id": "unesco-gb-26-07",
+      "sha256": "4d127a977388bf6043d879960a728dc9cd4e2bf647906341fe30a94c9dbf7ef8"
+    },
+    {
+      "id": "unesco-gb-26-08",
+      "sha256": "d4a6a217a7d81bef230e2250c3440b3bd8ab75c04b95fa2d4e6cea73d06be333"
+    },
+    {
+      "id": "unesco-gb-26-09",
+      "sha256": "54da37f2a4a059a9dc26ea0a7473bd1193213e8d6f0bbaa3b7604834850b2995"
+    },
+    {
+      "id": "unesco-gb-26-10",
+      "sha256": "f810c7247e8c65de8783986db71d3889f96788bdbccf1b3924c25014214b1add"
+    },
+    {
+      "id": "unesco-gb-26-11",
+      "sha256": "fc6ff9aac9843e0714bc63739e536fcc69a0260d8812b31deff773624a281841"
+    },
+    {
+      "id": "unesco-gb-26-12",
+      "sha256": "06d716a2fab5382d81f35552c9a4863b91a832ed3beb57afe0bc29593217eef2"
+    },
+    {
+      "id": "unesco-gb-36-01",
+      "sha256": "675f1146c73618f20d9639dee6694f689f80ecbfcb6cb8cd9d51a78f519794af"
+    },
+    {
+      "id": "unesco-gb-36-02",
+      "sha256": "3f1d6017057894eea61aba8b7b9f70e30698deab6d7f413ff4dd6208f6226a2a"
+    },
+    {
+      "id": "unesco-gb-36-03",
+      "sha256": "32358d3409f6d269a5ce4524087ad30b321bfbea2b51929294e78c00138f3e8f"
+    },
+    {
+      "id": "unesco-gb-36-04",
+      "sha256": "7d3e8663ca12a3efe259e7d569616ca985da034cfb2dc11381297d7a855093cd"
+    },
+    {
+      "id": "unesco-gb-36-05",
+      "sha256": "91a9b718eb5797785bc61d0bf755485586938fe3b1fddce1e4ce467daa503e53"
+    },
+    {
+      "id": "unesco-gb-36-06",
+      "sha256": "d3553bf0a5404e548f7bcc6b52837a6dc59784fd180b1f34b78079b2e8909124"
+    },
+    {
+      "id": "unesco-gb-36-07",
+      "sha256": "ad35af65efa29cee880762736b69ae272dc8562b333d5e5799f161061723e408"
+    },
+    {
+      "id": "unesco-gb-36-08",
+      "sha256": "7400518dd9a85f3db6074c4dda5c018273c25af2999174353f1e35ae2f944f6b"
+    },
+    {
+      "id": "unesco-gb-36-09",
+      "sha256": "cbf49f0981af957a553aafae3496081ce1d8a718aefafb69b9001a1214d6d9d7"
+    },
+    {
+      "id": "unesco-gb-36-10",
+      "sha256": "617d20e46c01ebcc5abcac1a2b511153a7aeeaa0772583d672b9b30d3df35555"
+    },
+    {
+      "id": "unesco-gb-36-11",
+      "sha256": "1672c06355857b74bcf6a17936923b10893e9d2b405106d57085ddf430b3054c"
+    },
+    {
+      "id": "unesco-gb-36-12",
+      "sha256": "2773fc6b8877ab7346d5a71c1302d44cef764b37363897b739cf60209501d4e3"
+    },
+    {
+      "id": "unesco-gb-38-01",
+      "sha256": "5951e18781f0066fa49afe76455a0dec48a8a45178217d406a7e1714dd99e5b5"
+    },
+    {
+      "id": "unesco-gb-38-02",
+      "sha256": "d106a046d37757d2039a09a75333df519b24361c4999d43f762b64acd0080d1e"
+    },
+    {
+      "id": "unesco-gb-38-03",
+      "sha256": "85d186580f57a7b0e7f818b7b0b8f25756677e478579642d81638a5af5cf9815"
+    },
+    {
+      "id": "unesco-gb-38-04",
+      "sha256": "ce0f422ef8f777f45849157cb106fd31a1c44fb2228f6d527b726307adbad410"
+    },
+    {
+      "id": "unesco-gb-38-05",
+      "sha256": "92a71972572686d02635d672338b7b47acfe6d9940a2d1e5d58e2a89bfc6ea01"
+    },
+    {
+      "id": "unesco-gb-38-06",
+      "sha256": "942b6549ebe880d137b45b1dde40a27b7cfb0cff0608ff182f438471c978af9f"
+    },
+    {
+      "id": "unesco-gb-38-07",
+      "sha256": "4501ba1d1b7ecac6180558ed11ab3d170b2d94068cd9c72005297f95a26e1379"
+    },
+    {
+      "id": "unesco-gb-38-08",
+      "sha256": "bc96b3acab594cbd64288ef11c2fdd47747e91994b0d2c06ee9c28ff37867041"
+    },
+    {
+      "id": "unesco-gb-38-09",
+      "sha256": "f753ef3597819efdc64fc948828a0362d811def2beaec6853e9022bdb1ae0df6"
+    },
+    {
+      "id": "unesco-gb-38-10",
+      "sha256": "087afc04293437a794d3586bc63d9cf0b99a7f9b3f2a21a333f67084fee1d8f1"
+    },
+    {
+      "id": "unesco-gb-38-11",
+      "sha256": "f227e413d676a04c92bc8c387360c092b24abe1c72bcec6bdfbd659cf412443a"
+    },
+    {
+      "id": "unesco-gb-38-12",
+      "sha256": "aee3f850c647f34d7673723cb535f579eb832f57052470011212a7e7831f3771"
+    },
+    {
+      "id": "unesco-gb-40-01",
+      "sha256": "f32d1e06171d0e0a7b18c90e81cfd80053316c1d9418ac721f5d5eaf60a86c05"
+    },
+    {
+      "id": "unesco-gb-40-02",
+      "sha256": "4853b2f48dc944b9cc011ff966ee04ebf1543e59ecfe4e7f9954d7e67f014740"
+    },
+    {
+      "id": "unesco-gb-40-03",
+      "sha256": "8915e3b3d9a497e1e49c679cd90ffbeea463cc038c5dcf7aee5ed8a24291cda6"
+    },
+    {
+      "id": "unesco-gb-40-04",
+      "sha256": "5c3dafe6398129ccbb412751e8f6cbf760b3b577f95885f2033f4a2dcbf949dc"
+    },
+    {
+      "id": "unesco-gb-40-05",
+      "sha256": "7a56d2e9520c741ebdca90d78b2afad115eccb5ebd862b7b8cfd6a5cdd472a5e"
+    },
+    {
+      "id": "unesco-gb-40-06",
+      "sha256": "5c8bdd5df77e507ca515c94abd06c239123b3d434c8fdc4238da465cb5e74338"
+    },
+    {
+      "id": "unesco-gb-40-07",
+      "sha256": "8185d4668e74b86a57db135ce775276cbbef27735420c489620ab9eac37046e8"
+    },
+    {
+      "id": "unesco-gb-40-08",
+      "sha256": "5ab5622a2d71ea11796f6498222217c44f37a941635ba4d1b6ca9e1d409dc631"
+    },
+    {
+      "id": "unesco-gb-40-09",
+      "sha256": "f6ca064f7425a93143165f9db486709ae7b04cccc1085595eae31649d8d3a186"
+    },
+    {
+      "id": "unesco-gb-40-10",
+      "sha256": "948661467b9b1e1de88a99aad80a89ca512b72e4b7b95b25bf3d99fd02a611bc"
+    },
+    {
+      "id": "unesco-gb-40-11",
+      "sha256": "519663e026f9aa502ee9714ddafce2231634d8cbed41e2552f73dbc93fae7b68"
+    },
+    {
+      "id": "unesco-gb-40-12",
+      "sha256": "ce8bf5caf37058e2afbf827bfee539184fd69f6e4ad9905b6f41028bca47a0dd"
+    },
+    {
+      "id": "unesco-gb-43-01",
+      "sha256": "98970063e80add4e7f32c11e37237920e31f8ec504dd23bd2c27733f78fb0a4b"
+    },
+    {
+      "id": "unesco-gb-43-02",
+      "sha256": "fb37650e80fdf21954ea536213f63ec95e2a7053c71996999bae4a06910ae61c"
+    },
+    {
+      "id": "unesco-gb-43-03",
+      "sha256": "c516f85e1ed3b3da3b2226f7f6d40eaaac25df100bdd08f4092727176fdaea27"
+    },
+    {
+      "id": "unesco-gb-43-04",
+      "sha256": "723abf6384a21cbcd572db65cab328067f46bbf2444239b0586dc0f7077bfd14"
+    },
+    {
+      "id": "unesco-gb-43-05",
+      "sha256": "a10aa86deb578e8a3b2cd425b3b3619affc06dd3e6b06808158325152da67144"
+    },
+    {
+      "id": "unesco-gb-43-06",
+      "sha256": "b3db27cdbb2033281467b9a07c809c395da0b06f37c2871d90ec2aa294310d1e"
+    },
+    {
+      "id": "unesco-gb-43-07",
+      "sha256": "38d93b318929c90a9a21a176044557081ce22214ca796f911f28b657279cf36f"
+    },
+    {
+      "id": "unesco-gb-43-08",
+      "sha256": "b94092ff5e2eb41e25480fd70649a35b9a3f600d786b01e2a13b84a2ce78af93"
+    },
+    {
+      "id": "unesco-gb-43-09",
+      "sha256": "da21e8aacf2402394c4edf38f6c3aaa314a296e4f744e8f517d220e4a5fb2939"
+    },
+    {
+      "id": "unesco-gb-43-10",
+      "sha256": "266b4f9571638e04e74371080815b326f5a7a3615dc5e5d1008e2fb2e103b9a1"
+    },
+    {
+      "id": "unesco-gb-43-11",
+      "sha256": "c625db512a336603a6fb7c528345c84bef4a789a2009709a76c1e1b304d7e3f5"
+    },
+    {
+      "id": "unesco-gb-43-12",
+      "sha256": "806226da06cfe2565ab7e32e47de2414eb34db75dc842e5b3c07dbe31b552c87"
+    },
+    {
+      "id": "unesco-gb-86-01",
+      "sha256": "3d19a114b2c9c9e688ca7458189d0a6d43674757f73cc1d9b2fabe25e2487ed5"
+    },
+    {
+      "id": "unesco-gb-86-02",
+      "sha256": "73625e3aa8d087a8d4c115740d7a72aa9e0f4646ec98b8132e70a905e1944134"
+    },
+    {
+      "id": "unesco-gb-86-03",
+      "sha256": "80376d3f36e87b500643109af9e4634317c8345bd130c8f60034f41252099501"
+    },
+    {
+      "id": "unesco-gb-86-04",
+      "sha256": "082372390d56e342f091a8e06bfda6979443fcb994920c1b4bd8a514be3fb401"
+    },
+    {
+      "id": "unesco-gb-86-05",
+      "sha256": "43481b686729e58ea4a110bee4979847c3d2df6e91fc02e832e0c70126bc2713"
+    },
+    {
+      "id": "unesco-gb-86-06",
+      "sha256": "b0534ba6d6a9c1e2d72f70edb5a131131403948ad9561cabfded52a28b8234fd"
+    },
+    {
+      "id": "unesco-gb-86-07",
+      "sha256": "c0b5ddd37f86c204992811bfb326e128b3d0838b262c21d54a666cc6608d3144"
+    },
+    {
+      "id": "unesco-gb-86-08",
+      "sha256": "6f28dd92c4a4a539244243a3a454f9d8c09ad63ad06ea255d10b237dc972d03e"
+    },
+    {
+      "id": "unesco-gb-86-09",
+      "sha256": "5971c862b76c3db066716142a3c1a8ef0acdde80a6789c5c198ca8df5c795281"
+    },
+    {
+      "id": "unesco-gb-86-10",
+      "sha256": "75031728ade257bdec5076bec9cc5ca800caa99760c10648bd73b76e337210b3"
+    },
+    {
+      "id": "unesco-gb-86-11",
+      "sha256": "1fba4d0e0cf444e906a0abe0b09d8ae681088b10efc6139db13c9209041ffe4a"
+    },
+    {
+      "id": "unesco-gb-86-12",
+      "sha256": "7040f85bafa44dfcb1390d7a06ed65d46531af25a396be38ead020165bd15298"
+    }
+  ],
+  "snapshotSha256": "233076f2eeb317435237f12dbe508ae41428ff1dc8f86aac4ac8df73c402390f",
+  "signatureAlg": "Ed25519",
+  "signatureKeyId": "ed25519-gtKMbu7iqc7u6tOC",
+  "signature": "Btb21dWwgVM8vulmcfn6082JuCoI5lVHGh5gsyyaBdKE048-do9D7cpcNVfBD-8e4kgO6Fnn4grsj65UxGEsBA",
+  "publicKeyUrl": "https://aioq.org/.well-known/aio-cert-key.json",
+  "note": "Ed25519 signature over the ASCII hex string in `snapshotSha256`, made with the AIO certificate signing key. Verify it against the key whose kid equals signatureKeyId. The item bodies are not published here — only their hashes, so an item cannot be altered after an attempt without breaking this commitment.",
+  "limits": [
+    "A commitment proves that the private items existed in this form at snapshotAt. It does not prove the items are good, nor that any particular attempt drew them.",
+    "Retired items are published in full in the companion .gateb-retired.json file."
+  ]
+}
